@@ -1,3 +1,5 @@
+import re
+
 def generate_finnish_tips():
     return [
         "Aloita päivä yhdellä selkeällä tavoitteella.",
@@ -12,23 +14,22 @@ def generate_english_tips():
         "Try the 10-minute cleaning method."
     ]
 
+def replace_section(html, section_id, tips):
+    # Luo uusi HTML sisältö
+    new_content = "".join([f'<div class="tip">{t}</div>' for t in tips])
+
+    # Regex: korvaa KAIKKI sisällöt divin sisällä
+    pattern = rf'<div id="{section_id}">.*?</div>'
+    replacement = f'<div id="{section_id}">{new_content}</div>'
+
+    return re.sub(pattern, replacement, html, flags=re.DOTALL)
+
 def update_html():
     with open("index.html", "r", encoding="utf-8") as f:
         html = f.read()
 
-    fi_tips = generate_finnish_tips()
-    en_tips = generate_english_tips()
-
-    fi_html = "".join([f'<div class="tip">{t}</div>' for t in fi_tips])
-    en_html = "".join([f'<div class="tip">{t}</div>' for t in en_tips])
-
-    # Tyhjennetään vanhat vinkit ja lisätään uudet
-    html = html.replace(
-        '<div id="tips-fi">', f'<div id="tips-fi">{fi_html}'
-    )
-    html = html.replace(
-        '<div id="tips-en">', f'<div id="tips-en">{en_html}'
-    )
+    html = replace_section(html, "tips-fi", generate_finnish_tips())
+    html = replace_section(html, "tips-en", generate_english_tips())
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
