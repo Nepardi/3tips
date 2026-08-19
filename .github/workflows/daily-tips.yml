@@ -15,7 +15,7 @@ jobs:
 
       - name: Run Ollama CLI
         run: |
-          call ollama run llama3.1 --format json "TECHNICAL TOPIC: MINIATURE MODEL BUILDING. Give exactly 3 practical tips in English. OUTPUT VALID JSON ONLY, no extra text, single line: {tips:[{title,text},{title,text},{title,text}]}" > tips.json
+          call ollama run llama3.1 --format json "TECHNICAL TOPIC: MINIATURE MODEL BUILDING. Give exactly 3 practical tips in English. OUTPUT VALID JSON ONLY, no extra text: {tips:[{title,text},{title,text},{title,text}]}" > tips.json
         shell: cmd
 
       - name: Show Response
