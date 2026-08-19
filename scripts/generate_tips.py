@@ -1,35 +1,21 @@
-import re
-
-def generate_finnish_tips():
-    return [
-        "Aloita päivä yhdellä selkeällä tavoitteella.",
-        "Pidä lyhyt tauko jokaisen tunnin jälkeen.",
-        "Kokeile 10 minuutin siivousmetodia."
-    ]
-
-def generate_english_tips():
-    return [
-        "Start your day with one clear goal.",
-        "Take a short break every hour.",
-        "Try the 10-minute cleaning method."
-    ]
-
-def replace_section(html, section_id, tips):
-    # Luo uusi HTML sisältö
-    new_content = "".join([f'<div class="tip">{t}</div>' for t in tips])
-
-    # Regex: korvaa KAIKKI sisällöt divin sisällä
-    pattern = rf'<div id="{section_id}">.*?</div>'
-    replacement = f'<div id="{section_id}">{new_content}</div>'
-
-    return re.sub(pattern, replacement, html, flags=re.DOTALL)
+import os
+import json
 
 def update_html():
+    ai_output = os.getenv("AI_OUTPUT")
+    data = json.loads(ai_output)
+
+    fi_tips = data["finnish"]
+    en_tips = data["english"]
+
     with open("index.html", "r", encoding="utf-8") as f:
         html = f.read()
 
-    html = replace_section(html, "tips-fi", generate_finnish_tips())
-    html = replace_section(html, "tips-en", generate_english_tips())
+    fi_html = "".join([f'<div class="tip">{t}</div>' for t in fi_tips])
+    en_html = "".join([f'<div class="tip">{t}</div>' for t in en_tips])
+
+    html = html.replace('<div id="tips-fi"></div>', f'<div id="tips-fi">{fi_html}</div>')
+    html = html.replace('<div id="tips-en"></div>', f'<div id="tips-en">{en_html}</div>')
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
