@@ -33,7 +33,9 @@ jobs:
             }')
 
           echo "$RESPONSE" > ai.json
-          echo "result=$(cat ai.json)" >> $GITHUB_OUTPUT
+          RESULT=$(cat ai.json | jq -r '.choices[0].message.content' 2>/dev/null || echo "")
+echo "result=$RESULT" >> $GITHUB_OUTPUT
+
 
       - name: Set up Python
         uses: actions/setup-python@v5
