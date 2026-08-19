@@ -2,58 +2,65 @@ import json
 import re
 
 with open('tips.json', 'r', encoding='utf-8') as f:
-    content = f.read().strip()
+    content = f.read()
 
-print(f"Raw content length: {len(content)}")
-print(f"First 200 chars: {content[:200]}")
+print(f"Raw length: {len(content)} chars")
 
-# Poista kaikki JSON-objektin ulkopuolinen teksti
-match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', content, re.DOTALL)
-
+# 1. Etsi JSON-objekti
+match = re.search(r'\{[\s\S]*\}', content)
 if not match:
-    print("ERROR: No JSON object found!")
-    # Yritä etsiä mitä tahansa accoladejä
-    match = re.search(r'\{.*\}', content, re.DOTALL)
-    if not match:
-        print("Still no luck. Content:", content)
-        exit(1)
-
-json_str = match.group()
-print(f"\nExtracted JSON (first 100 chars): {json_str[:100]}")
-
-# Yritä parsia JSONia
-try:
-    data = json.loads(json_str)
-except json.JSONDecodeError as e:
-    print(f"JSON decode error: {e}")
-    print("Trying to fix JSON...")
-    
-    # Yritä korjata yleisiä virheitä
-    json_str = json_str.replace('\n', ' ').replace('\\', '\\\\')
-    
-    try:
-        data = json.loads(json_str)
-    except:
-        print("Failed to fix JSON. Saving raw for debugging:")
-        with open('tips_debug.json', 'w') as f:
-            f.write(content)
-        exit(1)
-
-# Tarkista että 'tips' on olemassa
-if 'tips' not in data:
-    print(f"ERROR: 'tips' key missing! Available keys: {list(data.keys())}")
+    print("ERROR: No JSON found!")
     exit(1)
 
-print(f"Found {len(data['tips'])} tips")
+json_str = match.group()
+print(f"Extracted {len(json_str)} chars of JSON")
 
-html = '<html><body><h1>Vinkit</h1>'
-for i, t in enumerate(data['tips']):
-    title = t.get('title', f'Tipp {i+1}')
-    text = t.get('text', 'No text provided')
-    html += f'<h2>{title}</h2><p>{text}</p>'
+# 2. KORJAUS: Poista kaikki rivinvaihdot ja tabit koko JSONista
+# JSONissa rivinvaihdot merkkijonon sisällä eivät ole sallittuja
+cleaned = json_str.replace('\n', ' ').replace('\r', '').replace('\t', ' ')
+
+# 3. Purista ylimääräiset välilynnit
+cleaned = re.sub(r'  +', ' ', cleaned)
+
+print(f"Cleaned length: {len(cleaned)} chars")
+
+# 4. Parsi JSON
+try:
+    data = json.loads(cleaned)
+    print("✓ JSON parsed successfully!")
+except json.JSONDecodeError as e:
+    print(f"JSON error: {e}")
+    print(f"Problematic section: {cleaned[max(0, e.pos-50):e.pos+50]}")
+    
+    # Tallenna debug-tiedostot
+    with open('debug_raw.json', 'w', encoding='utf-8') as f:
+        f.write(content)
+    with open('debug_cleaned.json', 'w', encoding='utf-8') as f:
+        f.write(cleaned)
+    
+    exit(1)
+
+# 5. Tarkista rakenne
+if 'tips' not in data:
+    print(f"ERROR: Missing 'tips' key. Available: {list(data.keys())}")
+    exit(1)
+
+tips = data['tips']
+print(f"✓ Found {len(tips)} tips")
+
+# 6. Generoi HTML
+html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Vinkit</title>'
+html += '<style>body{font-family:sans-serif;max-width:800px;margin:40px auto}</style>'
+html += '</head><body><h1>Pienoismallivinkit</h1>'
+
+for i, t in enumerate(tips, 1):
+    title = str(t.get('title', f'Vinkki {i}')).replace('<', '&lt;').replace('>', '&gt;')
+    text = str(t.get('text', 'Ei sisältöä')).replace('<', '&lt;').replace('>', '&gt;')
+    html += f'<article><h2>{title}</h2><p>{text}</p></article>'
+
 html += '</body></html>'
 
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
-print("SUCCESS: Generated index.html")
+print("✅ Generated index.html")
