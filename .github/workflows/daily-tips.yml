@@ -14,26 +14,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate tips
-        run: ollama run llama3.1 "Kolme vinkkia pienoismalleihin, vain JSON: {\"tips\":[{\"title\":\"\",\"text\":\"\"},{\"title\":\"\",\"text\":\"\"},{\"title\":\"\",\"text\":\"\"}]}" > tips.json
-        shell: bash
-
-      - name: Generate HTML
+      - name: Generate tips with Ollama
         run: |
-          python3 << 'PYTHON'
-import json, re
+          $prompt = 'Anna kolme vinkkia pienoismalleihin. Palauta vain JSON: {"tips":[{"title":"","text":""},{"title":"","text":""},{"title":"","text":""}]}'
+          ollama run llama3.1 "$prompt --format json" 2>&1 | Select-String -Pattern '\{.*\}' > tips.json
+        shell: pwsh
+
+      - name: Create Python script
+        run: |
+          python_script = """
+import json, re, sys
 content = open("tips.json").read()
-data = json.loads(re.search(r"\{.*\}", content).group())
-html = "<html><body><h1>Vinkit</h1>" + "".join(f"<h2>{t['title']}</h2><p>{t['text']}</p>" for t in data["tips"]) + "</body></html>"
-open("index.html","w").write(html)
-PYTHON
-        shell: bash
+match = re.search(r"\{.*\}", content, re.DOTALL)
+if not match:
+    print("No JSON found"); sys.exit(1)
+data = json.loads(match.group())
+html = "<html><body><h1>Vinkit</h1>"
+for t in data["tips"]: html += f"<h2>{t['title']}</h2><p>{t['text']}</p>"
+html += "</body></html>"
+open("index.html","w",encoding="utf-8").write(html)
+"""
+          with open("generate.py", "w", encoding="utf-8") as f:
+              f.write(python_script)
+        shell: pwsh
+
+      - name: Run Python
+        run: python generate.py
+        shell: pwsh
 
       - name: Commit changes
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
           git add index.html tips.json
-          git commit -m "Update tips" || echo "No changes"
-          git push
-        shell: bash
+          git diff --cached --quiet || (git commit -m "Daily tips update" && git push)
+        shell: pwsh
