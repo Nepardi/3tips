@@ -37,7 +37,10 @@ jobs:
               ]
             }')
 
-          echo "$RESPONSE" > ai.json
+echo "OpenAI raw response:"
+echo "$RESPONSE"
+echo "$RESPONSE" > ai.json
+
 
           RESULT=$(cat ai.json | jq -r '.choices[0].message.content' 2>/dev/null || echo "")
           echo "result=$RESULT" >> $GITHUB_OUTPUT
