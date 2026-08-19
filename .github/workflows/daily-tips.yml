@@ -13,22 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Start Ollama Server
+      - name: Run Ollama CLI
         run: |
-          start cmd /c "ollama serve"
-        shell: cmd
-        continue-on-error: true
-
-      - name: Wait for Ollama
-        run: timeout 5
+          call ollama run llama3.1 --format json "TECHNICAL TOPIC: MINIATURE MODEL BUILDING. Give exactly 3 practical tips in English. OUTPUT VALID JSON ONLY, no extra text, single line: {tips:[{title,text},{title,text},{title,text}]}" > tips.json
         shell: cmd
 
-      - name: Run Ollama API
-        run: |
-          curl -s http://localhost:11434/api/generate -H "Content-Type: application/json" -d "{\"model\":\"llama3.1\",\"prompt\":\"TECHNICAL TOPIC: MINIATURE MODEL BUILDING. Give exactly 3 practical tips in English. OUTPUT VALID JSON ONLY: {tips:[{title,text},{title,text},{title,text}]}\",\"stream\":false,\"format\":\"json\"}" > tips.json
-        shell: cmd
-
-      - name: Show Ollama Response (DEBUG)
+      - name: Show Response (DEBUG)
         run: |
           type tips.json
         shell: cmd
