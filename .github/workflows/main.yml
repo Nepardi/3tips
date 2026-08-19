@@ -3,44 +3,84 @@ name: Daily Tips
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: [self-hosted, Windows, X64]
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+        
       - name: Generate tips with Ollama
         shell: powershell
         run: |
-          $prompt = 'Anna kolme lyhyttä vinkkiä pienoismallien rakentamiseen. Palauta vastaus JSON-muodossa: {"tips":[{"title":"","text":""},{"title":"","text":""},{"title":"","text":""}]}'
-          $response = ollama run llama3.1 $prompt
-          Set-Content -Path tips.json -Value $response -Encoding UTF8
+          $prompt = 'Anna kolme lyhyttä vinkkiä pienoismallien rakentamiseen. Palauta VAIN JSON-muodossa, ilman ylimääräistä tekstiä: {"tips":[{"title":"","text":""},{"title":"","text":""},{"title":"","text":""}]}'
+          
+          try {
+            $response = ollama run llama3.1 "$prompt --format json" 2>&1
+            $response | Set-Content -Path tips.json -Encoding UTF8
+            Write-Host "✓ tips.json luotu"
+          } catch {
+            Write-Error "Ollama epäonnistui: $_"
+            exit 1
+          }
 
       - name: Generate HTML with Python
         shell: powershell
         run: |
-          python - << 'EOF'
+          $pythonScript = @'
 import json
+import sys
 
-with open("tips.json", "r", encoding="utf-8") as f:
-    data = json.load(f)
-
-html = "<html><body><h1>Pienoismallivinkit</h1>"
-for tip in data["tips"]:
-    html += f"<h2>{tip['title']}</h2><p>{tip['text']}</p>"
-html += "</body></html>"
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html)
-EOF
+try:
+    with open("tips.json", "r", encoding="utf-8") as f:
+        content = f.read()
+        
+    # Pyydä pelkkä JSON objektia jos vastauksessa on ylimääräistä tekstiä
+    import re
+    json_match = re.search(r'\{.*\}', content, re.DOTALL)
+    if not json_match:
+        print("Ei JSON-tietoa löydetty!")
+        sys.exit(1)
+    
+    data = json.loads(json_match.group())
+    
+    html = "<html><body><h1>Pienoismallivinkit</h1>"
+    for tip in data["tips"]:
+        html += f"<h2>{tip['title']}</h2><p>{tip['text']}</p>"
+    html += "</body></html>"
+    
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    
+    print("✓ index.html luotu")
+except Exception as e:
+    print(f"Virhe: {e}")
+    sys.exit(1)
+'@
+      
+      $pythonScript | Out-File -FilePath generate_tips.py -Encoding utf8
+      python generate_tips.py
+      Remove-Item generate_tips.py
 
       - name: Commit HTML
         shell: powershell
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
           git add index.html tips.json
-          git commit -m "Daily tips update"
-          git push
+          
+          # Tarkista onko muutoksia
+          if (git diff --quiet --cached) {
+            echo "⚠️ Ei muutoksia commitoitavaksi"
+          } else {
+            git commit -m "Daily tips update $(Get-Date -Format 'yyyy-MM-dd')"
+            git push
+            echo "✓ Commit ja push onnistuivat"
+          }
+          
