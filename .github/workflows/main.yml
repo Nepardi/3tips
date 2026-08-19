@@ -12,3 +12,11 @@ jobs:
         shell: powershell
         run: |
           Write-Host "Testi toimii."
+
+      - name: Call Ollama
+        shell: powershell
+        run: |
+          Write-Host "Calling Ollama..."
+          $response = ollama run llama3.1 "Anna yksi lyhyt vinkki pienoismallien rakentamiseen."
+          Write-Host "Ollama response:"
+          Write-Host $response
