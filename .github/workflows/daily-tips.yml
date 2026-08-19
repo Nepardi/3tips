@@ -9,7 +9,6 @@ jobs:
 
     steps:
       - name: Say hello
-        shell: pwsh
+        shell: powershell
         run: |
           Write-Host "Runner toimii, tämä on testiajo."
-
