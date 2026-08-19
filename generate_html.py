@@ -1,40 +1,40 @@
 import json
+import re
 
 with open('tips.json', 'rb') as f:
     raw_bytes = f.read()
 
-# Convert to text, removing ALL control characters (bytes 0x00-0x1F except tab/newline)
-print(f"Raw bytes: {len(raw_bytes)}")
-
-# Filter out control characters but keep printable ASCII + valid JSON chars
+# Filter out control characters (bytes 0x00-0x1F except tab, LF, CR)
 filtered = bytearray()
 for byte in raw_bytes:
-    # Allow: 0x09 (tab), 0x0A (LF), 0x0D (CR), 0x20+ (printable)
     if byte >= 0x20 or byte in (0x09, 0x0A, 0x0D):
         filtered.append(byte)
-    # Otherwise skip it (control char)
 
-text = filtered.decode('utf-8')
+text = filtered.decode('utf-8', errors='ignore')
 
-# Now replace remaining newlines/tabs with space
+# Remove ALL ANSI escape sequences (like [2D[K, [K, etc.)
+# Pattern matches ESC [ ... sequence
+text = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', text)
+text = re.sub(r'\[\d*[a-zA-Z]', '', text)
+
+# Replace newlines/tabs with space
 text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
 
-# Collapse spaces
+# Collapse multiple spaces
 while '  ' in text:
     text = text.replace('  ', ' ')
 
 print(f"After cleaning: {len(text)} chars")
-print(f"Preview: {text[:200]}...")
+print(f"Preview: {text[:300]}...")
 
 try:
     data = json.loads(text)
     print("✓ JSON parsed!")
 except json.JSONDecodeError as e:
     print(f"ERROR: {e}")
-    print(f"Context around error:")
-    pos = max(0, e.pos - 40)
-    end = min(len(text), e.pos + 40)
-    print(f"...{text[pos:end]}...")
+    pos = max(0, e.pos - 50)
+    end = min(len(text), e.pos + 50)
+    print(f"Context: ...{text[pos:end]}...")
     exit(1)
 
 if 'tips' not in data:
@@ -61,4 +61,4 @@ html += '</body></html>'
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
-print("✅ SUCCESS!")
+print("✅ SUCCESS: index.html created!")
