@@ -15,32 +15,34 @@ jobs:
 
       - name: Generate tips with Ollama
         id: ai
+        shell: pwsh
         run: |
-          echo "Calling Ollama..."
+          Write-Host "Calling Ollama..."
 
-          RESPONSE=$(ollama run llama3.1 "
-          Vastaa täsmälleen tässä muodossa:
-          {
-            \"finnish\": [
-              \"vinkki 1\",
-              \"vinkki 2\",
-              \"vinkki 3\"
-            ],
-            \"english\": [
-              \"tip 1\",
-              \"tip 2\",
-              \"tip 3\"
-            ]
-          }
+          $prompt = @"
+Vastaa täsmälleen tässä muodossa:
+{
+  "finnish": [
+    "vinkki 1",
+    "vinkki 2",
+    "vinkki 3"
+  ],
+  "english": [
+    "tip 1",
+    "tip 2",
+    "tip 3"
+  ]
+}
+Anna 3 lyhyttä vinkkiä pienoismallien valmistuksesta suomeksi ja 3 englanniksi.
+Palauta vain JSON, ei selityksiä.
+"@
 
-          Anna 3 lyhyttä vinkkiä pienoismallien valmistuksesta **suomeksi** ja 3 **englanniksi**.
-          Palauta vain JSON, ei selityksiä.
-          ")
+          $RESPONSE = ollama run llama3.1 $prompt
 
-          echo "Ollama raw response:"
-          echo "$RESPONSE"
+          Write-Host "Ollama raw response:"
+          Write-Host $RESPONSE
 
-          echo "result=$RESPONSE" >> $GITHUB_OUTPUT
+          echo "result=$RESPONSE" >> $env:GITHUB_OUTPUT
 
       - name: Set up Python
         uses: actions/setup-python@v5
