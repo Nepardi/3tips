@@ -15,53 +15,43 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate tips with Ollama
-        run: ollama run llama3.1 "Anna kolme vinkkia pienoismalleihin. Vain JSON:" --format json ^> tips.json
-        shell: cmd
+        run: |
+          ollama run llama3.1 --format json "Anna kolme vinkkia pienoismalleihin. Palauta vain JSON-muotoisia tietoja." > tips.json
+        shell: bash
 
-      - name: Write Python script line 1
-        run: echo import json,re,sys > generate.py
-        shell: cmd
+      - name: Create Python script
+        run: |
+          cat > generate.py << 'PYEOF'
+import json
+import re
 
-      - name: Write Python script line 2
-        run: echo content=open^('tips.json'^).read() >> generate.py
-        shell: cmd
+with open("tips.json", "r", encoding="utf-8") as f:
+    content = f.read()
 
-      - name: Write Python script line 3
-        run: echo m=re.search(r^'{.*}^',content,re.DOTALL) >> generate.py
-        shell: cmd
+match = re.search(r"{.*}", content, re.DOTALL)
+if not match:
+    print("Ei JSON-tietoa")
+    exit(1)
 
-      - name: Write Python script line 4
-        run: echo if not m:print^('No JSON'^);sys.exit^^(1^^) >> generate.py
-        shell: cmd
+data = json.loads(match.group())
 
-      - name: Write Python script line 5
-        run: echo d=json.loads^^(m.group^^(^^)) >> generate.py
-        shell: cmd
+html = "<html><body><h1>Vinkit</h1>"
+for t in data["tips"]:
+    html += f"<h2>{t['title']}</h2><p>{t['text']}</p>"
+html += "</body></html>"
 
-      - name: Write Python script line 6
-        run: echo h='<html><body><h1>Vinkit</h1>' >> generate.py
-        shell: cmd
-
-      - name: Write Python script line 7
-        run: echo for t in d["tips"]:h+=f"<h2>{t['title']}</h2><p>{t['text']}</p>" >> generate.py
-        shell: cmd
-
-      - name: Write Python script line 8
-        run: echo h+='</body></html>' >> generate.py
-        shell: cmd
-
-      - name: Write Python script line 9
-        run: echo open^('index.html'^,'w',encoding='utf-8'^).write^^(h^^) >> generate.py
-        shell: cmd
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html)
+PYEOF
+        shell: bash
 
       - name: Run Python
         run: python generate.py
-        shell: cmd
+        shell: bash
 
       - name: Commit changes
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
           git add index.html tips.json
-          git diff --cached --quiet || (git commit -m "Daily tips update" && git push)
-        shell: cmd
+          git diff --cached --quiet || (git commit -m "Daily tips upda
