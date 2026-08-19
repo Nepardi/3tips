@@ -1,27 +1,24 @@
-import os
-import json
+import random
 
 def update_html():
-    raw = os.getenv("AI_OUTPUT")
+    finnish_pool = [
+        "Kokeile kevyttä viilausta ennen maalausta — lopputulos on siistimpi.",
+        "Pese osat miedolla saippualla, jotta maali tarttuu paremmin.",
+        "Käytä ohuita maalikerroksia, ne kuivuvat tasaisemmin.",
+        "Maskaa teipillä ennen ruiskumaalausta, rajat pysyvät terävinä.",
+        "Käytä cocktailtikkuja pienosien käsittelyyn."
+    ]
 
-    if not raw:
-        print("AI_OUTPUT is empty — OpenAI call failed.")
-        return
+    english_pool = [
+        "Use thin paint layers for a smoother finish.",
+        "Wash parts with mild soap to improve paint adhesion.",
+        "Mask edges with hobby tape for crisp paint lines.",
+        "Sand lightly to remove mold lines before painting.",
+        "Use toothpicks to hold small parts while painting."
+    ]
 
-    try:
-        parsed = json.loads(raw)
-    except Exception:
-        print("AI_OUTPUT is not valid JSON.")
-        print("Raw:", raw)
-        return
-
-    if "finnish" not in parsed or "english" not in parsed:
-        print("Parsed JSON missing expected keys.")
-        print("Parsed:", parsed)
-        return
-
-    fi_tips = parsed["finnish"]
-    en_tips = parsed["english"]
+    fi_tips = random.sample(finnish_pool, 3)
+    en_tips = random.sample(english_pool, 3)
 
     with open("index.html", "r", encoding="utf-8") as f:
         html = f.read()
