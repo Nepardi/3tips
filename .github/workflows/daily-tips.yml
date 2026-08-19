@@ -7,51 +7,32 @@ permissions:
   contents: write
 
 jobs:
-  generate:
-    runs-on: [self-hosted, Windows, X64]
-
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Generate tips with Ollama
+      - uses: actions/checkout@v4
+      
+      - name: Generate JSON
+        run: echo '{"tips":[{"title":"Vinkki 1","text":"Sisältö 1"},{"title":"Vinkki 2","text":"Sisältö 2"},{"title":"Vinkki 3","text":"Sisältö 3"}]}' > tips.json
+      
+      - name: Generate HTML
         run: |
-          ollama run llama3.1 --format json "Anna kolme vinkkia pienoismalleihin. Palauta vain JSON-muotoisia tietoja." > tips.json
-        shell: bash
-
-      - name: Create Python script
-        run: |
-          cat > generate.py << 'PYEOF'
+          python3 << 'SCRIPT'
 import json
-import re
-
-with open("tips.json", "r", encoding="utf-8") as f:
-    content = f.read()
-
-match = re.search(r"{.*}", content, re.DOTALL)
-if not match:
-    print("Ei JSON-tietoa")
-    exit(1)
-
-data = json.loads(match.group())
-
-html = "<html><body><h1>Vinkit</h1>"
-for t in data["tips"]:
+with open('tips.json') as f:
+    data = json.load(f)
+html = '<html><body><h1>Vinkit</h1>'
+for t in data['tips']:
     html += f"<h2>{t['title']}</h2><p>{t['text']}</p>"
-html += "</body></html>"
-
-with open("index.html", "w", encoding="utf-8") as f:
+html += '</body></html>'
+with open('index.html', 'w') as f:
     f.write(html)
-PYEOF
-        shell: bash
+SCRIPT
 
-      - name: Run Python
-        run: python generate.py
-        shell: bash
-
-      - name: Commit changes
+      - name: Commit
         run: |
-          git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git add index.html tips.json
-          git diff --cached --quiet || (git commit -m "Daily tips upda
+          git config user.email "actions@github.com"
+          git add tips.json index.html
+          git commit -m "Update tips" || true
+          git push
