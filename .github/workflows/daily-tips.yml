@@ -1,64 +1,11 @@
-name: Update Daily Tips
+name: Daily Tips (Safe Mode)
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
-  generate:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install jq
-        run: sudo apt-get install jq -y
-
-      - name: Generate tips with OpenAI
-        id: ai
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          echo "Calling OpenAI..."
-          RESPONSE=$(curl -s \
-            -X POST \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer $OPENAI_API_KEY" \
-            https://api.openai.com/v1/chat/completions \
-            -d '{
-              "model": "gpt-4o-mini",
-              "messages": [
-                {
-                  "role": "user",
-                  "content": "Anna 3 lyhyttä vinkkiä aiheesta pienoismallien valmistus suomeksi ja 3 englanniksi. Palauta JSON-muodossa: {\"finnish\": [...], \"english\": [...]}"
-                }
-              ]
-            }')
-
-echo "OpenAI raw response:"
-echo "$RESPONSE"
-echo "$RESPONSE" > ai.json
-
-
-          RESULT=$(cat ai.json | jq -r '.choices[0].message.content' 2>/dev/null || echo "")
-          echo "result=$RESULT" >> $GITHUB_OUTPUT
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
-      - name: Run tip generator
-        env:
-          AI_OUTPUT: ${{ steps.ai.outputs.result }}
-        run: python scripts/generate_tips.py
-
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add index.html
-          git commit -m "Daily tips update" || echo "No changes to commit"
-          git push --force
+      - name: Test
+        run: echo "Workflow is working again."
