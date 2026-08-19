@@ -1,8 +1,23 @@
-{ 
-  "tips": [ 
-    { "title": "Vinkki 1", "text": "Pääsy lattialle on helppoa" }, 
-    { "title": "Vinkki 2", "text": "Mitata vauvan kasvu" }, 
-    { "title": "Vinkki 3", "text": "Vauvojen koulutuksen tärkeys" } 
-  ] 
+{
+  "tips": [
+    {
+      "title": "Use Reference Images",
+      "text": "Collect reference images of the miniature model you're build[5D[K
+building to study its proportions, details, and colors. This will help you [K
+achieve accuracy and authenticity in your model."
+    },
+    {
+      "title": "Work from Large to Small",
+      "text": "Start with the largest components of the model and work your[4D[K
+your way down to the smallest details. This approach will help you maintain[8D[K
+maintain accuracy and prevent mistakes from propagating to smaller parts."
+    },
+    {
+      "title": "Use Scale-Accurate Tools",
+      "text": "Invest in scale-accurate tools, such as miniature hobby kniv[4D[K
+knives, paintbrushes, and tweezers, to ensure that you can work on the mode[4D[K
+model without damaging it or introducing errors."
+    }
+  ]
 }
 
