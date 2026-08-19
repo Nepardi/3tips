@@ -1,9 +1,9 @@
 name: Daily Tips (Ollama)
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
 
 jobs:
   generate:
@@ -60,4 +60,4 @@ Palauta vain JSON, ei selityksiä.
           git config --global user.email "actions@github.com"
           git add index.html
           git commit -m "Daily tips update" || echo "No changes to commit"
-          git push --force
+          git push
