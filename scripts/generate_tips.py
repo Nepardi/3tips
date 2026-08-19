@@ -2,11 +2,16 @@ import os
 import json
 
 def update_html():
-    ai_output = os.getenv("AI_OUTPUT")
-    data = json.loads(ai_output)
+    raw = os.getenv("AI_OUTPUT")
+    data = json.loads(raw)
 
-    fi_tips = data["finnish"]
-    en_tips = data["english"]
+    # Copilotin vastaus on tässä polussa:
+    content = data["choices"][0]["message"]["content"]
+
+    parsed = json.loads(content)
+
+    fi_tips = parsed["finnish"]
+    en_tips = parsed["english"]
 
     with open("index.html", "r", encoding="utf-8") as f:
         html = f.read()
