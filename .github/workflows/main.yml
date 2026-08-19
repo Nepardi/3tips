@@ -14,17 +14,7 @@ jobs:
       - name: Generate tips with Ollama
         shell: powershell
         run: |
-          $prompt = @'
-Anna kolme lyhyttä vinkkiä pienoismallien rakentamiseen.
-Palauta vastaus JSON-muodossa:
-{
-  "tips": [
-    {"title": "", "text": ""},
-    {"title": "", "text": ""},
-    {"title": "", "text": ""}
-  ]
-}
-'@
+          $prompt = 'Anna kolme lyhyttä vinkkiä pienoismallien rakentamiseen. Palauta vastaus JSON-muodossa: {"tips":[{"title":"","text":""},{"title":"","text":""},{"title":"","text":""}]}'
           $response = ollama run llama3.1 $prompt
           Set-Content -Path tips.json -Value $response -Encoding UTF8
 
