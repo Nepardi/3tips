@@ -8,15 +8,26 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Windows, X64]
+
     steps:
       - uses: actions/checkout@v4
       
-      - name: Generate JSON
-        run: echo '{"tips":[{"title":"Vinkki 1","text":"Sisalto 1"},{"title":"Vinkki 2","text":"Sisalto 2"},{"title":"Vinkki 3","text":"Sisalto 3"}]}' > tips.json
+      - name: Run Ollama
+        run: ollama run llama3.1 --format json "Anna kolme vinkkia pienoismalleihin. Palauta vain JSON" > tips.json
+        shell: bash
       
       - name: Generate HTML
-        run: python3 generate_html.py
+        run: python3 -c "
+import json
+data = json.load(open('tips.json'))
+html = '<html><body><h1>Vinkit</h1>'
+for t in data['tips']:
+    html += f\"<h2>{t['title']}</h2><p>{t['text']}</p>\"
+html += '</body></html>'
+open('index.html','w',encoding='utf-8').write(html)
+"
+        shell: bash
       
       - name: Commit
         run: |
@@ -25,3 +36,4 @@ jobs:
           git add tips.json index.html
           git commit -m "Update tips" || true
           git push
+        shell: bash
