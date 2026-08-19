@@ -12,28 +12,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Run Ollama
         run: ollama run llama3.1 --format json "Anna kolme vinkkia pienoismalleihin. Palauta vain JSON" > tips.json
         shell: bash
-      
+
       - name: Generate HTML
-        run: python3 -c "
-import json
-data = json.load(open('tips.json'))
-html = '<html><body><h1>Vinkit</h1>'
-for t in data['tips']:
-    html += f\"<h2>{t['title']}</h2><p>{t['text']}</p>\"
-html += '</body></html>'
-open('index.html','w',encoding='utf-8').write(html)
-"
+        run: python3 generate_html.py
         shell: bash
-      
-      - name: Commit
+
+      - name: Commit changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add tips.json index.html
-          git commit -m "Update tips" || true
+          git diff --quiet --cached || git commit -m "Daily tips update"
           git push
         shell: bash
