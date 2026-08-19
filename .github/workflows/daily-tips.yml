@@ -2,8 +2,8 @@ name: Update Daily Tips
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # Ajetaan joka yö klo 00:00
-  workflow_dispatch:       # Mahdollistaa manuaalisen ajon
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
   generate:
@@ -13,19 +13,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate tips with Copilot
+      - name: Generate tips with Copilot AI
         id: ai
-        uses: actions/ai@v1
-        with:
-          model: copilot
-          prompt: |
-            Anna 3 lyhyttä vinkkiä aiheesta "pienoismallien valmistus" suomeksi.
-            Anna myös 3 lyhyttä vinkkiä englanniksi.
-            Palauta JSON-muodossa:
-            {
-              "finnish": ["vinkki1", "vinkki2", "vinkki3"],
-              "english": ["tip1", "tip2", "tip3"]
-            }
+        run: |
+          echo "Calling Copilot AI..."
+          RESPONSE=$(curl -s \
+            -X POST \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Content-Type: application/json" \
+            https://api.githubcopilot.com/v1/chat/completions \
+            -d '{
+              "model": "gpt-4o-mini",
+              "messages": [
+                {
+                  "role": "user",
+                  "content": "Anna 3 lyhyttä vinkkiä aiheesta pienoismallien valmistus suomeksi ja 3 englanniksi. Palauta JSON-muodossa: {\"finnish\": [...], \"english\": [...]}"
+                }
+              ]
+            }')
+
+          echo "$RESPONSE" > ai.json
+          echo "result=$(cat ai.json)" >> $GITHUB_OUTPUT
 
       - name: Set up Python
         uses: actions/setup-python@v5
