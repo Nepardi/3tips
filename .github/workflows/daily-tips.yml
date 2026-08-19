@@ -15,7 +15,12 @@ jobs:
 
       - name: Run Ollama
         run: |
-          call ollama run llama3.1 --format json "Anna kolme vinkkia pienoismalleihin. Palauta vain JSON" > tips.json
+          call ollama run llama3.1 --format json "Anna kolme vinkkia pienoismalleihin. Vain JSON-muoto, ilman muuta tekstia: {tips:[{title,text},{title,text},{title,text}]}" > tips.json
+        shell: cmd
+
+      - name: Debug tips.json
+        run: |
+          type tips.json
         shell: cmd
 
       - name: Generate HTML
