@@ -1,1 +1,8 @@
-{"tips":[{"title":"Vinkki 1","text":"Sisalto 1"},{"title":"Vinkki 2","text":"Sisalto 2"},{"title":"Vinkki 3","text":"Sisalto 3"}]}
+{ 
+  "tips": [ 
+    { "title": "Vinkki 1", "text": "Pääsy lattialle on helppoa" }, 
+    { "title": "Vinkki 2", "text": "Mitata vauvan kasvu" }, 
+    { "title": "Vinkki 3", "text": "Vauvojen koulutuksen tärkeys" } 
+  ] 
+}
+
