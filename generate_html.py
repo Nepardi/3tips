@@ -12,8 +12,7 @@ for byte in raw_bytes:
 
 text = filtered.decode('utf-8', errors='ignore')
 
-# Remove ALL ANSI escape sequences (like [2D[K, [K, etc.)
-# Pattern matches ESC [ ... sequence
+# Remove ALL ANSI escape sequences
 text = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', text)
 text = re.sub(r'\[\d*[a-zA-Z]', '', text)
 
@@ -29,7 +28,7 @@ print(f"Preview: {text[:300]}...")
 
 try:
     data = json.loads(text)
-    print("✓ JSON parsed!")
+    print("OK: JSON parsed!")
 except json.JSONDecodeError as e:
     print(f"ERROR: {e}")
     pos = max(0, e.pos - 50)
@@ -42,7 +41,7 @@ if 'tips' not in data:
     exit(1)
 
 tips = data['tips']
-print(f"✓ Found {len(tips)} tips")
+print(f"OK: Found {len(tips)} tips")
 
 html = '<!DOCTYPE html><html><head><meta charset="UTF-8">'
 html += '<style>body{font-family:Arial,sans-serif;max-width:800px;margin:40px auto;background:#f5f5f5;padding:20px;line-height:1.6}'
@@ -61,4 +60,4 @@ html += '</body></html>'
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
-print("✅ SUCCESS: index.html created!")
+print("DONE: index.html created!")
