@@ -19,7 +19,7 @@ jobs:
         shell: cmd
 
       - name: Generate HTML
-        run: python3 generate_html.py
+        run: python generate_html.py
         shell: cmd
 
       - name: Commit changes
