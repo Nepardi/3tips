@@ -1,0 +1,39 @@
+name: Daily Tips
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: [self-hosted, Windows, X64]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate tips
+        run: ollama run llama3.1 "Kolme vinkkia pienoismalleihin, vain JSON: {\"tips\":[{\"title\":\"\",\"text\":\"\"},{\"title\":\"\",\"text\":\"\"},{\"title\":\"\",\"text\":\"\"}]}" > tips.json
+        shell: bash
+
+      - name: Generate HTML
+        run: |
+          python3 << 'PYTHON'
+import json, re
+content = open("tips.json").read()
+data = json.loads(re.search(r"\{.*\}", content).group())
+html = "<html><body><h1>Vinkit</h1>" + "".join(f"<h2>{t['title']}</h2><p>{t['text']}</p>" for t in data["tips"]) + "</body></html>"
+open("index.html","w").write(html)
+PYTHON
+        shell: bash
+
+      - name: Commit changes
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add index.html tips.json
+          git commit -m "Update tips" || echo "No changes"
+          git push
+        shell: bash
