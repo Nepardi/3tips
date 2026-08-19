@@ -1,5 +1,3 @@
-import datetime
-
 def generate_finnish_tips():
     return [
         "Aloita päivä yhdellä selkeällä tavoitteella.",
@@ -24,6 +22,7 @@ def update_html():
     fi_html = "".join([f'<div class="tip">{t}</div>' for t in fi_tips])
     en_html = "".join([f'<div class="tip">{t}</div>' for t in en_tips])
 
+    # Tyhjennetään vanhat vinkit ja lisätään uudet
     html = html.replace(
         '<div id="tips-fi">', f'<div id="tips-fi">{fi_html}'
     )
@@ -36,4 +35,3 @@ def update_html():
 
 if __name__ == "__main__":
     update_html()
-
