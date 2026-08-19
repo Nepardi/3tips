@@ -15,23 +15,43 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate tips with Ollama
-        run: |
-          $prompt = 'Anna kolme vinkkia pienoismalleihin. Palauta vain JSON.'
-          ollama run llama3.1 "$prompt --format json" 2>&1 | Select-String -Pattern '\{.*\}' > tips.json
+        run: ollama run llama3.1 "Anna kolme vinkkia pienoismalleihin. Vain JSON:" --format json > tips.json
         shell: pwsh
 
-      - name: Create Python script
-        run: |
-          $script = 'import json,re,sys
-content=open("tips.json").read()
-m=re.search(r"{.*}",content,re.DOTALL)
-if not m:print("No JSON");sys.exit(1)
-d=json.loads(m.group())
-h="<html><body><h1>Vinkit</h1>"
-for t in d["tips"]:h+=f"<h2>{t[\'title\']}</h2><p>{t[\'text\']}</p>"
-h+="</body></html>"
-open("index.html","w",encoding="utf-8").write(h)'
-          [System.IO.File]::WriteAllText("generate.py",$script)
+      - name: Write Python script line 1
+        run: echo "import json,re,sys" > generate.py
+        shell: pwsh
+
+      - name: Write Python script line 2
+        run: echo "content=open('tips.json').read()" >> generate.py
+        shell: pwsh
+
+      - name: Write Python script line 3
+        run: echo "m=re.search(r'{.*}',content,re.DOTALL)" >> generate.py
+        shell: pwsh
+
+      - name: Write Python script line 4
+        run: echo "if not m:print('No JSON');sys.exit(1)" >> generate.py
+        shell: pwsh
+
+      - name: Write Python script line 5
+        run: echo "d=json.loads(m.group())" >> generate.py
+        shell: pwsh
+
+      - name: Write Python script line 6
+        run: echo "h='<html><body><h1>Vinkit</h1>'" >> generate.py
+        shell: pwsh
+
+      - name: Write Python script line 7
+        run: echo 'for t in d["tips"]:h+=f"<h2>{t['"'"'title'"'"']}</h2><p>{t['"'"'text'"'"']}</p>"' >> generate.py
+        shell: pwsh
+
+      - name: Write Python script line 8
+        run: echo "h+='</body></html>'" >> generate.py
+        shell: pwsh
+
+      - name: Write Python script line 9
+        run: echo "open('index.html','w',encoding='utf-8').write(h)" >> generate.py
         shell: pwsh
 
       - name: Run Python
