@@ -17,25 +17,25 @@ jobs:
       - name: Generate tips with Ollama
         run: |
           $prompt = 'Anna kolme vinkkia pienoismalleihin. Palauta vain JSON: {"tips":[{"title":"","text":""},{"title":"","text":""},{"title":"","text":""}]}'
-          ollama run llama3.1 "$prompt --format json" 2>&1 | Select-String -Pattern '\{.*\}' > tips.json
+          ollama run llama3.1 "$prompt --format json" 2>&1 | Select-String -Pattern '\{.*\}' | ForEach-Object { $_.Line } > tips.json
         shell: pwsh
 
       - name: Create Python script
         run: |
-          python_script = """
+          Set-Content -Path generate.py -Value @'
 import json, re, sys
 content = open("tips.json").read()
 match = re.search(r"\{.*\}", content, re.DOTALL)
 if not match:
-    print("No JSON found"); sys.exit(1)
+    print("No JSON found")
+    sys.exit(1)
 data = json.loads(match.group())
 html = "<html><body><h1>Vinkit</h1>"
-for t in data["tips"]: html += f"<h2>{t['title']}</h2><p>{t['text']}</p>"
+for t in data["tips"]:
+    html += f"<h2>{t['title']}</h2><p>{t['text']}</p>"
 html += "</body></html>"
 open("index.html","w",encoding="utf-8").write(html)
-"""
-          with open("generate.py", "w", encoding="utf-8") as f:
-              f.write(python_script)
+'@ -NoNewline
         shell: pwsh
 
       - name: Run Python
