@@ -13,8 +13,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install jq
+        run: sudo apt-get install jq -y
+
       - name: Generate tips with OpenAI
         id: ai
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           echo "Calling OpenAI..."
           RESPONSE=$(curl -s \
@@ -33,9 +38,9 @@ jobs:
             }')
 
           echo "$RESPONSE" > ai.json
-          RESULT=$(cat ai.json | jq -r '.choices[0].message.content' 2>/dev/null || echo "")
-echo "result=$RESULT" >> $GITHUB_OUTPUT
 
+          RESULT=$(cat ai.json | jq -r '.choices[0].message.content' 2>/dev/null || echo "")
+          echo "result=$RESULT" >> $GITHUB_OUTPUT
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -45,8 +50,7 @@ echo "result=$RESULT" >> $GITHUB_OUTPUT
       - name: Run tip generator
         env:
           AI_OUTPUT: ${{ steps.ai.outputs.result }}
-        run: |
-          python scripts/generate_tips.py
+        run: python scripts/generate_tips.py
 
       - name: Commit and push changes
         run: |
