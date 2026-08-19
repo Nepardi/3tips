@@ -15,12 +15,12 @@ jobs:
 
       - name: Run Ollama
         run: |
-          ollama run llama3.1 --format json "Anna kolme vinkkia pienoismalleihin. Palauta vain JSON" | Out-File -FilePath tips.json -Encoding UTF8
-        shell: pwsh
+          call ollama run llama3.1 --format json "Anna kolme vinkkia pienoismalleihin. Palauta vain JSON" > tips.json
+        shell: cmd
 
       - name: Generate HTML
         run: python3 generate_html.py
-        shell: pwsh
+        shell: cmd
 
       - name: Commit changes
         run: |
@@ -29,4 +29,4 @@ jobs:
           git add tips.json index.html
           git diff --quiet --cached || git commit -m "Daily tips update"
           git push
-        shell: pwsh
+        shell: cmd
