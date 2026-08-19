@@ -3,14 +3,9 @@ import json
 
 def update_html():
     raw = os.getenv("AI_OUTPUT")
+    data = json.loads(raw)
 
-    # Copilotin API palauttaa useita JSON-rivejä -> otetaan viimeinen
-    lines = [line for line in raw.split("\n") if line.strip().startswith("{")]
-    last = lines[-1]  # viimeinen JSON-objekti
-
-    data = json.loads(last)
-
-    # Lopullinen sisältö on tässä
+    # OpenAI palauttaa yhden siistin JSON-objektin
     content = data["choices"][0]["message"]["content"]
 
     parsed = json.loads(content)
