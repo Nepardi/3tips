@@ -2,16 +2,30 @@ name: Update Daily Tips
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # Ajetaan joka yö klo 03:00
-  workflow_dispatch:       # Mahdollistaa manuaalisen käynnistyksen
+    - cron: "0 0 * * *"   # Ajetaan joka yö klo 00:00
+  workflow_dispatch:       # Mahdollistaa manuaalisen ajon
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Generate tips with Copilot
+        id: ai
+        uses: actions/ai@v1
+        with:
+          model: copilot
+          prompt: |
+            Anna 3 lyhyttä vinkkiä aiheesta "pienoismallien valmistus" suomeksi.
+            Anna myös 3 lyhyttä vinkkiä englanniksi.
+            Palauta JSON-muodossa:
+            {
+              "finnish": ["vinkki1", "vinkki2", "vinkki3"],
+              "english": ["tip1", "tip2", "tip3"]
+            }
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -19,7 +33,10 @@ jobs:
           python-version: "3.x"
 
       - name: Run tip generator
-        run: python scripts/generate_tips.py
+        env:
+          AI_OUTPUT: ${{ steps.ai.outputs.result }}
+        run: |
+          python scripts/generate_tips.py
 
       - name: Commit and push changes
         run: |
@@ -28,4 +45,3 @@ jobs:
           git add index.html
           git commit -m "Daily tips update" || echo "No changes to commit"
           git push --force
-
