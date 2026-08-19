@@ -15,7 +15,7 @@ jobs:
 
       - name: Run Ollama
         run: |
-          call ollama run llama3.1 --format json "TEEMA: PIENOISMALLIEN RAKENTAMINEN. Anna 3 vinkkia. VAIN JSON. Compact-format (ei rivinvaihtoja): {\"tips\":[{\"title\":\"\",\"text\":\"\"},{\"title\":\"\",\"text\":\"\"},{\"title\":\"\",\"text\":\"\"}]}" > tips.json
+          call ollama run llama3.1 --format json "TEEMA: PIENOISMALLIEN RAKENTAMINEN. Anna 3 vinkkia. VAIN JSON, YKSIRIVINEN, EI RIVINVAIHTOJA: {\"tips\":[{\"title\":\"\",\"text\":\"\"},{\"title\":\"\",\"text\":\"\"},{\"title\":\"\",\"text\":\"\"}]}" > tips.json
         shell: cmd
 
       - name: Generate HTML
