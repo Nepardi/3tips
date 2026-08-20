@@ -2,8 +2,8 @@ name: Daily Tips
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Run daily at 6 AM UTC
-  workflow_dispatch:     # Allow manual runs for testing
+    - cron: '0 */6 * * *'  # Every 6 hours (0, 6, 12, 18 UTC)
+  workflow_dispatch:       # Allow manual runs for testing
 
 permissions:
   contents: write
@@ -34,6 +34,6 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add tips.json index.html
-          git diff --quiet --cached || git commit -m "Daily tips update $(Get-Date -Format 'yyyy-MM-dd')"
+          git diff --quiet --cached || git commit -m "Daily tips update $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
           git push
         shell: cmd
