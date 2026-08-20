@@ -5,7 +5,7 @@ from datetime import datetime
 with open('tips.json', 'rb') as f:
     raw_bytes = f.read()
 
-# Clean the JSON
+# Clean the JSON - remove control characters and ANSI codes
 filtered = bytearray()
 for byte in raw_bytes:
     if byte >= 0x20 or byte in (0x09, 0x0A, 0x0D):
@@ -32,7 +32,7 @@ if 'tips' not in data:
 tips = data['tips']
 print(f"OK: Found {len(tips)} tips")
 
-# Modern HTML with nice styling
+# Modern HTML with nice styling + PDF support
 html = '''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,6 +109,37 @@ h1 {
   font-weight: 600;
   margin-top: 15px;
   box-shadow: 0 4px 15px var(--shadow);
+}
+
+/* Action buttons */
+.actions {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--gradient-end));
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow);
+}
+
+.btn svg {
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 /* Card container */
@@ -247,6 +278,43 @@ footer {
 .card:nth-child(1) { animation-delay: 0.1s; }
 .card:nth-child(2) { animation-delay: 0.2s; }
 .card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+
+/* PRINT STYLES - For PDF export */
+@media print {
+  .actions, footer, .date-badge {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    padding: 0 !important;
+  }
+  
+  .container {
+    max-width: 100% !important;
+    padding: 20px !important;
+    margin: 0 !important;
+  }
+  
+  h1 {
+    font-size: 2em !important;
+    -webkit-text-fill-color: #1a1a2e !important;
+    background: none !important;
+  }
+  
+  .card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+  }
+  
+  .subtitle {
+    font-size: 1em !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -260,6 +328,18 @@ html += datetime.now().strftime('%B %d, %Y')
 
 html += '''</div>
 </header>
+
+<div class="actions">
+<button class="btn" onclick="window.print()">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6 9V2h12v7"></path>
+<rect x="6" y="14" width="12" height="8"></rect>
+<line x1="6" y1="18" x2="18" y2="18"></line>
+<path d="M6 14H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+</svg>
+Save as PDF
+</button>
+</div>
 
 <div class="cards">'''
 
@@ -282,6 +362,7 @@ html += '''
 
 <footer>
 <p>Generated automatically by GitHub Actions &middot; Powered by Ollama</p>
+<p style="margin-top: 10px; font-size: 0.8em;">Use the button above to save this page as PDF</p>
 </footer>
 </div>
 </body>
@@ -290,4 +371,4 @@ html += '''
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
-print("OK: index.html created with new styling!")
+print(f"OK: index.html created with {len(tips)} tips and PDF export support!")
