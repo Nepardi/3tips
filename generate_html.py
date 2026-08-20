@@ -1,5 +1,6 @@
 import json
 import re
+from datetime import datetime
 
 with open('tips.json', 'rb') as f:
     raw_bytes = f.read()
@@ -37,7 +38,7 @@ html = '''<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Model Building Tips</title>
+<title>Scale Model Building Tips</title>
 <style>
 /* Color Variables */
 :root {
@@ -251,11 +252,10 @@ footer {
 <body>
 <div class="container">
 <header>
-<h1>🛠️ Miniature Model Building Tips</h1>
-<p class="subtitle">Practical advice for model builders</p>
+<h1>🛠️ Scale Model Building Tips</h1>
+<p class="subtitle">Practical advice for scale model builders</p>
 <div class="date-badge">'''
 
-from datetime import datetime
 html += datetime.now().strftime('%B %d, %Y')
 
 html += '''</div>
