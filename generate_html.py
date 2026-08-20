@@ -19,14 +19,54 @@ text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
 while '  ' in text:
     text = text.replace('  ', ' ')
 
-try:
-    data = json.loads(text)
-except json.JSONDecodeError as e:
-    print(f"ERROR: {e}")
+print(f"Cleaned JSON length: {len(text)} chars")
+
+# Extract JSON object
+match = re.search(r'\{[\s\S]*\}', text)
+if not match:
+    print("ERROR: No JSON found!")
     exit(1)
 
+json_str = match.group()
+
+# AGGRESSIVE JSON FIXER - fix common issues
+def fix_json(json_string):
+    """Fix common JSON errors from LLMs"""
+    # Remove trailing commas before closing braces
+    json_string = re.sub(r',(\s*[}\]])', r'\1', json_string)
+    # Add missing commas after closing quotes (common LLM error)
+    json_string = re.sub(r'"\s*"', '", "', json_string)
+    # Fix missing commas between objects
+    json_string = re.sub(r'}(\s*){', '}, {', json_string)
+    return json_string
+
+json_str = fix_json(json_str)
+
+try:
+    data = json.loads(json_str)
+    print("OK: JSON parsed successfully!")
+except json.JSONDecodeError as e:
+    print(f"ERROR: {e}")
+    print(f"Context around error (pos {e.pos}):")
+    start = max(0, e.pos - 50)
+    end = min(len(json_str), e.pos + 50)
+    print(f"...{json_str[start:end]}...")
+    
+    # Try one more aggressive fix
+    json_str = re.sub(r'"(\s+)"', '","', json_str)
+    json_str = re.sub(r'"\s+"', '", "', json_str)
+    
+    try:
+        data = json.loads(json_str)
+        print("OK: Fixed JSON parsed!")
+    except:
+        print("CRITICAL: Cannot parse JSON even after fixes")
+        with open('debug_json.txt', 'w', encoding='utf-8') as f:
+            f.write(json_str)
+        exit(1)
+
 if 'tips' not in data:
-    print("Missing 'tips' key!")
+    print(f"Missing 'tips' key! Keys: {list(data.keys())}")
     exit(1)
 
 tips = data['tips']
