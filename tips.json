@@ -2,20 +2,24 @@
   "tips": [
     {
       "title": "Choose the Right Scale",
-      "text": "Select a scale that suits your skills and the project's comp[4D[K
-complexity. Common scales for miniature models are 1:12, 1:24, and 1:48."
+      "text": "Select a scale that suits your skill level and the model's c[1D[K
+complexity. Common scales include 1:24, 1:48, and 1:64. A smaller scale req[3D[K
+requires more detail and precision, but also allows for a more realistic re[2D[K
+representation of the subject."
+    },
+    {
+      "title": "Prepare Your Workspace",
+      "text": "Set up a dedicated workspace with good lighting, a stable su[2D[K
+surface, and necessary tools. This will help you stay organized and focused[7D[K
+focused throughout the building process. Consider investing in a magnifying[10D[K
+magnifying glass or lamp to enhance your visibility."
     },
     {
       "title": "Use Reference Images",
-      "text": "Gather reference images of the subject you're modeling, whet[4D[K
-whether it's a building, vehicle, or object. This helps ensure accuracy and[3D[K
-and details."
-    },
-    {
-      "title": "Work from the Ground Up",
-      "text": "Build your model in layers, starting with the base and worki[5D[K
-working your way up. This approach helps maintain structural integrity and [K
-prevents mistakes."
+      "text": "Study reference images of the subject to get a better unders[6D[K
+understanding of its proportions, textures, and details. This will help you[3D[K
+you create a more accurate and realistic model. You can find reference imag[4D[K
+images online or in books, or take your own photos of the subject."
     }
   ]
 }
