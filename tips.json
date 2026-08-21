@@ -2,39 +2,34 @@
   "tips": [
     {
       "title": "Choose the Right Scale",
-      "text": "Select a scale that is suitable for the model you want to bu[2D[K
-build. Common scales include 1/24, 1/48, and 1/64. Larger scales are better[6D[K
-better for beginners, while smaller scales require more precision and patie[5D[K
-patience."
+      "text": "Select a scale that suits your project and skill level. A sm[2D[K
+smaller scale (e.g. 1:64) is more forgiving for beginners, while larger sca[3D[K
+scales (e.g. 1:12) require more precision and expertise."
     },
     {
-      "title": "Use Reference Images",
-      "text": "Gather reference images of the real-life object or vehicle y[1D[K
-you're modeling. This will help you get the proportions and details right. [K
-Study the images carefully and take note of any features you want to includ[6D[K
-include in your model."
+      "title": "Research and Plan Thoroughly",
+      "text": "Study your subject, take reference photos, and plan your mod[3D[K
+model's layout before starting construction. This will save time and preven[6D[K
+prevent costly mistakes down the line."
     },
     {
-      "title": "Select the Right Materials",
-      "text": "Choose materials that are suitable for the scale and type of[2D[K
-of model you're building. For example, wood or plastic may be suitable for [K
-larger scales, while resin or metal may be better for smaller scales. Consi[5D[K
-Consider the weight and durability of the materials as well."
+      "title": "Use Reference Images and Measurements",
+      "text": "Consult reference images and measurements to ensure accuracy[8D[K
+accuracy and proportion in your model. You can use online tools or software[8D[K
+software to help with this process."
     },
     {
-      "title": "Plan Your Build",
-      "text": "Create a plan or drawing of your model before you start buil[4D[K
-building. This will help you visualize the project and identify any potenti[7D[K
-potential problems. Break down the build into smaller tasks and prioritize [K
-the most critical components."
+      "title": "Select the Right Materials and Tools",
+      "text": "Choose materials and tools that match your project's require[7D[K
+requirements and skill level. For example, use balsa wood for a lightweight[11D[K
+lightweight aircraft model, while a heavier, more durable material like foa[3D[K
+foam board may be better suited for a car or truck model."
     },
     {
-      "title": "Pay Attention to Detail",
-      "text": "Scale modeling requires attention to detail. Take your time [K
-and focus on getting the small details right. Use reference images to ensur[5D[K
-ensure accuracy, and don't be afraid to make adjustments as you go along. T[1D[K
-The more detail you include, the more realistic and impressive your model w[1D[K
-will be."
+      "title": "Pay Attention to Details and Finishing Touches",
+      "text": "Don't overlook small details, such as textures, decals, and [K
+weathering effects, which can make a significant difference in your model's[7D[K
+model's overall appearance and authenticity."
     }
   ]
 }
