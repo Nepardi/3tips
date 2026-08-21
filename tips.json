@@ -1,35 +1,35 @@
 {
-  "tips": [
-    {
-      "title": "Select the Right Scale",
-      "text": "Choose a scale that is suitable for the project and the buil[4D[K
-builder's skill level. Common scales for model building include 1:24, 1:48,[5D[K
-1:48, and 1:64."
-    },
-    {
-      "title": "Use Accurate Measurements",
-      "text": "Take precise measurements of the model's dimensions and use [K
-them to create a detailed plan or blueprint. This will ensure that the mode[4D[K
-model is built to scale and accurately represents the real thing."
-    },
-    {
-      "title": "Choose the Right Materials",
-      "text": "Select materials that are suitable for the project and the d[1D[K
-desired finish. For example, wood is often used for model building, while p[1D[K
-plastic and metal are used for more detailed or intricate models."
-    },
-    {
-      "title": "Use Reference Images",
-      "text": "Study reference images of the real thing to get a detailed u[1D[K
-understanding of its shape, proportions, and details. This will help ensure[6D[K
-ensure that the model is accurate and realistic."
-    },
-    {
-      "title": "Build in Layers",
-      "text": "Break down the model into smaller components and build each [K
-layer separately. This will help prevent mistakes and make it easier to add[3D[K
-add details and finishes later."
-    }
-  ]
+"tips": [
+{
+"title": "Choose the Right Scale",
+"text": "Select a scale that is realistic for your project and suitable for[3D[K
+for the size and complexity of the model. Common scales include 1:12, 1:24,[5D[K
+1:24, and 1:48."
+},
+{
+"title": "Select Accurate Reference Images",
+"text": "Gather high-quality reference images of the subject, including pho[3D[K
+photographs, drawings, and measurements. This will help you to accurately r[1D[K
+replicate the details and proportions of the original."
+},
+{
+"title": "Use the Right Materials",
+"text": "Select materials that are suitable for the scale and type of model[5D[K
+model you are building. For example, use thin woods for small models, and t[1D[K
+thick woods for larger models."
+},
+{
+"title": "Pay Attention to Proportions",
+"text": "Ensure that the model is proportionate to the original subject. Us[2D[K
+Use measurements and calculations to ensure that the model is accurate and [K
+realistic."
+},
+{
+"title": "Joining Techniques",
+"text": "Use suitable joining techniques for your scale and materials, such[4D[K
+such as glue, screws, or nails. Make sure to follow the manufacturer's inst[4D[K
+instructions and take necessary safety precautions."
+}
+] 
 }
 
