@@ -1,35 +1,35 @@
 {
 "tips": [
-{
-"title": "Choose the Right Scale",
-"text": "Select a scale that is realistic for your project and suitable for[3D[K
-for the size and complexity of the model. Common scales include 1:12, 1:24,[5D[K
-1:24, and 1:48."
-},
-{
-"title": "Select Accurate Reference Images",
-"text": "Gather high-quality reference images of the subject, including pho[3D[K
-photographs, drawings, and measurements. This will help you to accurately r[1D[K
-replicate the details and proportions of the original."
-},
-{
-"title": "Use the Right Materials",
-"text": "Select materials that are suitable for the scale and type of model[5D[K
-model you are building. For example, use thin woods for small models, and t[1D[K
-thick woods for larger models."
-},
-{
-"title": "Pay Attention to Proportions",
-"text": "Ensure that the model is proportionate to the original subject. Us[2D[K
-Use measurements and calculations to ensure that the model is accurate and [K
-realistic."
-},
-{
-"title": "Joining Techniques",
-"text": "Use suitable joining techniques for your scale and materials, such[4D[K
-such as glue, screws, or nails. Make sure to follow the manufacturer's inst[4D[K
-instructions and take necessary safety precautions."
-}
+  {
+    "title": "Use Reference Images",
+    "text": "Collect reference images of the real thing to ensure accuracy [K
+and proportion in your scale model. This is especially important for comple[6D[K
+complex shapes and architectural features."
+  },
+  {
+    "title": "Measure Twice, Cut Once",
+    "text": "Double-check your measurements before cutting any parts to avo[3D[K
+avoid errors and waste. This is especially crucial when working with small,[6D[K
+small, intricate components."
+  },
+  {
+    "title": "Choose the Right Materials",
+    "text": "Select materials that match the scale and requirements of your[4D[K
+your model. For example, use thin materials for delicate details and thicke[6D[K
+thicker materials for structural components."
+  },
+  {
+    "title": "Plan Your Assembly",
+    "text": "Think ahead and plan your assembly process to ensure that comp[4D[K
+components fit together correctly and efficiently. Use diagrams or 3D model[5D[K
+models to visualize the assembly process."
+  },
+  {
+    "title": "Be Patient and Persistent",
+    "text": "Scale model building can be time-consuming and frustrating at [K
+times. Don't be discouraged by setbacks or mistakes – keep practicing, and [K
+you'll improve with experience."
+  }
 ] 
 }
 
