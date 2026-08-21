@@ -1,35 +1,41 @@
 {
-"tips": [
-  {
-    "title": "Use Reference Images",
-    "text": "Collect reference images of the real thing to ensure accuracy [K
-and proportion in your scale model. This is especially important for comple[6D[K
-complex shapes and architectural features."
-  },
-  {
-    "title": "Measure Twice, Cut Once",
-    "text": "Double-check your measurements before cutting any parts to avo[3D[K
-avoid errors and waste. This is especially crucial when working with small,[6D[K
-small, intricate components."
-  },
-  {
-    "title": "Choose the Right Materials",
-    "text": "Select materials that match the scale and requirements of your[4D[K
-your model. For example, use thin materials for delicate details and thicke[6D[K
-thicker materials for structural components."
-  },
-  {
-    "title": "Plan Your Assembly",
-    "text": "Think ahead and plan your assembly process to ensure that comp[4D[K
-components fit together correctly and efficiently. Use diagrams or 3D model[5D[K
-models to visualize the assembly process."
-  },
-  {
-    "title": "Be Patient and Persistent",
-    "text": "Scale model building can be time-consuming and frustrating at [K
-times. Don't be discouraged by setbacks or mistakes – keep practicing, and [K
-you'll improve with experience."
-  }
-] 
+  "tips": [
+    {
+      "title": "Choose the Right Scale",
+      "text": "Select a scale that is suitable for the model you want to bu[2D[K
+build. Common scales include 1/24, 1/48, and 1/64. Larger scales are better[6D[K
+better for beginners, while smaller scales require more precision and patie[5D[K
+patience."
+    },
+    {
+      "title": "Use Reference Images",
+      "text": "Gather reference images of the real-life object or vehicle y[1D[K
+you're modeling. This will help you get the proportions and details right. [K
+Study the images carefully and take note of any features you want to includ[6D[K
+include in your model."
+    },
+    {
+      "title": "Select the Right Materials",
+      "text": "Choose materials that are suitable for the scale and type of[2D[K
+of model you're building. For example, wood or plastic may be suitable for [K
+larger scales, while resin or metal may be better for smaller scales. Consi[5D[K
+Consider the weight and durability of the materials as well."
+    },
+    {
+      "title": "Plan Your Build",
+      "text": "Create a plan or drawing of your model before you start buil[4D[K
+building. This will help you visualize the project and identify any potenti[7D[K
+potential problems. Break down the build into smaller tasks and prioritize [K
+the most critical components."
+    },
+    {
+      "title": "Pay Attention to Detail",
+      "text": "Scale modeling requires attention to detail. Take your time [K
+and focus on getting the small details right. Use reference images to ensur[5D[K
+ensure accuracy, and don't be afraid to make adjustments as you go along. T[1D[K
+The more detail you include, the more realistic and impressive your model w[1D[K
+will be."
+    }
+  ]
 }
 
