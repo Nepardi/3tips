@@ -27,86 +27,87 @@ with open('topics.json', 'w', encoding='utf-8') as f:
 print(f"Topic: {topic_name}")
 print(f"Next topic index: {topics_data['next_topic']}")
 
-# ========== STEP 2: CALL OLLAMA API ==========
-print("Calling Ollama API...")
+# ========== STEP 2: CALL OLLAMA API (WITH RETRY) ==========
+max_retries = 3
+tips = None
 
-try:
-    response = requests.post(
-        'http://localhost:11434/api/generate',
-        json={
-            'model': 'llama3.1',
-            'prompt': prompt,
-            'format': 'json',
-            'stream': False,
-            'options': {
-                'temperature': 0.8
-            }
-        },
-        timeout=180
-    )
-    result = response.json()
-    raw_output = result.get('response', '')
-    print(f"API returned {len(raw_output)} chars")
-    
-    # Save raw output
-    with open('tips.json', 'w', encoding='utf-8') as f:
-        f.write(raw_output)
-        
-except Exception as e:
-    print(f"ERROR calling Ollama API: {e}")
-    print("Make sure Ollama is running: ollama serve")
-    exit(1)
+for attempt in range(1, max_retries + 1):
+    print(f"Calling Ollama API (attempt {attempt}/{max_retries})...")
 
-# ========== STEP 3: CLEAN AND PARSE JSON ==========
-# Remove any ANSI codes
-text = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', raw_output)
-text = re.sub(r'\x1b\[K', '', text)
-text = re.sub(r'\[\d*[a-zA-Z]', '', text)
+    try:
+        response = requests.post(
+            'http://localhost:11434/api/generate',
+            json={
+                'model': 'llama3.1',
+                'prompt': prompt,
+                'format': 'json',
+                'stream': False,
+                'options': {
+                    'temperature': 0.8
+                }
+            },
+            timeout=180
+        )
+        result = response.json()
+        raw_output = result.get('response', '')
+        print(f"API returned {len(raw_output)} chars")
 
-# Remove leftover partial word artifacts
-def remove_artifacts(text):
-    # Pattern: "impre impressive" -> "impressive"
-    text = re.sub(r'\b(\w{1,8}) (\w{3,})\b', 
-                  lambda m: m.group(2) if len(m.group(1)) > 2 and m.group(2).lower().startswith(m.group(1).lower()) and len(m.group(1)) < len(m.group(2)) else m.group(0), 
-                  text)
-    return text
+        with open('tips.json', 'w', encoding='utf-8') as f:
+            f.write(raw_output)
 
-text = remove_artifacts(text)
+    except Exception as e:
+        print(f"ERROR calling Ollama API: {e}")
+        print("Make sure Ollama is running: ollama serve")
+        exit(1)
 
-# Clean whitespace
-text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
-while '  ' in text:
-    text = text.replace('  ', ' ')
+    # ========== STEP 3: CLEAN AND PARSE JSON ==========
+    text = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', raw_output)
+    text = re.sub(r'\x1b\[K', '', text)
+    text = re.sub(r'\[\d*[a-zA-Z]', '', text)
 
-match = re.search(r'\{[\s\S]*\}', text)
-if not match:
-    print("ERROR: No JSON found!")
-    print(f"Raw output: {raw_output[:500]}")
-    exit(1)
+    def remove_artifacts(text):
+        text = re.sub(r'\b(\w{1,8}) (\w{3,})\b',
+                      lambda m: m.group(2) if len(m.group(1)) > 2 and m.group(2).lower().startswith(m.group(1).lower()) and len(m.group(1)) < len(m.group(2)) else m.group(0),
+                      text)
+        return text
 
-json_str = match.group()
+    text = remove_artifacts(text)
+    text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    while '  ' in text:
+        text = text.replace('  ', ' ')
 
-# Fix common JSON errors
-json_str = re.sub(r',(\s*[}\]])', r'\1', json_str)
-json_str = re.sub(r'"\s*"', '", "', json_str)
-json_str = re.sub(r'}(\s*){', '}, {', json_str)
+    match = re.search(r'\{[\s\S]*\}', text)
+    if not match:
+        print(f"Attempt {attempt}: No JSON found!")
+        continue
 
-try:
-    data = json.loads(json_str)
-    print("OK: JSON parsed!")
-except json.JSONDecodeError as e:
-    print(f"ERROR: {e}")
-    start = max(0, e.pos - 50)
-    end = min(len(json_str), e.pos + 50)
-    print(f"Context: ...{json_str[start:end]}...")
-    exit(1)
+    json_str = match.group()
+    json_str = re.sub(r',(\s*[}\]])', r'\1', json_str)
+    json_str = re.sub(r'"\s*"', '", "', json_str)
+    json_str = re.sub(r'}(\s*){', '}, {', json_str)
 
-if 'tips' not in data:
-    print(f"Missing 'tips' key! Keys: {list(data.keys())}")
-    exit(1)
+    try:
+        data = json.loads(json_str)
+        print(f"Attempt {attempt}: JSON parsed!")
+    except json.JSONDecodeError as e:
+        print(f"Attempt {attempt}: JSON error: {e}")
+        continue
 
-tips = data['tips']
-print(f"OK: Found {len(tips)} tips")
+    if 'tips' not in data:
+        print(f"Attempt {attempt}: Missing 'tips' key! Keys: {list(data.keys())}")
+        continue
+
+    found_tips = data['tips']
+    print(f"Attempt {attempt}: Found {len(found_tips)} tips")
+
+    if len(found_tips) >= 5:
+        tips = found_tips[:5]
+        break
+    elif attempt < max_retries:
+        print(f"Only {len(found_tips)} tips, retrying...")
+    else:
+        print(f"WARNING: Only {len(found_tips)} tips after {max_retries} attempts, using what we have")
+        tips = found_tips
 
 # Clean each tip's text from artifacts
 for tip in tips:
@@ -114,6 +115,8 @@ for tip in tips:
         tip['title'] = remove_artifacts(str(tip['title']))
     if 'text' in tip:
         tip['text'] = remove_artifacts(str(tip['text']))
+
+print(f"OK: Using {len(tips)} tips")
 
 # ========== STEP 4: GENERATE HTML ==========
 topic_display = {
