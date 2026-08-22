@@ -1,1 +1,17 @@
-
+{
+  "next_topic": 1,
+  "topics": [
+    "MATERIALS_SUPPLIES",
+    "TOOLS_TECHNIQUES",
+    "PAINTING_FINISHING",
+    "ASSEMBLY_CONSTRUCTION",
+    "TROUBLESHOOTING_PROTIPS"
+  ],
+  "prompts": {
+    "MATERIALS_SUPPLIES": "TECHNICAL TOPIC: SCALE MODEL MATERIALS AND SUPPLIES. Give exactly 5 practical, SPECIFIC tips about plastic sheets, adhesives, primers, sourcing materials, and storage. Avoid generic advice. Mention specific types/brands where relevant. Output ONLY valid JSON: {tips:[{title,text},{title,text},{title,text},{title,text},{title,text}]}",
+    "TOOLS_TECHNIQUES": "TECHNICAL TOPIC: SCALE MODEL TOOLS AND CUTTING TECHNIQUES. Give exactly 5 practical, SPECIFIC tips about knives, saws, files, sanding, precision cuts, and tool maintenance. Avoid generic advice. Be technical and precise. Output ONLY valid JSON: {tips:[{title,text},{title,text},{title,text},{title,text},{title,text}]}",
+    "PAINTING_FINISHING": "TECHNICAL TOPIC: SCALE MODEL PAINTING AND WEATHERING. Give exactly 5 practical, SPECIFIC tips about airbrushing, hand painting, primers, decals, washes, dry brushing, and weathering techniques. Avoid generic advice. Be technical. Output ONLY valid JSON: {tips:[{title,text},{title,text},{title,text},{title,text},{title,text}]}",
+    "ASSEMBLY_CONSTRUCTION": "TECHNICAL TOPIC: SCALE MODEL ASSEMBLY AND ENGINEERING. Give exactly 5 practical, SPECIFIC tips about dry fitting, structural support, modifying parts, seam filling, and construction sequencing. Avoid generic advice. Be technical. Output ONLY valid JSON: {tips:[{title,text},{title,text},{title,text},{title,text},{title,text}]}",
+    "TROUBLESHOOTING_PROTIPS": "TECHNICAL TOPIC: SCALE MODEL TROUBLESHOOTING AND PRO TECHNIQUES. Give exactly 5 practical, SPECIFIC tips about fixing mistakes, avoiding common pitfalls, workspace optimization, and advanced techniques. Avoid generic advice. Share expert knowledge. Output ONLY valid JSON: {tips:[{title,text},{title,text},{title,text},{title,text},{title,text}]}"
+  }
+}
