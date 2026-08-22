@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tips Archive - Scale Model Building</title>
+<style>
+:root {
+  --primary: #6d4aff;
+  --primary-dark: #573dd4;
+  --bg-color: #f8f9fc;
+  --card-bg: #ffffff;
+  --text-main: #1a1a2e;
+  --text-muted: #6c757d;
+  --border-color: #e9ecef;
+  --shadow: rgba(109, 74, 255, 0.15);
+  --gradient-start: #6d4aff;
+  --gradient-end: #a855f7;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, var(--bg-color) 0%, #e8f5ff 100%);
+  min-height: 100vh;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+.container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+header { text-align: center; margin-bottom: 40px; }
+h1 {
+  font-size: 2.5em; font-weight: 700;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: 10px;
+}
+.subtitle { color: var(--text-muted); font-size: 1.1em; }
+.archive-count {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--gradient-end));
+  color: white; padding: 8px 20px; border-radius: 20px;
+  font-size: 0.9em; font-weight: 600; margin-top: 15px;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+.actions { text-align: center; margin: 30px 0; }
+.btn {
+  display: inline-block;
+  background: white; color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 12px 30px; border-radius: 25px;
+  text-decoration: none; font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: var(--primary); color: white;
+  transform: translateY(-2px);
+}
+.archive-list { display: grid; gap: 15px; }
+.archive-item {
+  background: var(--card-bg); border-radius: 12px; padding: 20px 25px;
+  box-shadow: 0 2px 10px var(--shadow);
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s ease;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.archive-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px var(--shadow);
+}
+.archive-item-info { flex-grow: 1; }
+.archive-item-date {
+  font-weight: 600; color: var(--text-main); font-size: 1.1em;
+}
+.archive-item-topic {
+  color: var(--text-muted); font-size: 0.95em; margin-top: 5px;
+}
+.archive-item-link {
+  background: var(--primary); color: white;
+  padding: 8px 20px; border-radius: 20px;
+  text-decoration: none; font-size: 0.9em; font-weight: 600;
+  white-space: nowrap; margin-left: 20px;
+  transition: all 0.3s ease;
+}
+.archive-item-link:hover {
+  background: var(--primary-dark);
+}
+.empty-message {
+  text-align: center; color: var(--text-muted);
+  font-size: 1.1em; padding: 40px;
+}
+footer {
+  text-align: center; margin-top: 60px; padding-top: 30px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted); font-size: 0.9em;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.archive-item { animation: fadeInUp 0.4s ease forwards; }
+@media (max-width: 768px) {
+  .container { padding: 20px 15px; }
+  h1 { font-size: 1.8em; }
+  .archive-item {
+    flex-direction: column; align-items: flex-start; gap: 10px;
+  }
+  .archive-item-link { margin-left: 0; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>📂 Tips Archive</h1>
+<p class="subtitle">Previous Scale Model Building Tips</p>
+<div class="archive-count">1 archived tip sets</div>
+</header>
+<div class="actions">
+<a class="btn" href="../index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+<line x1="19" y1="12" x2="5" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+Back to Current Tips
+</a>
+</div>
+<div class="archive-list">
+<div class="archive-item">
+<div class="archive-item-info">
+<div class="archive-item-date">2026-08-22 16:39</div>
+<div class="archive-item-topic"></div>
+</div>
+<a class="archive-item-link" href="2026-08-22_1639.html">View Tips</a>
+</div>
+</div>
+<footer>
+<p>Scale Model Building Tips Archive &middot; Powered by Ollama</p>
+</footer>
+</div>
+</body>
+</html>
