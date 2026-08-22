@@ -2,8 +2,8 @@ name: Daily Tips
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours (0, 6, 12, 18 UTC)
-  workflow_dispatch:       # Allow manual runs for testing
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -15,9 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Run Ollama CLI
-        run: |
-          call ollama run llama3.1 --format json "TECHNICAL TOPIC: SCALE MODEL BUILDING. Give exactly 5 practical tips in English. OUTPUT VALID JSON ONLY, no extra text: {tips:[{title,text},{title,text},{title,text},{title,text},{title,text}]}" > tips.json
+      - name: Generate Tips
+        run: python generate_html.py
         shell: cmd
 
       - name: Show Response
@@ -25,15 +24,11 @@ jobs:
           type tips.json
         shell: cmd
 
-      - name: Generate HTML
-        run: python generate_html.py
-        shell: cmd
-
       - name: Commit changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add tips.json index.html
-          git diff --quiet --cached || git commit -m "Daily tips update $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+          git add tips.json index.html topics.json
+          git diff --quiet --cached || git commit -m "Tips update - $(type tips.json | findstr /n . | findstr ^[1]:)"
           git push
         shell: cmd
