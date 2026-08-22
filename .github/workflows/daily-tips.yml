@@ -15,6 +15,17 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Start Ollama Server
+        run: |
+          start cmd /c "ollama serve"
+        shell: cmd
+        continue-on-error: true
+
+      - name: Wait for Ollama
+        run: |
+          ping -n 5 127.0.0.1 >nul
+        shell: cmd
+
       - name: Generate Tips
         run: python generate_html.py
         shell: cmd
@@ -29,6 +40,6 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add tips.json index.html topics.json
-          git diff --quiet --cached || git commit -m "Tips update - $(type tips.json | findstr /n . | findstr ^[1]:)"
+          git diff --quiet --cached || git commit -m "Tips update - Topic $((Get-Content topics.json | ConvertFrom-Json).next_topic)"
           git push
-        shell: cmd
+        shell: pwsh
