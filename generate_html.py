@@ -1,6 +1,7 @@
 import json
 import re
 import os
+import shutil
 from datetime import datetime
 try:
     import requests
@@ -8,6 +9,20 @@ except ImportError:
     print("Installing requests...")
     os.system('pip install requests')
     import requests
+
+# ========== STEP 0: ARCHIVE OLD TIPS ==========
+if os.path.exists('index.html'):
+    # Create archive folder if it doesn't exist
+    if not os.path.exists('archive'):
+        os.makedirs('archive')
+    
+    # Generate timestamp for the archive file
+    archive_timestamp = datetime.now().strftime('%Y-%m-%d_%H%M')
+    archive_filename = f'archive/{archive_timestamp}.html'
+    
+    # Copy current index.html to archive
+    shutil.copy2('index.html', archive_filename)
+    print(f"Archived old tips to: {archive_filename}")
 
 # ========== STEP 1: SELECT TOPIC ==========
 with open('topics.json', 'r', encoding='utf-8') as f:
@@ -127,6 +142,9 @@ topic_display = {
     'TROUBLESHOOTING_PROTIPS': 'Troubleshooting & Pro Tips'
 }.get(topic_name, topic_name)
 
+current_date = datetime.now().strftime('%B %d, %Y')
+current_time = datetime.now().strftime('%Y-%m-%d_%H%M')
+
 html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -177,6 +195,7 @@ h1 {{
   border-radius: 20px; font-size: 0.85em; font-weight: 600;
   margin-top: 10px;
 }}
+.badges {{ display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }}
 .actions {{ text-align: center; margin: 30px 0; }}
 .btn {{
   display: inline-block;
@@ -188,6 +207,13 @@ h1 {{
 }}
 .btn:hover {{ transform: translateY(-2px); box-shadow: 0 6px 20px var(--shadow); }}
 .btn svg {{ vertical-align: middle; margin-right: 8px; }}
+.btn-archive {{
+  background: white; color: var(--primary); border: 2px solid var(--primary);
+  box-shadow: none;
+}}
+.btn-archive:hover {{
+  background: var(--primary); color: white;
+}}
 .cards {{ display: grid; gap: 25px; }}
 .card {{
   background: var(--card-bg); border-radius: 16px; padding: 30px;
@@ -242,7 +268,7 @@ footer {{
 .card:nth-child(4) {{ animation-delay: 0.4s; }}
 .card:nth-child(5) {{ animation-delay: 0.5s; }}
 @media print {{
-  .actions, footer, .date-badge, .topic-badge {{ display: none !important; }}
+  .actions, footer, .date-badge, .topic-badge, .btn-archive {{ display: none !important; }}
   body {{ background: white !important; padding: 0 !important; }}
   .container {{ max-width: 100% !important; padding: 20px !important; margin: 0 !important; }}
   h1 {{ font-size: 2em !important; -webkit-text-fill-color: #1a1a2e !important; background: none !important; }}
@@ -259,8 +285,10 @@ footer {{
 <header>
 <h1>🛠️ Scale Model Building Tips</h1>
 <p class="subtitle">Practical advice for scale model builders</p>
+<div class="badges">
 <div class="topic-badge">📋 {topic_display}</div>
-<div class="date-badge">{datetime.now().strftime('%B %d, %Y')}</div>
+<div class="date-badge">{current_date}</div>
+</div>
 </header>
 <div class="actions">
 <button class="btn" onclick="window.print()">
@@ -272,6 +300,14 @@ footer {{
 </svg>
 Save as PDF
 </button>
+<a class="btn btn-archive" href="archive/index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M21 8v13H3V8"></path>
+<path d="M1 3h22v5H1z"></path>
+<path d="M10 12h4"></path>
+</svg>
+View Archive
+</a>
 </div>
 <div class="cards">'''
 
@@ -301,3 +337,200 @@ with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
 print(f"OK: index.html created with {len(tips)} tips on topic: {topic_display}")
+
+# ========== STEP 5: GENERATE ARCHIVE INDEX PAGE ==========
+# Collect all archived files
+archive_files = []
+if os.path.exists('archive'):
+    for f in sorted(os.listdir('archive'), reverse=True):
+        if f.endswith('.html') and f != 'index.html':
+            # Extract timestamp from filename
+            name_without_ext = f.replace('.html', '')
+            # Try to parse the date from filename
+            try:
+                parts = name_without_ext.split('_')
+                date_part = parts[0]
+                time_part = parts[1] if len(parts) > 1 else ''
+                time_formatted = f'{time_part[:2]}:{time_part[2:]}' if len(time_part) >= 4 else time_part
+                
+                # Read the file to extract topic
+                with open(f'archive/{f}', 'r', encoding='utf-8') as af:
+                    content = af.read()
+                    topic_match = re.search(r'topic-badge[^>]*>([^<]+)', content)
+                    topic_text = topic_match.group(1).strip() if topic_match else 'Unknown'
+                
+                archive_files.append({
+                    'filename': f,
+                    'date': date_part,
+                    'time': time_formatted,
+                    'topic': topic_text,
+                    'display': f'{date_part} {time_formatted} - {topic_text}'
+                })
+            except:
+                archive_files.append({
+                    'filename': f,
+                    'date': name_without_ext,
+                    'time': '',
+                    'topic': 'Unknown',
+                    'display': name_without_ext
+                })
+
+archive_count = len(archive_files)
+print(f"Archive contains {archive_count} old tip sets")
+
+archive_html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tips Archive - Scale Model Building</title>
+<style>
+:root {{
+  --primary: #6d4aff;
+  --primary-dark: #573dd4;
+  --bg-color: #f8f9fc;
+  --card-bg: #ffffff;
+  --text-main: #1a1a2e;
+  --text-muted: #6c757d;
+  --border-color: #e9ecef;
+  --shadow: rgba(109, 74, 255, 0.15);
+  --gradient-start: #6d4aff;
+  --gradient-end: #a855f7;
+}}
+* {{ margin: 0; padding: 0; box-sizing: border-box; }}
+body {{
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, var(--bg-color) 0%, #e8f5ff 100%);
+  min-height: 100vh;
+  color: var(--text-main);
+  line-height: 1.6;
+}}
+.container {{ max-width: 900px; margin: 0 auto; padding: 40px 20px; }}
+header {{ text-align: center; margin-bottom: 40px; }}
+h1 {{
+  font-size: 2.5em; font-weight: 700;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: 10px;
+}}
+.subtitle {{ color: var(--text-muted); font-size: 1.1em; }}
+.archive-count {{
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--gradient-end));
+  color: white; padding: 8px 20px; border-radius: 20px;
+  font-size: 0.9em; font-weight: 600; margin-top: 15px;
+  box-shadow: 0 4px 15px var(--shadow);
+}}
+.actions {{ text-align: center; margin: 30px 0; }}
+.btn {{
+  display: inline-block;
+  background: white; color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 12px 30px; border-radius: 25px;
+  text-decoration: none; font-weight: 600;
+  transition: all 0.3s ease;
+}}
+.btn:hover {{
+  background: var(--primary); color: white;
+  transform: translateY(-2px);
+}}
+.archive-list {{ display: grid; gap: 15px; }}
+.archive-item {{
+  background: var(--card-bg); border-radius: 12px; padding: 20px 25px;
+  box-shadow: 0 2px 10px var(--shadow);
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s ease;
+  display: flex; align-items: center; justify-content: space-between;
+}}
+.archive-item:hover {{
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px var(--shadow);
+}}
+.archive-item-info {{ flex-grow: 1; }}
+.archive-item-date {{
+  font-weight: 600; color: var(--text-main); font-size: 1.1em;
+}}
+.archive-item-topic {{
+  color: var(--text-muted); font-size: 0.95em; margin-top: 5px;
+}}
+.archive-item-link {{
+  background: var(--primary); color: white;
+  padding: 8px 20px; border-radius: 20px;
+  text-decoration: none; font-size: 0.9em; font-weight: 600;
+  white-space: nowrap; margin-left: 20px;
+  transition: all 0.3s ease;
+}}
+.archive-item-link:hover {{
+  background: var(--primary-dark);
+}}
+.empty-message {{
+  text-align: center; color: var(--text-muted);
+  font-size: 1.1em; padding: 40px;
+}}
+footer {{
+  text-align: center; margin-top: 60px; padding-top: 30px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted); font-size: 0.9em;
+}}
+@keyframes fadeInUp {{
+  from {{ opacity: 0; transform: translateY(20px); }}
+  to {{ opacity: 1; transform: translateY(0); }}
+}}
+.archive-item {{ animation: fadeInUp 0.4s ease forwards; }}
+@media (max-width: 768px) {{
+  .container {{ padding: 20px 15px; }}
+  h1 {{ font-size: 1.8em; }}
+  .archive-item {{
+    flex-direction: column; align-items: flex-start; gap: 10px;
+  }}
+  .archive-item-link {{ margin-left: 0; }}
+}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>📂 Tips Archive</h1>
+<p class="subtitle">Previous Scale Model Building Tips</p>
+<div class="archive-count">{archive_count} archived tip sets</div>
+</header>
+<div class="actions">
+<a class="btn" href="../index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;">
+<line x1="19" y1="12" x2="5" y2="12"></line>
+<polyline points="12 19 5 12 12 5"></polyline>
+</svg>
+Back to Current Tips
+</a>
+</div>
+<div class="archive-list">'''
+
+if archive_files:
+    for item in archive_files:
+        archive_html += f'''
+<div class="archive-item">
+<div class="archive-item-info">
+<div class="archive-item-date">{item['date']} {item['time']}</div>
+<div class="archive-item-topic">{item['topic']}</div>
+</div>
+<a class="archive-item-link" href="{item['filename']}">View Tips</a>
+</div>'''
+else:
+    archive_html += '''
+<div class="empty-message">
+No archived tips yet. Archive will grow automatically as new tips are generated.
+</div>'''
+
+archive_html += '''
+</div>
+<footer>
+<p>Scale Model Building Tips Archive &middot; Powered by Ollama</p>
+</footer>
+</div>
+</body>
+</html>'''
+
+with open('archive/index.html', 'w', encoding='utf-8') as f:
+    f.write(archive_html)
+
+print(f"OK: archive/index.html created with {archive_count} entries")
