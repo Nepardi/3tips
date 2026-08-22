@@ -1,6 +1,7 @@
 import json
 import re
 import subprocess
+import os
 from datetime import datetime
 
 # ========== STEP 1: SELECT TOPIC ==========
@@ -21,12 +22,17 @@ with open('topics.json', 'w', encoding='utf-8') as f:
 print(f"Topic: {topic_name}")
 print(f"Next topic index: {topics_data['next_topic']}")
 
-# ========== STEP 2: RUN OLLAMA ==========
+# ========== STEP 2: RUN OLLAMA (with NO ANSI) ==========
 print("Running Ollama...")
+
+# Force no color and dumb terminal to prevent ANSI artifacts
+clean_env = {**os.environ, 'NO_COLOR': '1', 'TERM': 'dumb', 'OLLAMA_NOHISTORY': '1'}
+
 try:
     result = subprocess.run(
         ['ollama', 'run', 'llama3.1', '--temperature', '0.8', '--format', 'json', prompt],
         capture_output=True,
+        env=clean_env,
         timeout=180
     )
     raw_output = result.stdout.decode('utf-8', errors='ignore')
@@ -40,16 +46,24 @@ with open('tips.json', 'wb') as f:
     f.write(raw_output.encode('utf-8'))
 
 # ========== STEP 3: CLEAN AND PARSE JSON ==========
-filtered = bytearray()
-for byte in raw_output.encode('utf-8'):
-    if byte >= 0x20 or byte in (0x09, 0x0A, 0x0D):
-        filtered.append(byte)
-
-text = filtered.decode('utf-8', errors='ignore')
-text = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', text)
+# Remove any remaining ANSI codes
+text = re.sub(r'\x1b\[[0-9;]*[a-zA-Z]', '', raw_output)
+text = re.sub(r'\x1b\[K', '', text)
 text = re.sub(r'\[\d*[a-zA-Z]', '', text)
-text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
 
+# Remove leftover partial word artifacts (pattern: "partialw word" where partial is prefix of word)
+def remove_artifacts(text):
+    # Pattern: short fragment followed by space followed by longer word that starts with same letters
+    # Examples: "impre impressive" -> "impressive", "buil build" -> "build"
+    text = re.sub(r'\b(\w{1,8}) (\w{3,})\b', lambda m: m.group(2) if m.group(2).startswith(m.group(1)[:3]) and len(m.group(1)) < len(m.group(2)) else m.group(0), text)
+    # Also fix "A l larger" type artifacts
+    text = re.sub(r'\b([A-Za-z]) ([a-z]{3,})\b', lambda m: m.group(2) if m.group(2).startswith(m.group(1).lower()) else m.group(0), text)
+    return text
+
+text = remove_artifacts(text)
+
+# Now clean up whitespace
+text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
 while '  ' in text:
     text = text.replace('  ', ' ')
 
@@ -82,8 +96,14 @@ if 'tips' not in data:
 tips = data['tips']
 print(f"OK: Found {len(tips)} tips")
 
+# Clean each tip's text from artifacts
+for tip in tips:
+    if 'title' in tip:
+        tip['title'] = re.sub(r'\b(\w{1,8}) (\w{3,})\b', lambda m: m.group(2) if m.group(2).startswith(m.group(1)[:3]) and len(m.group(1)) < len(m.group(2)) else m.group(0), str(tip['title']))
+    if 'text' in tip:
+        tip['text'] = re.sub(r'\b(\w{1,8}) (\w{3,})\b', lambda m: m.group(2) if m.group(2).startswith(m.group(1)[:3]) and len(m.group(1)) < len(m.group(2)) else m.group(0), str(tip['text']))
+
 # ========== STEP 4: GENERATE HTML ==========
-# Human-readable topic name
 topic_display = {
     'MATERIALS_SUPPLIES': 'Materials & Supplies',
     'TOOLS_TECHNIQUES': 'Tools & Techniques',
