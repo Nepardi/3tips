@@ -40,6 +40,6 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add tips.json index.html topics.json
-          git diff --quiet --cached || git commit -m "Tips update - Topic $((Get-Content topics.json | ConvertFrom-Json).next_topic)"
+          git diff --quiet --cached || git commit -m "Tips update"
           git push
-        shell: pwsh
+        shell: cmd
