@@ -25,6 +25,7 @@ TOPIC_DISPLAY = {
 }
 
 WEBSITE_URL = 'https://scalemodeltips.eu'
+HASHTAGS = '\n\n#scalemodels #hobby #pienoismallit'
 
 # ========== GET CREDENTIALS ==========
 BLUESKY_HANDLE = os.environ.get('BLUESKY_HANDLE', '')
@@ -77,25 +78,33 @@ else:
 
 print(f"Image for Bluesky: {image_path or 'None'}")
 
-# ========== BUILD POST TEXT WITH FACET ==========
+# ========== BUILD POST TEXT WITH FACETS ==========
 first_tip = tips[0]
 title = str(first_tip.get('title', ''))
 text_content = str(first_tip.get('text', ''))
 
 prefix = f"New: {topic_display}\n\n{title}\n\n"
 suffix = "\n\nFull 5 tips:"
-max_text_len = 300 - len(prefix) - len(suffix) - len(WEBSITE_URL) - 2
+max_text_len = 300 - len(prefix) - len(suffix) - len(WEBSITE_URL) - 2 - len(HASHTAGS)
 
 if len(text_content) > max_text_len:
     text_teaser = text_content[:max_text_len - 3].rstrip() + "..."
 else:
     text_teaser = text_content
 
-post_text = prefix + text_teaser + suffix + f" {WEBSITE_URL}"
+post_text = prefix + text_teaser + suffix + f" {WEBSITE_URL}" + HASHTAGS
 
-# Calculate byte positions for the URL facet
-url_start_byte = len(post_text[:post_text.rfind(WEBSITE_URL)].encode('utf-8'))
-url_end_byte = url_start_byte + len(WEBSITE_URL.encode('utf-8'))
+# Calculate byte positions for facets
+def byte_pos(text, substring):
+    """Calculate byte position of substring in text."""
+    char_pos = text.rfind(substring)
+    if char_pos == -1:
+        return -1, -1
+    bytes_before = len(text[:char_pos].encode('utf-8'))
+    bytes_len = len(substring.encode('utf-8'))
+    return bytes_before, bytes_before + bytes_len
+
+url_start_byte, url_end_byte = byte_pos(post_text, WEBSITE_URL)
 
 print(f"Post text ({len(post_text)} chars):")
 print(post_text)
@@ -108,13 +117,30 @@ try:
     client.login(BLUESKY_HANDLE, BLUESKY_PASSWORD)
     print(f"Logged in as {BLUESKY_HANDLE}")
 
-    # Create facet for URL link
-    link_facet = models.AppBskyRichtextFacet.Main(
-        index=models.AppBskyRichtextFacet.Index(byteStart=url_start_byte, byteEnd=url_end_byte),
-        features=[
-            models.AppBskyRichtextFacet.Link(uri=WEBSITE_URL)
-        ]
-    )
+    # Create facets list
+    facets = []
+
+    # URL facet
+    if url_start_byte >= 0:
+        url_facet = models.AppBskyRichtextFacet.Main(
+            index=models.AppBskyRichtextFacet.Index(byteStart=url_start_byte, byteEnd=url_end_byte),
+            features=[
+                models.AppBskyRichtextFacet.Link(uri=WEBSITE_URL)
+            ]
+        )
+        facets.append(url_facet)
+
+    # Hashtag facets
+    for tag in ['#scalemodels', '#hobby', '#pienoismallit']:
+        tag_start, tag_end = byte_pos(post_text, tag)
+        if tag_start >= 0:
+            tag_facet = models.AppBskyRichtextFacet.Main(
+                index=models.AppBskyRichtextFacet.Index(byteStart=tag_start, byteEnd=tag_end),
+                features=[
+                    models.AppBskyRichtextFacet.Tag(tag=tag.lstrip('#'))
+                ]
+            )
+            facets.append(tag_facet)
 
     # Build post record
     created_at = client.get_current_time_iso()
@@ -127,14 +153,14 @@ try:
             print(f"Image too large ({len(img_data)} bytes), posting without image")
             post_record = models.AppBskyFeedPost.Record(
                 text=post_text,
-                facets=[link_facet],
+                facets=facets,
                 created_at=created_at
             )
         else:
             uploaded_img = client.upload_blob(img_data)
             post_record = models.AppBskyFeedPost.Record(
                 text=post_text,
-                facets=[link_facet],
+                facets=facets,
                 embed=models.AppBskyEmbedImages.Record(
                     images=[
                         models.AppBskyEmbedImages.Image(
@@ -148,7 +174,7 @@ try:
     else:
         post_record = models.AppBskyFeedPost.Record(
             text=post_text,
-            facets=[link_facet],
+            facets=facets,
             created_at=created_at
         )
 
