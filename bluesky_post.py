@@ -161,7 +161,7 @@ try:
             post_record = models.AppBskyFeedPost.Record(
                 text=post_text,
                 facets=facets,
-                embed=models.AppBskyEmbedImages.Record(
+                embed=models.AppBskyEmbedImages.Main(
                     images=[
                         models.AppBskyEmbedImages.Image(
                             alt=f"Scale model building tips about {topic_display}",
