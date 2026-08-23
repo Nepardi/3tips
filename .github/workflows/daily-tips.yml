@@ -35,11 +35,11 @@ jobs:
           type tips.json
         shell: cmd
 
-        - name: Commit changes
+      - name: Commit changes
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add tips.json index.html topics.json archive/ CNAME
+          git add tips.json index.html topics.json archive/
           git diff --quiet --cached || git commit -m "Tips update + domain scalemodeltips.eu"
           git push
         shell: cmd
