@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Airbrushing: Use a Pressure Regulator",
-      "text": "When airbrushing, use a pressure regulator to adjust the air pressure to match the viscosity of the paint. This ensures a consistent flow rate and prevents paint from being pushed through the brush too quickly, causing uneven coats."
+      "title": "Dry Fitting with a 'Best Fit' Approach",
+      "text": "Use a combination of visual inspection and feel to identify the optimal position for each part during dry fitting. For example, use a caliper to measure the distance between a part's mounting holes and the corresponding holes in the surrounding structure. This ensures accurate positioning and minimizes the risk of misaligned parts during assembly."
     },
     {
-      "title": "Hand Painting: Use a Masking Fluid",
-      "text": "Apply a masking fluid (such as frisket or Winsor & Newton's Masking Fluid) to areas where you don't want paint to bleed, allowing you to paint delicate details without worrying about overspray."
+      "title": "Structural Support with Spacers and Dowel Pins",
+      "text": "When assembling a complex structure, use spacers and dowel pins to maintain precise alignment and prevent distortion. For instance, when joining two parts with a large gap, insert a dowel pin to act as a pivot point, allowing the parts to be aligned accurately. Then, use a spacer to maintain the correct distance between the parts."
     },
     {
-      "title": "Primer: Use a Thinner Primer for Small Details",
-      "text": "When painting small details, use a thinner primer (such as Tamiya's Primer or Vallejo's Primer) to ensure a smooth, even coat that won't obscure fine lines or textures."
+      "title": "Modifying Parts with 3D Printing and Milling",
+      "text": "Use 3D printing to create custom parts or modify existing ones with complex geometries. For example, print a custom adapter to connect two parts with incompatible interfaces. Alternatively, use a CNC milling machine to machine custom holes or profiles on existing parts, allowing for precise alignment and optimal fitment."
     },
     {
-      "title": "Decals: Use a Decal Set with a Water-Based Adhesive",
-      "text": "For decals with a water-based adhesive (such as those from Microscale or Vallejo), apply a small amount of water to the decal and let it sit for a few seconds before applying it to the model, allowing the adhesive to flow and adhere properly."
+      "title": "Seam Filling with Epoxy and Putty",
+      "text": "When filling seams, use a combination of epoxy resin and putty to achieve a strong and visually appealing bond. Apply a thin layer of putty to the seam, allowing it to cure before applying multiple thin layers of epoxy. This approach ensures a strong bond, minimal shrinkage, and a smooth finish."
     },
     {
-      "title": "Weathering: Use a Thinned-out Wash for Realistic Gradients",
-      "text": "To create realistic weathering gradients, thin out a wash (such as Tamiya's Panel Line Wash or Vallejo's Wash) with a small amount of water or thinner, and apply it to the model in a smooth, even motion, allowing the wash to flow into the crevices and recesses."
+      "title": "Construction Sequencing with a 'Top-Down' Approach",
+      "text": "When assembling a complex structure, use a 'top-down' approach to construction sequencing. Start by assembling the uppermost components, working your way down to the base. This approach allows for easier access to parts, reduces the risk of parts getting damaged, and facilitates the use of temporary supports and clamps."
     }
   ]
 }
