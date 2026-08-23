@@ -123,7 +123,7 @@ try:
     # URL facet
     if url_start_byte >= 0:
         url_facet = models.AppBskyRichtextFacet.Main(
-            index=models.AppBskyRichtextFacet.Index(byteStart=url_start_byte, byteEnd=url_end_byte),
+            index=models.AppBskyRichtextFacet.ByteSlice(byte_start=url_start_byte, byte_end=url_end_byte),
             features=[
                 models.AppBskyRichtextFacet.Link(uri=WEBSITE_URL)
             ]
@@ -135,7 +135,7 @@ try:
         tag_start, tag_end = byte_pos(post_text, tag)
         if tag_start >= 0:
             tag_facet = models.AppBskyRichtextFacet.Main(
-                index=models.AppBskyRichtextFacet.Index(byteStart=tag_start, byteEnd=tag_end),
+                index=models.AppBskyRichtextFacet.ByteSlice(byte_start=tag_start, byte_end=tag_end),
                 features=[
                     models.AppBskyRichtextFacet.Tag(tag=tag.lstrip('#'))
                 ]
@@ -186,10 +186,6 @@ try:
 
 except ImportError:
     print("atproto library not installed. Run: pip install atproto")
-    sys.exit(1)
-except AttributeError as e:
-    print(f"Error creating facet (maybe outdated atproto version): {e}")
-    print("Try updating: pip install --upgrade atproto")
     sys.exit(1)
 except Exception as e:
     print(f"Error posting to Bluesky: {e}")
