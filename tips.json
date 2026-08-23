@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Achieving a Smooth, Even Airbrush Finish with Minimal Overspray",
-      "text": "Use a high-volume, low-pressure (HVLP) airbrush with a 1.5-2mm nozzle and a 0.5-1.5mm air cap. Set the air pressure to 10-15psi and the paint flow to 5-10%. Use a medium to thin paint viscosity, and thin with a specialized airbrush thinner (e.g., Vallejo Airbrush Thinner) to achieve the desired consistency."
+      "title": "Dry Fitting: Use a 3D Printed Master",
+      "text": "Before assembly, create a 3D printed master of the complex parts, such as engine components or gearboxes. This allows for accurate dry fitting, identification of potential issues, and testing of component clearances without damaging the actual parts."
     },
     {
-      "title": "Hand Painting Techniques for Realistic Edge Highlighting",
-      "text": "Use a fine-tip brush (0.1-0.3mm) and a mixture of 90% paint and 10% medium (e.g., Vallejo Medium Varnish) to create a blendable, soft edge highlight. Apply the highlight to the raised edges of raised details, such as rivets, bolts, or panel lines, using a gentle, sweeping motion."
+      "title": "Structural Support: Use Aluminum Rods for Long Span Support",
+      "text": "For large scale models, use aluminum rods (e.g., 1/8\" or 3mm diameter) to provide structural support for long span structures, such as wing or fuselage sections. This helps prevent sagging and ensures accurate fitment of parts."
     },
     {
-      "title": "Choosing the Right Primer for Scale Model Painting",
-      "text": "Select a primer that matches the model's material and intended use (e.g., acrylic, enamel, or metallic). For example, use a flexible primer (e.g., Tamiya Flexible Cement) for models with flexible parts or a primer with a high filler content (e.g., AK Interactive Primer) for models with rough surfaces."
+      "title": "Modifying Parts: Use a 3D Scanner to Create Custom Profiles",
+      "text": "When modifying parts, use a 3D scanner to capture the exact shape and profile of the part. This allows for creating custom profiles, which can then be 3D printed or milled to exact specifications, ensuring accurate fitment and minimal material waste."
     },
     {
-      "title": "Decal Application Techniques for a Smooth, Bubble-Free Finish",
-      "text": "Use a decal solution (e.g., Microscale Decal Settling Solution) to soften the decals and facilitate even application. Apply a thin layer of decal solution to the decal and let it sit for 1-2 minutes before applying it to the model. Use a gentle, smoothing motion to remove air bubbles and excess solution."
+      "title": "Seam Filling: Use a Thermoplastic Adhesive for Low-Vibration Areas",
+      "text": "For areas with low vibration, such as the fuselage or cabin sections, use a thermoplastic adhesive (e.g., Loctite PL 500) to fill seams. This provides a strong, flexible bond that can withstand minor vibrations and movements during assembly and use."
     },
     {
-      "title": "Creating Realistic Weathering Effects with Washes and Dry Brushing",
-      "text": "Use a weathering wash (e.g., AK Interactive Wash) to create a subtle, realistic weathering effect on raised details, such as rivets, bolts, or panel lines. Apply the wash using a fine-tip brush (0.1-0.3mm) and a gentle, sweeping motion. For dry brushing, use a stiff-bristled brush and a light touch to create texture and wear on flat surfaces, such as hulls or wings."
+      "title": "Construction Sequencing: Assemble Critical Components First",
+      "text": "Prioritize the assembly of critical components, such as the engine, transmission, or steering system, before moving on to less critical areas. This ensures that the model's overall structural integrity is maintained and reduces the risk of costly rework or repairs during the assembly process."
     }
   ]
 }
