@@ -400,6 +400,20 @@ if os.path.exists('archive'):
                     'display': name_without_ext
                 })
 
+# ========== NEW: ENFORCE MAX 100 FILES IN ARCHIVE ==========
+MAX_ARCHIVE_FILES = 100
+if len(archive_files) > MAX_ARCHIVE_FILES:
+    files_to_delete = archive_files[MAX_ARCHIVE_FILES:]
+    for item in files_to_delete:
+        try:
+            os.remove(f"archive/{item['filename']}")
+            print(f"Deleted old archive: {item['filename']}")
+        except Exception as e:
+            print(f"Warning: Could not delete {item['filename']}: {e}")
+    
+    archive_files = archive_files[:MAX_ARCHIVE_FILES]
+    print(f"Archive cleaned: removed {len(files_to_delete)} old files, keeping {len(archive_files)}")
+
 archive_count = len(archive_files)
 print(f"Archive contains {archive_count} old tip sets")
 
