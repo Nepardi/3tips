@@ -29,6 +29,17 @@ jobs:
           type tips.json
         shell: cmd
 
+      - name: Install Bluesky dependencies
+        run: pip install atproto
+        shell: cmd
+
+      - name: Post to Bluesky
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+        run: python bluesky_post.py
+        shell: cmd
+
       - name: Commit changes
         run: |
           git config user.name "GitHub Actions"
