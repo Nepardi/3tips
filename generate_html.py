@@ -30,10 +30,11 @@ if os.path.exists('index.html'):
 
     shutil.copy2('index.html', archive_filename)
 
-    # Fix image paths for archive subfolder
+    # Fix paths for archive subfolder
     with open(archive_filename, 'r', encoding='utf-8') as f:
         archived_content = f.read()
     archived_content = archived_content.replace('src="images/', 'src="../images/')
+    archived_content = archived_content.replace('href="archive/index.html"', 'href="index.html"')
     with open(archive_filename, 'w', encoding='utf-8') as f:
         f.write(archived_content)
 
