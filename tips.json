@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Airbrushing Tip: Thin Your Paint Wisely",
-      "text": "When airbrushing, it's essential to thin your paint with the correct ratio of paint to thinner. A general rule of thumb is to start with a 1:1 ratio (1 part paint to 1 part thinner). However, for some airbrushes, you may need to adjust this ratio to 1:2 or even 1:3, depending on the viscosity of the paint and the desired effect. Experiment with different ratios to achieve the perfect consistency for your model."
+      "title": "Dry Fitting: Use a Soft-Tip Pick to Remove Parts from the Mold",
+      "text": "Use a soft-tip pick to carefully remove parts from the mold, especially for resin or cast parts. This helps prevent damage to the part or the mold, and makes it easier to handle small, delicate components."
     },
     {
-      "title": "Hand Painting Tip: Use a 'Wet-on-Wet' Technique",
-      "text": "When hand painting, try using a 'wet-on-wet' technique to blend colors seamlessly. This involves applying a layer of paint to the model, allowing it to dry slightly, and then adding additional layers of paint without waiting for the previous layer to fully dry. This technique helps to create subtle, nuanced transitions between colors and can add depth and realism to your model."
+      "title": "Structural Support: Use 3M VHB Tape for Secure Attachments",
+      "text": "For attaching parts that require structural support, such as wings or fuselage sections, use 3M VHB (Vinyl-Coated, High-Bond) tape. This tape provides a strong, yet removable bond, and is suitable for a variety of materials, including plastic, metal, and wood."
     },
     {
-      "title": "Primer Tip: Use a High-Gloss Primer for Maximum Adhesion",
-      "text": "When applying primer to your model, choose a high-gloss primer for maximum adhesion. This type of primer creates a smooth, even surface that allows paint to adhere well and reduces the risk of flaking or peeling. Look for primers specifically designed for scale modeling, such as Tamiya or Vallejo primers, which are formulated to withstand the rigors of paint and handling."
+      "title": "Modifying Parts: Use a Rotary Tool with a Carbide Bit for Precise Cutting",
+      "text": "When modifying parts, use a rotary tool (e.g., Dremel) with a carbide cutting bit. Carbide bits are designed for cutting through various materials, including plastic, metal, and wood, and provide a high level of precision and accuracy."
     },
     {
-      "title": "Decal Tip: Use a 'Soak-and-Scratch' Method for Perfect Application",
-      "text": "When applying decals to your model, try using a 'soak-and-scratch' method for perfect application. Apply a small amount of water to the decal and let it soak for a few seconds, then use a credit card or similar tool to gently scratch the decal onto the model. This method helps to prevent air bubbles and ensures a smooth, even application of the decal."
+      "title": "Seam Filling: Use a Two-Part Epoxy for Strong, Flexible Bonds",
+      "text": "For filling seams, use a two-part epoxy (e.g., J-B Weld or 5-Minute Epoxy). These epoxies provide a strong, flexible bond that can withstand stress and fatigue, making them ideal for filling seams between parts that may be subject to movement or vibration."
     },
     {
-      "title": "Weathering Tip: Use a 'Drybrushing' Technique for Realistic Wear",
-      "text": "To create realistic wear and tear on your model, try using a 'drybrushing' technique. Dip a drybrush into a small amount of paint, then brush it across the model to create textured, worn areas. This technique is particularly effective for simulating rust, dust, or other types of environmental wear. Experiment with different brushstrokes and paint colors to achieve the desired effect."
+      "title": "Construction Sequencing: Use a 'Build-Block' Approach for Efficient Assembly",
+      "text": "To optimize construction sequencing, use a 'build-block' approach. Identify key components or sub-assemblies and build these first, then integrate them into the larger assembly. This approach helps prevent mistakes, reduces the risk of damage, and ensures a more efficient build process."
     }
   ]
 }
