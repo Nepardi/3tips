@@ -15,12 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Start Ollama Server
-        run: |
-          start cmd /c "ollama serve"
-        shell: cmd
-        continue-on-error: true
-
       - name: Wait for Ollama
         run: |
           ping -n 5 127.0.0.1 >nul
