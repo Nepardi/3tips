@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Use a precision caliper to measure model dimensions",
-      "text": "A precision caliper is essential for accurately measuring small model dimensions. It helps to identify scaling errors and ensures that the model is built to the correct proportions."
+      "title": "Avoid Using PETG for Scale Modeling",
+      "text": "PETG (Polyethylene Terephthalate Glycol) sheets are often marketed as a flexible alternative to acrylic or styrene, but they can be too prone to warping and shrinkage for scale modeling purposes. Consider using HIPS (High-Impact Polystyrene) or ABS (Acrylonitrile Butadiene Styrene) sheets instead, like those from Plastruct or Evergreen."
     },
     {
-      "title": "Apply a thin layer of varnish to prevent dust buildup",
-      "text": "Applying a thin layer of varnish on the model's surface helps to prevent dust and debris from accumulating, which can lead to paint scratches and damage during transport. Choose a varnish specifically designed for scale models."
+      "title": "Use a Good Quality Plastic Adhesive",
+      "text": "When working with scale models, a strong and flexible adhesive is essential. Tamiya's Extra Thin Cement is a popular choice among scale modelers due to its ability to bond with a wide range of plastics without leaving residue or bubbles."
     },
     {
-      "title": "Invest in a dust-free workspace with a HEPA air purifier",
-      "text": "A dust-free workspace is crucial for scale model building. A HEPA air purifier helps to remove 99.97% of particles as small as 0.3 microns, reducing the risk of dust contamination and ensuring a cleaner work environment."
+      "title": "Prime Your Surfaces for Better Paint Adhesion",
+      "text": "Applying a primer before painting can significantly improve the adhesion and durability of your finish. Use a high-quality primer like Alclad II or Vallejo's Plastic Primer to ensure a strong bond between the plastic and paint."
     },
     {
-      "title": "Use a digital level to ensure perfectly horizontal and vertical surfaces",
-      "text": "A digital level is a must-have tool for any serious scale model builder. It helps to achieve perfectly horizontal and vertical surfaces, ensuring that the model's components are properly aligned and that the final product looks professional."
+      "title": "Sourcing Materials: Know Your Suppliers",
+      "text": "When sourcing materials for your scale models, it's essential to know your suppliers. Companies like Plastruct and Evergreen offer a wide range of plastics sheets and rod, while specialty stores like HobbyTown or Michaels may carry a selection of scale modeling supplies."
     },
     {
-      "title": "Practice micro-soldering techniques for delicate details",
-      "text": "Micro-soldering techniques are essential for adding delicate details to scale models. Use a soldering iron with a fine tip and practice using a magnifying glass or a microscope to achieve precise soldering results."
+      "title": "Proper Storage to Prevent Warping",
+      "text": "To prevent plastic sheets from warping or bending, store them away from direct sunlight and heat sources. Use a stiff cardboard or foam core to support the sheets, and wrap them in plastic or aluminum foil to protect them from dust and scratches."
     }
   ]
 }
