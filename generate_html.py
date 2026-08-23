@@ -2,6 +2,7 @@ import json
 import re
 import os
 import shutil
+import random
 from datetime import datetime
 try:
     import requests
@@ -9,6 +10,15 @@ except ImportError:
     print("Installing requests...")
     os.system('pip install requests')
     import requests
+
+# ========== TOPIC IMAGE MAPPING ==========
+TOPIC_IMAGE_KEYS = {
+    'MATERIALS_SUPPLIES': 'materials',
+    'TOOLS_TECHNIQUES': 'tools',
+    'PAINTING_FINISHING': 'painting',
+    'ASSEMBLY_CONSTRUCTION': 'assembly',
+    'TROUBLESHOOTING_PROTIPS': 'troubleshooting'
+}
 
 # ========== STEP 0: ARCHIVE OLD TIPS ==========
 if os.path.exists('index.html'):
@@ -19,6 +29,14 @@ if os.path.exists('index.html'):
     archive_filename = f'archive/{archive_timestamp}.html'
 
     shutil.copy2('index.html', archive_filename)
+
+    # Fix image paths for archive subfolder
+    with open(archive_filename, 'r', encoding='utf-8') as f:
+        archived_content = f.read()
+    archived_content = archived_content.replace('src="images/', 'src="../images/')
+    with open(archive_filename, 'w', encoding='utf-8') as f:
+        f.write(archived_content)
+
     print(f"Archived old tips to: {archive_filename}")
 
 # ========== STEP 1: SELECT TOPIC ==========
@@ -36,6 +54,33 @@ with open('topics.json', 'w', encoding='utf-8') as f:
 
 print(f"Topic: {topic_name}")
 print(f"Next topic index: {topics_data['next_topic']}")
+
+# ========== STEP 1b: LOAD IMAGES FOR CURRENT TOPIC ==========
+topic_img_key = TOPIC_IMAGE_KEYS.get(topic_name, topic_name.lower())
+
+# Header image
+header_image = f'images/header_{topic_img_key}.jpg'
+header_image_exists = os.path.exists(header_image)
+if header_image_exists:
+    print(f"Header image found: {header_image}")
+else:
+    print(f"No header image found (expected: {header_image})")
+
+# Card images — load all available, shuffle for variety
+card_images = []
+for i in range(1, 6):
+    img_path = f'images/{topic_img_key}_{i}.jpg'
+    if os.path.exists(img_path):
+        card_images.append(img_path)
+
+random.shuffle(card_images)
+print(f"Card images found: {len(card_images)}")
+
+def get_card_image(index):
+    """Return image path for card index, or None."""
+    if card_images:
+        return card_images[index % len(card_images)]
+    return None
 
 # ========== STEP 2: CALL OLLAMA API (WITH RETRY) ==========
 max_retries = 3
@@ -138,6 +183,33 @@ topic_display = {
 
 current_date = datetime.now().strftime('%B %d, %Y')
 
+# Build hero image section (empty if no image)
+hero_html = ''
+if header_image_exists:
+    hero_html = f'''<div class="hero-image">
+<img src="{header_image}" alt="{topic_display}">
+</div>'''
+
+# Build card HTML
+cards_html = ''
+for i, t in enumerate(tips, 1):
+    title = str(t.get('title', f'Tip {i}'))
+    text_content = str(t.get('text', ''))
+    card_img = get_card_image(i - 1)
+    card_img_html = ''
+    if card_img:
+        card_img_html = f'''<div class="card-image">
+<img src="{card_img}" alt="">
+</div>'''
+    cards_html += f'''<article class="card">
+{card_img_html}
+<div class="title-row">
+<span class="tip-number">{i}</span>
+<h2>{title}</h2>
+</div>
+<p>{text_content}</p>
+</article>'''
+
 html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -191,6 +263,25 @@ h1 {{
   border: 2px solid var(--primary); padding: 6px 18px;
   border-radius: 20px; font-size: 0.85em; font-weight: 600;
   margin-top: 10px;
+}}
+.hero-image {{
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 25px 0;
+  box-shadow: 0 4px 25px var(--shadow);
+  position: relative;
+}}
+.hero-image img {{
+  width: 100%; height: 100%;
+  object-fit: cover;
+}}
+.hero-image::after {{
+  content: ''; position: absolute; bottom: 0; left: 0;
+  width: 100%; height: 70px;
+  background: linear-gradient(to top, rgba(0,0,0,0.35), transparent);
+  pointer-events: none;
 }}
 .disclaimer {{
   background: var(--warning-bg);
@@ -249,6 +340,22 @@ h1 {{
   opacity: 0; transition: opacity 0.3s ease;
 }}
 .card:hover::before {{ opacity: 1; }}
+.card-image {{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  position: relative;
+}}
+.card-image img {{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}}
+.card:hover .card-image img {{
+  transform: scale(1.06);
+}}
 .tip-number {{
   display: inline-flex; align-items: center; justify-content: center;
   width: 32px; height: 32px;
@@ -273,7 +380,9 @@ footer {{
 @media (max-width: 768px) {{
   .container {{ padding: 20px 15px; }}
   h1 {{ font-size: 1.8em; }}
+  .hero-image {{ height: 200px; }}
   .card {{ padding: 20px; }}
+  .card-image {{ height: 160px; }}
   .card h2 {{ font-size: 1.2em; }}
   .card p {{ padding-left: 0; padding-top: 10px; }}
   .tip-number {{ display: none; }}
@@ -294,6 +403,8 @@ footer {{
   body {{ background: white !important; padding: 0 !important; }}
   .container {{ max-width: 100% !important; padding: 20px !important; margin: 0 !important; }}
   h1 {{ font-size: 2em !important; -webkit-text-fill-color: #1a1a2e !important; background: none !important; }}
+  .hero-image {{ height: 120px; border-radius: 8px; }}
+  .card-image {{ height: 100px; border-radius: 8px; }}
   .card {{
     break-inside: avoid !important; page-break-inside: avoid !important;
     box-shadow: none !important; border: 1px solid #ddd !important;
@@ -305,15 +416,16 @@ footer {{
 <body>
 <div class="container">
 <header>
-<h1>🛠️ Scale Model Building Tips</h1>
+<h1>&#128295; Scale Model Building Tips</h1>
 <p class="subtitle">Practical advice for scale model builders</p>
 <div class="badges">
-<div class="topic-badge">📋 {topic_display}</div>
+<div class="topic-badge">&#128203; {topic_display}</div>
 <div class="date-badge">{current_date}</div>
 </div>
 </header>
+{hero_html}
 <div class="disclaimer">
-<div class="disclaimer-icon">⚠️</div>
+<div class="disclaimer-icon">&#9888;&#65039;</div>
 <div class="disclaimer-text">
 <strong>AI-Generated Content</strong>
 These tips are automatically generated by an AI language model (Llama 3.1 via Ollama). While the content aims to be helpful and accurate, it may contain errors or outdated information. Always verify advice against reliable sources before applying it to your projects.
@@ -338,21 +450,8 @@ Save as PDF
 View Archive
 </a>
 </div>
-<div class="cards">'''
-
-for i, t in enumerate(tips, 1):
-    title = str(t.get('title', f'Tip {i}'))
-    text_content = str(t.get('text', ''))
-    html += f'''
-<article class="card">
-<div class="title-row">
-<span class="tip-number">{i}</span>
-<h2>{title}</h2>
-</div>
-<p>{text_content}</p>
-</article>'''
-
-html += '''
+<div class="cards">
+{cards_html}
 </div>
 <footer>
 <p>Generated automatically by GitHub Actions &middot; Powered by Ollama</p>
@@ -400,7 +499,7 @@ if os.path.exists('archive'):
                     'display': name_without_ext
                 })
 
-# ========== NEW: ENFORCE MAX 100 FILES IN ARCHIVE ==========
+# ========== ENFORCE MAX 100 FILES IN ARCHIVE ==========
 MAX_ARCHIVE_FILES = 100
 if len(archive_files) > MAX_ARCHIVE_FILES:
     files_to_delete = archive_files[MAX_ARCHIVE_FILES:]
@@ -410,7 +509,7 @@ if len(archive_files) > MAX_ARCHIVE_FILES:
             print(f"Deleted old archive: {item['filename']}")
         except Exception as e:
             print(f"Warning: Could not delete {item['filename']}: {e}")
-    
+
     archive_files = archive_files[:MAX_ARCHIVE_FILES]
     print(f"Archive cleaned: removed {len(files_to_delete)} old files, keeping {len(archive_files)}")
 
@@ -558,12 +657,12 @@ footer {{
 <body>
 <div class="container">
 <header>
-<h1>📂 Tips Archive</h1>
+<h1>&#128194; Tips Archive</h1>
 <p class="subtitle">Previous Scale Model Building Tips</p>
 <div class="archive-count">{archive_count} archived tip sets</div>
 </header>
 <div class="disclaimer">
-<div class="disclaimer-icon">⚠️</div>
+<div class="disclaimer-icon">&#9888;&#65039;</div>
 <div class="disclaimer-text">
 <strong>AI-Generated Content</strong>
 All archived tips were generated by an AI language model (Llama 3.1 via Ollama). The content may contain errors or outdated information. Always verify advice against reliable sources.
