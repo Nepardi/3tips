@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Dry Fitting: Use a 3D Printed Master",
-      "text": "Before assembly, create a 3D printed master of the complex parts, such as engine components or gearboxes. This allows for accurate dry fitting, identification of potential issues, and testing of component clearances without damaging the actual parts."
+      "title": "Using a precision-cutting mat for small-scale models",
+      "text": "Invest in a precision-cutting mat with a grid pattern for small-scale models. This helps to prevent errors in measurements and ensures accurate cuts."
     },
     {
-      "title": "Structural Support: Use Aluminum Rods for Long Span Support",
-      "text": "For large scale models, use aluminum rods (e.g., 1/8\" or 3mm diameter) to provide structural support for long span structures, such as wing or fuselage sections. This helps prevent sagging and ensures accurate fitment of parts."
+      "title": "The importance of a consistent reference point",
+      "text": "When building a scale model, establish a consistent reference point for all measurements. This can be a fixed point on the model or a specific measurement on a component."
     },
     {
-      "title": "Modifying Parts: Use a 3D Scanner to Create Custom Profiles",
-      "text": "When modifying parts, use a 3D scanner to capture the exact shape and profile of the part. This allows for creating custom profiles, which can then be 3D printed or milled to exact specifications, ensuring accurate fitment and minimal material waste."
+      "title": "Using a magnifying glass for intricate details",
+      "text": "Employ a magnifying glass to inspect and work on intricate details in scale models. This helps to prevent mistakes and ensures accuracy."
     },
     {
-      "title": "Seam Filling: Use a Thermoplastic Adhesive for Low-Vibration Areas",
-      "text": "For areas with low vibration, such as the fuselage or cabin sections, use a thermoplastic adhesive (e.g., Loctite PL 500) to fill seams. This provides a strong, flexible bond that can withstand minor vibrations and movements during assembly and use."
+      "title": "Organizing your workspace with a 'zone system'",
+      "text": "Implement a 'zone system' in your workspace to separate different tasks. For example, dedicate one zone for cutting, another for gluing, and so on."
     },
     {
-      "title": "Construction Sequencing: Assemble Critical Components First",
-      "text": "Prioritize the assembly of critical components, such as the engine, transmission, or steering system, before moving on to less critical areas. This ensures that the model's overall structural integrity is maintained and reduces the risk of costly rework or repairs during the assembly process."
+      "title": "Employing the 'dry-fitting' technique for complex assemblies",
+      "text": "Use the 'dry-fitting' technique for complex assemblies. This involves temporarily assembling the components without glue to check for fit and alignment before applying adhesive."
     }
   ]
 }
