@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+from datetime import datetime
 
 # ========== CONFIG ==========
 TOPIC_IMAGE_KEYS = {
@@ -60,12 +61,10 @@ except Exception:
 # ========== FIND IMAGE ==========
 image_path = None
 
-# Try header image first
 header_path = f'images/header_{topic_img_key}.jpg'
 if os.path.exists(header_path):
     image_path = header_path
 else:
-    # Try card images
     for i in range(1, 6):
         card_path = f'images/{topic_img_key}_{i}.jpg'
         if os.path.exists(card_path):
@@ -74,55 +73,100 @@ else:
 
 print(f"Image for Bluesky: {image_path or 'None'}")
 
-# ========== BUILD POST TEXT ==========
+# ========== BUILD POST TEXT WITH FACET ==========
 first_tip = tips[0]
 title = str(first_tip.get('title', ''))
-text = str(first_tip.get('text', ''))
+text_content = str(first_tip.get('text', ''))
 
-prefix = f"New Scale Model Tips: {topic_display}\n\n{title}\n"
-suffix = f"\n\nSee all 5 tips at {WEBSITE_URL}"
-max_text_len = 300 - len(prefix) - len(suffix)
+prefix = f"🛠️ New: {topic_display}\n\n{title}\n\n"
+suffix = "\n\nFull 5 tips:"
+max_text_len = 300 - len(prefix) - len(suffix) - len(WEBSITE_URL) - 2  # -2 for " \n"
 
-if len(text) > max_text_len:
-    text_teaser = text[:max_text_len - 3].rstrip() + "..."
+if len(text_content) > max_text_len:
+    text_teaser = text_content[:max_text_len - 3].rstrip() + "..."
 else:
-    text_teaser = text
+    text_teaser = text_content
 
-post_text = prefix + text_teaser + suffix
+post_text = prefix + text_teaser + suffix + f" {WEBSITE_URL}"
+
+# Calculate byte positions for the URL facet
+url_start = post_text.rfind(WEBSITE_URL)
+url_end = url_start + len(WEBSITE_URL)
 
 print(f"Post text ({len(post_text)} chars):")
 print(post_text)
 
 # ========== POST TO BLUESKY ==========
 try:
-    from atproto import Client
+    from atproto import Client, models
 
     client = Client()
     client.login(BLUESKY_HANDLE, BLUESKY_PASSWORD)
+    print(f"Logged in as {BLUESKY_HANDLE}")
+
+    # Create facet for URL link
+    link_facet = models.AppBskyRichtextFacet.Main(
+        index=models.AppBskyRichtextFacet.Index(byteStart=url_start, byteEnd=url_end),
+        features=[
+            models.AppBskyRichtextFacet.Link(uri=WEBSITE_URL)
+        ]
+    )
+
+    # Build post record
+    created_at = client.get_current_time_iso()
 
     if image_path and os.path.exists(image_path):
         with open(image_path, 'rb') as f:
             img_data = f.read()
 
-        # Bluesky image limit: ~1 MiB
         if len(img_data) > 1000000:
             print(f"Image too large ({len(img_data)} bytes), posting without image")
-            post = client.send_post(text=post_text)
-        else:
-            post = client.send_image(
+            post_record = models.AppBskyFeedPost.Record(
                 text=post_text,
-                image=img_data,
-                image_alt=f"Scale model building tips about {topic_display}"
+                facets=[link_facet],
+                created_at=created_at
+            )
+        else:
+            uploaded_img = client.upload_blob(img_data)
+            post_record = models.AppBskyFeedPost.Record(
+                text=post_text,
+                facets=[link_facet],
+                embed=models.AppBskyEmbedImages.Record(
+                    images=[
+                        models.AppBskyEmbedImages.Image(
+                            alt=f"Scale model building tips about {topic_display}",
+                            image=uploaded_img.blob
+                        )
+                    ]
+                ),
+                created_at=created_at
             )
     else:
-        post = client.send_post(text=post_text)
+        post_record = models.AppBskyFeedPost.Record(
+            text=post_text,
+            facets=[link_facet],
+            created_at=created_at
+        )
 
-    print(f"Posted to Bluesky successfully!")
-    print(f"Post URI: {post.uri}")
+    # Create the post
+    post_response = client.app.bsky.feed.post.create(client.me.did, post_record)
+    
+    print(f"✅ Posted to Bluesky successfully!")
+    print(f"Post URI: {post_response.uri}")
+    
+    # Shorten for display
+    post_url = post_response.uri.replace("at://", "https://bsky.app/profile/")
+    print(f"View post: https://bsky.app/profile/{BLUESKY_HANDLE}/post/{post_url.split('/')[-1]}")
 
 except ImportError:
-    print("atproto library not installed. Run: pip install atproto")
+    print("❌ atproto library not installed. Run: pip install atproto")
+    sys.exit(1)
+except AttributeError as e:
+    print(f"❌ Error creating facet (maybe outdated atproto version): {e}")
+    print("Try updating: pip install --upgrade atproto")
     sys.exit(1)
 except Exception as e:
-    print(f"Error posting to Bluesky: {e}")
+    print(f"❌ Error posting to Bluesky: {e}")
+    import traceback
+    traceback.print_exc()
     sys.exit(1)
