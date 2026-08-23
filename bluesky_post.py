@@ -3,6 +3,10 @@ import os
 import sys
 from datetime import datetime
 
+# ========== FIX WINDOWS CONSOLE ENCODING ==========
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
 # ========== CONFIG ==========
 TOPIC_IMAGE_KEYS = {
     'MATERIALS_SUPPLIES': 'materials',
@@ -78,9 +82,9 @@ first_tip = tips[0]
 title = str(first_tip.get('title', ''))
 text_content = str(first_tip.get('text', ''))
 
-prefix = f"🛠️ New: {topic_display}\n\n{title}\n\n"
+prefix = f"New: {topic_display}\n\n{title}\n\n"
 suffix = "\n\nFull 5 tips:"
-max_text_len = 300 - len(prefix) - len(suffix) - len(WEBSITE_URL) - 2  # -2 for " \n"
+max_text_len = 300 - len(prefix) - len(suffix) - len(WEBSITE_URL) - 2
 
 if len(text_content) > max_text_len:
     text_teaser = text_content[:max_text_len - 3].rstrip() + "..."
@@ -90,8 +94,8 @@ else:
 post_text = prefix + text_teaser + suffix + f" {WEBSITE_URL}"
 
 # Calculate byte positions for the URL facet
-url_start = post_text.rfind(WEBSITE_URL)
-url_end = url_start + len(WEBSITE_URL)
+url_start_byte = len(post_text[:post_text.rfind(WEBSITE_URL)].encode('utf-8'))
+url_end_byte = url_start_byte + len(WEBSITE_URL.encode('utf-8'))
 
 print(f"Post text ({len(post_text)} chars):")
 print(post_text)
@@ -106,7 +110,7 @@ try:
 
     # Create facet for URL link
     link_facet = models.AppBskyRichtextFacet.Main(
-        index=models.AppBskyRichtextFacet.Index(byteStart=url_start, byteEnd=url_end),
+        index=models.AppBskyRichtextFacet.Index(byteStart=url_start_byte, byteEnd=url_end_byte),
         features=[
             models.AppBskyRichtextFacet.Link(uri=WEBSITE_URL)
         ]
@@ -150,23 +154,19 @@ try:
 
     # Create the post
     post_response = client.app.bsky.feed.post.create(client.me.did, post_record)
-    
-    print(f"✅ Posted to Bluesky successfully!")
+
+    print(f"Posted to Bluesky successfully!")
     print(f"Post URI: {post_response.uri}")
-    
-    # Shorten for display
-    post_url = post_response.uri.replace("at://", "https://bsky.app/profile/")
-    print(f"View post: https://bsky.app/profile/{BLUESKY_HANDLE}/post/{post_url.split('/')[-1]}")
 
 except ImportError:
-    print("❌ atproto library not installed. Run: pip install atproto")
+    print("atproto library not installed. Run: pip install atproto")
     sys.exit(1)
 except AttributeError as e:
-    print(f"❌ Error creating facet (maybe outdated atproto version): {e}")
+    print(f"Error creating facet (maybe outdated atproto version): {e}")
     print("Try updating: pip install --upgrade atproto")
     sys.exit(1)
 except Exception as e:
-    print(f"❌ Error posting to Bluesky: {e}")
+    print(f"Error posting to Bluesky: {e}")
     import traceback
     traceback.print_exc()
     sys.exit(1)
