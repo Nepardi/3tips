@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Dry Fitting with a 'Best Fit' Approach",
-      "text": "Use a combination of visual inspection and feel to identify the optimal position for each part during dry fitting. For example, use a caliper to measure the distance between a part's mounting holes and the corresponding holes in the surrounding structure. This ensures accurate positioning and minimizes the risk of misaligned parts during assembly."
+      "title": "Use a precision caliper to measure model dimensions",
+      "text": "A precision caliper is essential for accurately measuring small model dimensions. It helps to identify scaling errors and ensures that the model is built to the correct proportions."
     },
     {
-      "title": "Structural Support with Spacers and Dowel Pins",
-      "text": "When assembling a complex structure, use spacers and dowel pins to maintain precise alignment and prevent distortion. For instance, when joining two parts with a large gap, insert a dowel pin to act as a pivot point, allowing the parts to be aligned accurately. Then, use a spacer to maintain the correct distance between the parts."
+      "title": "Apply a thin layer of varnish to prevent dust buildup",
+      "text": "Applying a thin layer of varnish on the model's surface helps to prevent dust and debris from accumulating, which can lead to paint scratches and damage during transport. Choose a varnish specifically designed for scale models."
     },
     {
-      "title": "Modifying Parts with 3D Printing and Milling",
-      "text": "Use 3D printing to create custom parts or modify existing ones with complex geometries. For example, print a custom adapter to connect two parts with incompatible interfaces. Alternatively, use a CNC milling machine to machine custom holes or profiles on existing parts, allowing for precise alignment and optimal fitment."
+      "title": "Invest in a dust-free workspace with a HEPA air purifier",
+      "text": "A dust-free workspace is crucial for scale model building. A HEPA air purifier helps to remove 99.97% of particles as small as 0.3 microns, reducing the risk of dust contamination and ensuring a cleaner work environment."
     },
     {
-      "title": "Seam Filling with Epoxy and Putty",
-      "text": "When filling seams, use a combination of epoxy resin and putty to achieve a strong and visually appealing bond. Apply a thin layer of putty to the seam, allowing it to cure before applying multiple thin layers of epoxy. This approach ensures a strong bond, minimal shrinkage, and a smooth finish."
+      "title": "Use a digital level to ensure perfectly horizontal and vertical surfaces",
+      "text": "A digital level is a must-have tool for any serious scale model builder. It helps to achieve perfectly horizontal and vertical surfaces, ensuring that the model's components are properly aligned and that the final product looks professional."
     },
     {
-      "title": "Construction Sequencing with a 'Top-Down' Approach",
-      "text": "When assembling a complex structure, use a 'top-down' approach to construction sequencing. Start by assembling the uppermost components, working your way down to the base. This approach allows for easier access to parts, reduces the risk of parts getting damaged, and facilitates the use of temporary supports and clamps."
+      "title": "Practice micro-soldering techniques for delicate details",
+      "text": "Micro-soldering techniques are essential for adding delicate details to scale models. Use a soldering iron with a fine tip and practice using a magnifying glass or a microscope to achieve precise soldering results."
     }
   ]
 }
