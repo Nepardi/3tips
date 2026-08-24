@@ -154,8 +154,16 @@ for attempt in range(1, max_retries + 1):
         print(f"Attempt {attempt}: JSON error: {e}")
         continue
 
-    if 'tips' not in data:
-        print(f"Attempt {attempt}: Missing 'tips' key! Keys: {list(data.keys())}")
+        # Handle both formats: ['tips'] or ['tip1', 'tip2', ...]
+    if 'tips' in data:
+        found_tips = data['tips']
+    elif all(k.startswith('tip') and k[3:].isdigit() for k in data.keys()):
+        # Convert {'tip1': ..., 'tip2': ...} to list
+        tip_keys = sorted([k for k in data.keys() if k.startswith('tip')], 
+                         key=lambda x: int(x[3:]))
+        found_tips = [data[k] for k in tip_keys]
+    else:
+        print(f"Attempt {attempt}: Unexpected JSON structure! Keys: {list(data.keys())}")
         continue
 
     found_tips = data['tips']
