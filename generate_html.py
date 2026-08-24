@@ -91,12 +91,14 @@ tips = None
 for attempt in range(1, max_retries + 1):
     print(f"Calling Ollama API (attempt {attempt}/{max_retries})...")
 
-    try:
+try:
+        full_prompt = f"{SYSTEM_PROMPT}\n\n{prompt}"
+
         response = requests.post(
             'http://localhost:11434/api/generate',
             json={
                 'model': 'qwen3:8b',
-                'prompt': prompt,
+                'prompt': full_prompt,
                 'format': 'json',
                 'stream': False,
                 'options': {
