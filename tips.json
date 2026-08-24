@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Dry Fitting: Use a Caliper to Measure Tolerances",
-      "text": "When dry fitting parts, use a digital caliper to measure the tolerances between mating surfaces. This helps identify potential issues before assembly, allowing for adjustments to be made or parts to be replaced. Record the measurements to track progress and make informed decisions."
+      "title": "Reversing a Mistake: Cutting Out the Wrong Shape",
+      "text": "If you accidentally cut out the wrong shape or at the wrong scale, use a craft knife or a hobby knife to carefully cut out the correct shape or rescale the piece. To avoid this mistake, always double-check your plans and cutting templates before starting to cut out the model parts."
     },
     {
-      "title": "Structural Support: Use a Combination of Pins and Clamps",
-      "text": "When building complex structures, use a combination of pins and clamps to provide temporary support. Pins can be used to hold parts in place, while clamps can be used to apply pressure and secure the structure. This approach helps prevent damage and ensures accurate alignment."
+      "title": "Advanced Technique: Using the 'Match Line' Method",
+      "text": "When building a model with interlocking parts, use the 'match line' method to ensure a precise fit. This involves carefully aligning the parts and using a ruler or straightedge to draw a line on the part where it needs to fit. Then, use a hobby knife or sandpaper to carefully trim the part to match the line, creating a precise fit."
     },
     {
-      "title": "Modifying Parts: Use a Dremel with a Carbide Bit for Precise Cutting",
-      "text": "When modifying parts, use a Dremel with a carbide bit for precise cutting. The carbide bit's high hardness and sharpness enable accurate cuts in a variety of materials, including plastic and metal. Apply a light touch and use a dust mask to minimize debris and ensure a smooth finish."
+      "title": "Workspace Optimization: Using a Modular Workspace",
+      "text": "Set up a modular workspace with separate areas for different tasks, such as cutting, sanding, and painting. This will help you stay organized and avoid contamination of surfaces. Use dividers or screens to separate the areas and keep tools and materials within easy reach."
     },
     {
-      "title": "Seam Filling: Use a Cyanoacrylate-Based Adhesive for Strong Bonds",
-      "text": "When filling seams, use a cyanoacrylate-based adhesive for strong bonds and minimal shrinkage. Apply a small amount to the seam, then use a brush or cloth to smooth it out. Allow the adhesive to cure before adding additional coats or finishing the surface."
+      "title": "Pitfall Avoidance: The Importance of Proper Glue Drying",
+      "text": "When using glue to assemble a model, make sure to allow it to dry completely before handling the model. If the glue is not fully dry, it can smudge or come loose when touched, causing damage to the model. Use a timer or a fan to speed up the drying process, and always follow the manufacturer's instructions for drying times."
     },
     {
-      "title": "Construction Sequencing: Build in a Logical Order to Minimize Errors",
-      "text": "When building complex models, construct in a logical order to minimize errors and rework. Start with the largest components and work your way down to the smallest details. This approach helps prevent damage to smaller parts and ensures that each component is accurately fitted and aligned."
+      "title": "Expert Tip: Using a 'Pre-Assembly' Checklist",
+      "text": "Before starting to assemble a model, create a checklist of all the parts and ensure you have all the necessary tools and materials. This will help you avoid missing parts or tools, and ensure a smooth assembly process. Use a spreadsheet or a note-taking app to create the checklist and keep it organized."
     }
   ]
 }
