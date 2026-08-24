@@ -94,7 +94,7 @@ for attempt in range(1, max_retries + 1):
         response = requests.post(
             'http://localhost:11434/api/generate',
             json={
-                'model': 'llama3.1',
+                'model': 'qwen3:8b',
                 'prompt': prompt,
                 'format': 'json',
                 'stream': False,
