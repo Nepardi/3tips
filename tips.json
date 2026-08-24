@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Airbrushing: Achieving Smooth Transitions with a Gradation Mask",
-      "text": "Use a thin, flexible film of transparent tape to create a gradation mask for airbrushing. Apply the tape at a 45-degree angle to create a smooth transition between two colors. Use a high-quality airbrush with a 0.5mm nozzle and a suitable air pressure setting to maintain a consistent flow of paint."
+      "title": "Dry Fitting: Use a Caliper to Measure Tolerances",
+      "text": "When dry fitting parts, use a digital caliper to measure the tolerances between mating surfaces. This helps identify potential issues before assembly, allowing for adjustments to be made or parts to be replaced. Record the measurements to track progress and make informed decisions."
     },
     {
-      "title": "Hand Painting: Creating Realistic Metallic Effects with Alkyd Paint",
-      "text": "Mix alkyd paint with a high-solidity resin (e.g., Vallejo's Alkyd Thinner) to create a durable, glossy finish. Apply multiple thin layers, allowing each layer to dry before adding the next. Use a brush with synthetic fibers to achieve a smooth, even finish. For realistic metallic effects, add a small amount of metallic powder (e.g., aluminum or copper) to the paint mixture."
+      "title": "Structural Support: Use a Combination of Pins and Clamps",
+      "text": "When building complex structures, use a combination of pins and clamps to provide temporary support. Pins can be used to hold parts in place, while clamps can be used to apply pressure and secure the structure. This approach helps prevent damage and ensures accurate alignment."
     },
     {
-      "title": "Primer: Using a Texture Spray for Enhanced Detail",
-      "text": "Use a texture spray (e.g., Tamiya's Fine Surface Primer) to create a raised, textured surface for detailing. Apply the primer with a brush, allowing it to dry completely before adding paint or washes. This technique is particularly effective for creating realistic stone or concrete surfaces."
+      "title": "Modifying Parts: Use a Dremel with a Carbide Bit for Precise Cutting",
+      "text": "When modifying parts, use a Dremel with a carbide bit for precise cutting. The carbide bit's high hardness and sharpness enable accurate cuts in a variety of materials, including plastic and metal. Apply a light touch and use a dust mask to minimize debris and ensure a smooth finish."
     },
     {
-      "title": "Decals: Applying Thin, Flexible Decals with a Water-Based Adhesive",
-      "text": "Use a water-based decal adhesive (e.g., Microscale's Set & Peel) to apply decals to curved or irregular surfaces. Apply a thin layer of adhesive to the decal, then position it on the model. Use a small brush to smooth out any air bubbles or wrinkles."
+      "title": "Seam Filling: Use a Cyanoacrylate-Based Adhesive for Strong Bonds",
+      "text": "When filling seams, use a cyanoacrylate-based adhesive for strong bonds and minimal shrinkage. Apply a small amount to the seam, then use a brush or cloth to smooth it out. Allow the adhesive to cure before adding additional coats or finishing the surface."
     },
     {
-      "title": "Weathering: Using a Combination of Washes and Dry Brushing for Realistic Effects",
-      "text": "Combine a dark wash (e.g., Citadel's Nuln Oil) with dry brushing to create realistic, multi-layered weathering effects. Apply the wash to recessed areas, then use a dry brush to pick out raised details. Repeat the process with lighter washes and brushstrokes to achieve a natural, weathered appearance."
+      "title": "Construction Sequencing: Build in a Logical Order to Minimize Errors",
+      "text": "When building complex models, construct in a logical order to minimize errors and rework. Start with the largest components and work your way down to the smallest details. This approach helps prevent damage to smaller parts and ensures that each component is accurately fitted and aligned."
     }
   ]
 }
