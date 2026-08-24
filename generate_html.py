@@ -107,7 +107,7 @@ for attempt in range(1, max_retries + 1):
                     'temperature': 0.8
                 }
             },
-            timeout=180
+            timeout=300
         )
         result = response.json()
         raw_output = result.get('response', '')
