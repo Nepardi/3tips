@@ -1,6 +1,7 @@
 import json
 import re
 import os
+import urllib.parse
 import shutil
 import random
 from datetime import datetime
@@ -215,6 +216,8 @@ for i, t in enumerate(tips, 1):
         card_img_html = f'''<div class="card-image">
 <img src="{card_img}" alt="">
 </div>'''
+    search_query = urllib.parse.quote(f"scale model {title}")
+    search_url = f"https://www.google.com/search?q={search_query}"
     cards_html += f'''<article class="card">
 {card_img_html}
 <div class="title-row">
@@ -222,6 +225,7 @@ for i, t in enumerate(tips, 1):
 <h2>{title}</h2>
 </div>
 <p>{text_content}</p>
+<a class="search-link" href="{search_url}" target="_blank" rel="noopener noreferrer">&#128269; Search for more</a>
 </article>'''
 
 html = f'''<!DOCTYPE html>
@@ -385,6 +389,15 @@ h1 {{
 .card p {{
   color: var(--text-muted); font-size: 1.05em;
   line-height: 1.7; padding-left: 47px; text-align: justify;
+}}
+.search-link {{
+  display: inline-block; margin-top: 10px; margin-left: 47px;
+  font-size: 0.85em; color: var(--primary);
+  text-decoration: none; font-weight: 600;
+  transition: color 0.3s ease;
+}}
+.search-link:hover {{
+  color: var(--primary-dark); text-decoration: underline;
 }}
 footer {{
   text-align: center; margin-top: 60px; padding-top: 30px;
