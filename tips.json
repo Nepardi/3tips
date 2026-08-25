@@ -1,1 +1,26 @@
-{"tips": [{"title": "Selecting the Right Paint Type for Scale Models", "text": "For acrylic paints, Vallejo Model Color (Item 73022) is ideal for dry-brushing and washes due to its high pigment load. Enamel paints like Tamiya Acrylic Enamel (Item 87004) offer harder finishes and better adhesion to plastic, suitable for final gloss coats. Lacquer paints (AMMO by Mig Jimenez, Item 4353) are fast-drying and provide a very hard, glass-like finish, perfect for metallics. Always thin enamel and lacquer with Tami, 10-20% water for acrylics. Test on a small area first to avoid color shifts or cracking."}, {"title": "Optimal Sandpaper Grits for Model Detailing", "text": "Start with 400-grit sandpaper (Tamiya 87006) for coarse scratches on plastic parts, then 1000-grit (Tamiya 87007) for fine smoothing. For the final stages, use 2000-grit (Tamiya 87008) to eliminate all surface imperfections. Always sand in a well-ventilated area with a sanding block or sponge. Wipe with a damp cloth after each grit to remove dust and debris. Avoid using 600-grit for final polishing as it leaves a hazy surface."}, {"title": "Choosing the Best Filler for Plastic Gaps", "text": "Tamiya Putty (Item 87009) is perfect for filling small gaps in polystyrene models, while Vallejo Plastic Putty (Item 73055) works better on ABS plastics. For a faster alternative, mix super glue with baking soda (3:1 ratio) to create a quick-setting filler. Apply with a fine brush, press into the gap, and let dry for 10 minutes. Sand with 1000-grit paper afterward. Avoid using epoxy putty for small gaps as it's too rigid and hard to sand."}, {"title": "Selecting Photo-Etch vs Resin Details", "text": "Photo-etch (PE) parts from ICM (Item 3001) and Eduard (Item 1001) are thinner, more detailed, and ideal for intricate components like gun sights and aircraft panels. Resin parts from Clear Prop Models (Item 9901) are thicker, more durable, and better suited for large-scale or rough handling. PE requires careful bending with a PE bender, while resin parts can be sanded with 600-grit paper. Always clean PE parts with isopropyl alcohol before assembly to remove mold release agents."}, {"title": "Using the Right Decal Setting Solutions", "text": "Micro Set (Item 7310) is the best for setting decals on acrylic paints due to its clear, strong bond. Mr. Mark Softer (Item 7308) is ideal for enamel or lacquer finishes as it dissolves the decal’s adhesive slowly, reducing bubbling. For lacquer decals, use Clear Prop Models’ Microscale Solution (Item 7309) which is specifically formulated for fast-drying lacquers. Apply a thin layer with a brush, press the decal firmly, and allow 24 hours to cure. Test on a small area first to avoid decal distortion."}]}
+{
+
+
+  "tips": [
+    {
+      "title": "The Two-Cut Method with GodHand SPN-120 Nippers",
+      "text": "GodHand SPN-120 Ultimate Nippers have razor-sharp edges that leave almost no stress mark, but they are fragile and will chip if used on thick gates. Use the two-cut method: first cut the gate 2mm from the part with cheaper nippers (Tamiya 74123), then make the final flush cut with the GodHand. Never twist or pull the part off — always cut straight through. This works especially well on delicate Eduard photo-etch frets and Clear Prop Models canopy parts."
+    },
+    {
+      "title": "Scribing Panel Lines with RB Productions Scribing Tool",
+      "text": "RB Productions Scribing Tool creates clean, precise panel lines without smearing. Hold the tool at a 30° angle to the surface, apply light pressure, and drag it across the plastic. For deeper lines, use the tool with a light coat of Tamiya Plastic Cement applied with a brush. This technique is ideal for fine detailing on Arma Hobby or ICM kits, ensuring crisp lines that won’t smear during painting."
+    },
+    {
+      "title": "Photo-etch Bending Jig for Eduard Frets",
+      "text": "Eduard photo-etch parts require precise bending to avoid cracking. Use a 1.5mm thick bending jig (such as Clear Prop Models' 200mm jig) and apply gentle pressure. Heat the part with a heat gun (200°C) for 5 seconds before bending, then cool with a hair dryer. This technique ensures crisp bends for ICM or Arma Hobby detail parts."
+    },
+    {
+      "title": "Airbrush Needle Cleaning with Iwata Airbrush",
+      "text": "Iwata airbrush needles get clogged with paint residue. Use a 0.3mm diameter brass needle cleaner (Iwata part #004-1038) to clear blockages. Soak the cleaner in isopropyl alcohol for 10 minutes, then gently twist it through the needle. Clean daily after use, and replace the needle every 50 hours of use for optimal spray quality."
+    },
+    {
+      "title": "Masking with Tamiya Tape vs Kabuki Tape",
+      "text": "Tamiya tape adheres well to clean plastic but can peel if painted over. Use it for large areas, then cover with Kabuki tape (1.5mm thick) for fine lines. Apply Kabuki tape with a squeegee (Tamiya 74120) to avoid bubbles. After painting, peel the tape off immediately to prevent paint transfer. This method works best on ICM or Hobby Boss kits for sharp edges and clean lines."
+    }
+  ]
+}
