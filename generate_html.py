@@ -1,6 +1,7 @@
 import json
 import re
 import os
+import time
 import urllib.parse
 import shutil
 import random
@@ -23,7 +24,57 @@ TOPIC_IMAGE_KEYS = {
 
 # ========== SYSTEM PROMPT ==========
 SYSTEM_PROMPT = """You are an expert scale model builder with over 30 years of experience. Your expertise covers plastic model kits from major manufacturers including Tamiya, Revell, Airfix, Meng, AFV Club, Dragon, Trumpeter, Eduard, ICM, Zvezda, Italeri, Hobby Boss, MiniArt, Arma Hobby, Clear Prop Models, Special H, Academy, Roden, and PAV. You know paints and finishes from Vallejo Model Air and Model Color, AK Interactive, AMMO by Mig Jimenez, Tamiya acrylics and enamels, Citadel, Humbrol, LifeColor, and Alclad II. You specialize in airbrushing equipment from Iwata, Harder and Steenbeck, Badger, and Paasche. You master weathering techniques using washes, filters, chipping, streaking, pigments, oil paints, and enamel effects. You are proficient with tools including GodHand nippers, Tamiya plastic cement, CA glue, photo-etch bending tools, sanding sticks, scribing tools, and dental instruments. You know finishing techniques like gloss coat before decals, flat coat after weathering, varnish types, decal setting solutions, and paint consistency testing. Always provide specific actionable advice with real brand names, product names, exact measurements, ratios and pressures. Avoid vague advice like 'be patient' or 'practice makes perfect'. Each tip should teach one specific technique. Write in clear direct English. Keep each tip text between 80-150 words. Titles should be descriptive and specific."""
+# ========== LOCK FILE MECHANISM ==========
+LOCK_FILE = '.workflow.lock'
 
+def acquire_lock(timeout=3600):
+    """Try to acquire lock, return True if successful"""
+    start = time.time()
+    while os.path.exists(LOCK_FILE):
+        # Check if lock is stale (> 1 hour old)
+        try:
+            with open(LOCK_FILE, 'r') as f:
+                lock_time = datetime.fromisoformat(f.read().strip())
+            age = datetime.now() - lock_time
+            if age.total_seconds() > timeout:
+                print(f"Stale lock detected ({age.seconds}s old), removing it")
+                os.remove(LOCK_FILE)
+                break
+        except:
+            pass
+        
+        if time.time() - start > timeout:
+            print("Could not acquire lock, another workflow may be running")
+            exit(0)
+        
+        time.sleep(10)
+    
+    try:
+        with open(LOCK_FILE, 'w') as f:
+            f.write(datetime.now().isoformat())
+        print("Lock acquired successfully")
+        return True
+    except Exception as e:
+        print(f"Failed to create lock file: {e}")
+        return False
+
+def release_lock():
+    """Remove lock file when done"""
+    try:
+        if os.path.exists(LOCK_FILE):
+            os.remove(LOCK_FILE)
+            print("Lock released")
+    except:
+        pass
+
+# Acquire lock at start
+if not acquire_lock():
+    print("Exiting because another workflow instance is running")
+    exit(0)
+
+# Ensure lock is released on exit
+import atexit
+atexit.register(release_lock)
 # ========== STEP 0: ARCHIVE OLD TIPS ==========
 if os.path.exists('index.html'):
     if not os.path.exists('archive'):
@@ -167,7 +218,6 @@ for attempt in range(1, max_retries + 1):
         print(f"Attempt {attempt}: Unexpected JSON structure! Keys: {list(data.keys())}")
         continue
 
-    found_tips = data['tips']
     print(f"Attempt {attempt}: Found {len(found_tips)} tips")
 
     if len(found_tips) >= 5:
@@ -184,7 +234,56 @@ for tip in tips:
         tip['title'] = remove_artifacts(str(tip['title']))
     if 'text' in tip:
         tip['text'] = remove_artifacts(str(tip['text']))
+# ========== SANITY CHECK: FILTER BAD TIPS ==========
+BANNED_PHRASES = [
+    'glue to paint', 'paint on glue', 'glue the paint',
+    'soak in thinner overnight', 'spray undiluted',
+    'dip entire model in', 'melt with acetone',
+    'use acetone on plastic', 'heat gun on plastic',
+    'superglue on clear parts', 'ca glue on canopy'
+]
 
+VALID_BRANDS = [
+    'tamiya', 'vallejo', 'ak interactive', 'ammo', 'revell',
+    'airfix', 'meng', 'iwata', 'harder', 'steubenbeck',
+    'citadel', 'humbrol', 'lifecolor', 'alclad',
+    'mr. hobby', 'mr hobby', 'scale75', 'eduard',
+    'godhand', 'evergreen', 'microscale', 'mr. mark',
+    'clear prop', 'arma hobby'
+]
+
+good_tips = []
+for tip in tips:
+    text_lower = str(tip.get('text', '')).lower()
+    title = str(tip.get('title', ''))
+    
+    # 1. Hylkää kielletyt fraasit
+    rejected = False
+    for phrase in BANNED_PHRASES:
+        if phrase in text_lower:
+            print(f"  REJECTED tip '{title}': banned phrase '{phrase}'")
+            rejected = True
+            break
+    if rejected:
+        continue
+    
+    # 2. Varoita jos ei yhtään brändiä
+    has_brand = any(b in text_lower for b in VALID_BRANDS)
+    if not has_brand:
+        print(f"  WARNING: tip '{title}' has no brand references")
+    
+    # 3. Varoita jos teksti on liian lyhyt (< 50 sanaa)
+    word_count = len(text_lower.split())
+    if word_count < 50:
+        print(f"  WARNING: tip '{title}' is only {word_count} words")
+    
+    good_tips.append(tip)
+
+if good_tips:
+    tips = good_tips
+    print(f"Sanity check: {len(tips)} tips passed")
+else:
+    print("Sanity check: ALL tips rejected, keeping originals")
 print(f"OK: Using {len(tips)} tips")
 
 # ========== STEP 4: GENERATE HTML ==========
