@@ -1,1 +1,22 @@
-{"tips": [{"title": "Thinning Vallejo Model Air for Airbrushing", "text": "Use a 1:3 ratio of Vallejo Model Air to Vallejo Airbrush Thinner (71.261) for optimal airbrush performance. This dilutes the paint to a thin, consistent mist. Add 1-2 drops of Vallejo Flow Improver (71.230) per 10 drops of thinner to enhance flow. Test spray on a white plastic spoon — if the paint forms droplets, add more thinner. Spray at 1.0-1.5 bar pressure. Avoid mixing with Model Color, as their base formulas differ significantly."}, {"title": "Base Coat with Tamiya 1/32 Primer", "text": "Apply two thin layers of Tamiya 1/32 Primer (13341) using a brush for even coverage. Allow 30 minutes drying time between coats. Use a Tamiya plastic cement (10103) brush for precise application. Prime all surfaces, including seams and panel lines, to ensure base coat adhesion. Avoid over-brushing to prevent paint bleed through the primer layer. For metallics, apply primer first then spray with Tamiya Model Color (71.230)."}, {"title": "Camouflage Masking with Eduard Masking Tape", "text": "Use Eduard 1:35 Camouflage Masking Tape (72454) to create sharp, clean patterns. Apply with a Tamiya brush (10112) and Tamiya Masking Tape Adhesive (10115) for strong adherence. Cut tape with a hobby knife (Tamiya T-200) for precise shapes. Remove tape immediately after painting to avoid residue. For multi-color camo, use separate masks for each color to prevent paint bleed between sections."}, {"title": "Applying Washes with AK Interactive Pigment Wash", "text": "Mix AK Interactive Pigment Wash (11048) with water at a 1:3 ratio for a thin, liquid consistency. Apply with a soft brush (Tamiya 10043) using light, even strokes. Focus on recessed areas and panel lines for depth. After drying, use a Tamiya brush (10112) to wipe away excess wash. For a more intense effect, use Flory Models Pigment Wash (11147) with a 1:2 ratio for heavier application on textured surfaces."}, {"title": "Gloss Coat Before Decals with Clear Prop Models", "text": "Apply a thin gloss coat of Clear Prop Models Gloss Varnish (73726) using a Tamiya brush (10112) or airbrush (0.2mm nozzle). Ensure the surface is completely dry before applying. Use a soft cloth (Tamiya 10044) to wipe off excess varnish for a smooth finish. Allow 15 minutes drying time. This creates a smooth base for decals, ensuring they adhere without bubbles or wrinkling. Apply two coats for maximum adhesion and clarity."}]}
+{"tips": [
+  {
+    "title": "Assembling Multi-Part Gun Barrels (Trumpeter, AFV Club)",
+    "text": "For multi-part gun barrels (e.g., Trumpeter's 1/35 88mm Flak 18/36/37, AFV Club's 1/35 75mm PaK 40), dry-fit parts first. Apply Tamiya Extra Thin Cement only where parts join. Hold parts together until set (about 15 seconds). Avoid using too much cement to prevent excess glue on barrel exterior."
+  },
+  {
+    "title": "Using Jigs for Wing Alignment (Meng, ICM)",
+    "text": "For wing assembly, create a jig using foam board or plastic cardstock. Align wings level with the jig's top surface. Apply Tamiya Extra Thin Cement along wing roots, using a syringe for better control. Clamp wings to jig with small clamps, ensuring no torque. Let cure for 30 minutes before removing jig."
+  },
+  {
+    "title": "Installing Photo-Etch Parts (Eduard, Arma Hobby)",
+    "text": "Before installing photo-etch parts, anneal them using a heat gun or oven (180°C/350°F for 20-30 minutes). This makes parts more pliable. Bending tools help shape parts precisely. Use tweezers to apply super glue (e.g., CA Glue 'Super Fast') to attach parts, applying glue only where parts meet the surface."
+  },
+  {
+    "title": "Working with Resin Conversion Kits (Clear Prop Models)",
+    "text": "Resin parts often require cleaning up after casting. Using a new X-Acto blade, carefully scrape away excess resin from part edges. Use a jeweler's file to smooth out rough surfaces. Drill holes for locating pins if not pre-drilled. Test fit parts before gluing with CA glue, ensuring a good fit."
+  },
+  {
+    "title": "Assembling Tracks (Individual Link vs Vinyl vs Workable)",
+    "text": "For individual link tracks, use Tweezers to attach links, applying CA glue sparingly. For vinyl tracks, cut to length, soak in warm water until flexible, align on the model, and let dry. For workable tracks, align on the model, pin with brass rod at regular intervals, and let dry. Paint and weather tracks before installation."
+  }
+]}
