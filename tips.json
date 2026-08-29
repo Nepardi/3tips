@@ -1,22 +1,24 @@
-{"tips": [
-  {
-    "title": "Scribing Panel Lines with RB Productions Tools",
-    "text": "For crisp panel lines, use RB Productions' scribing tools. Choose the appropriate size (0.2mm, 0.3mm, or 0.5mm) based on your model's scale. Hold the tool like a pencil, apply gentle pressure, and follow the panel line. Start from one end and push along the line, don't pull back. For best results, use a sharp tool and scribe on lightly sanded, bare plastic."
-  },
-  {
-    "title": "Photo-Etch Bending with Eduard's Jigs",
-    "text": "Eduard's photo-etch bending jigs help create accurate angles for details like landing gear and antennae. Before bending, lightly scratch the bending point with a sharp knife. Place the jig on a flat surface, position the photo-etch part on the jig's bend, and press gently with tweezers. Bend gradually, checking the angle frequently. For tight bends, use a sharp needle to create a precise bend."
-  },
-  {
-    "title": "Airbrush Needle Cleaning with Iwata Brush Washer",
-    "text": "Keep your Iwata airbrush needle clean for smooth paint flow. After each color change, run Iwata Airbrush Cleaner through the brush. Then, use the Iwata Brush Washer to scrub the needle. Dip the washer in cleaner, insert it into the brush body, and rotate the trigger to scrub the needle. Rinse and dry thoroughly before resuming painting."
-  },
-  {
-    "title": "Masking with Tamiya Tape vs Kabuki Tape",
-    "text": "Choose between Tamiya tape (thinner, more delicate) and Kabuki tape (thicker, more robust) based on your masking needs. For complex, fine maskings like air intakes, use Tamiya tape. For large, flat surfaces like wing-root merges, use Kabuki tape. Always press down firmly and use a sharp blade to trim."
-  },
-  {
-    "title": "Sanding Stick Progression for Smooth Surfaces",
-    "text": "Achieve a smooth finish with ICM's sanding sticks. Start with 240-grit for general shaping, followed by 320-grit for removing scratches, and finish with 400-grit for a fine, smooth surface. Sand parallel to panel lines, never in circles. For hard-to-reach areas, use ICM's flexible sanding sticks. Wet-sand with water for better control and easier clean-up."
-  }
-]}
+{
+  "tips": [
+    {
+      "title": "Airbrushing Vallejo Model Air — Optimal Thinning Ratio",
+      "text": "Vallejo Model Air is thinner than Model Color and requires thinning for airbrushing. Mix at a 2:1 ratio with Vallejo Airbrush Thinner (71.261) for optimal consistency. Add 2-3 drops of Vallejo Flow Improver (71.262) per 10 drops of thinned paint. Spray at 1.0-1.5 bar pressure."
+    },
+    {
+      "title": "Base Coat Technique with Tamiya Acrylics",
+      "text": "Mix Tamiya Acrylic paints (XF-xx series) with Tamiya Acrylic Thinner (7502) at a 2:1 ratio for base coats. Stir well and filter through a fine nylon sieve. Apply multiple thin coats, allowing each coat to dry completely before applying the next."
+    },
+    {
+      "title": "Camouflage Masking with Mr. Hobby Masking Tape",
+      "text": "Use Mr. Hobby Masking Tape (8301) for camouflage patterns. Apply tape to the edge of the first color, pressing down firmly. Paint the first color, then carefully peel off the tape. Allow paint to dry completely before applying the next color. Remove any remaining tape residue with Mr. Hobby Masking Tape Remover (8302)."
+    },
+    {
+      "title": "Applying AK Interactive Washes — The 3:1 Ratio",
+      "text": "Mix AK Interactive Washes (AK700-xx series) at a 3:1 ratio with AK Interactive Thinner (AK7003) for a suitable consistency. Apply washes with a soft brush, working from one side of the panel to the other. Allow the wash to sit for 10-15 minutes, then remove excess with a damp cloth or cotton swab."
+    },
+    {
+      "title": "Streaking with Oil Paints — The 'Dab and Wipe' Technique",
+      "text": "Mix oil paints with odorless mineral spirits at a 1:1 ratio for streaking effects. Apply the mixture with a fine brush, focusing on edges and raised surfaces. Dab gently to create streaks, then immediately wipe away excess with a clean cloth or cotton swab. Allow oil streaks to dry completely before sealing with a varnish."
+    }
+  ]
+}
