@@ -1,22 +1,22 @@
 {"tips": [
   {
-    "title": "Mastering Panel Line Scribing with RB Productions Tools",
-    "text": "For precise scribing of panel lines, use RB Productions tools. First, score the line with the 0.3mm scriber, then deepen it with the 0.5mm tool. Always keep the tools perpendicular to the surface to avoid damaging details. Apply gentle, steady pressure; never force the tool. Finish by cleaning any burrs with a stiff brush."
+    "title": "Airbrushing Vallejo Model Air — Thinning Ratio",
+    "text": "Vallejo Model Air is thinner than Model Color and needs slight thinning for airbrushing. Mix at a 2:1 ratio with Vallejo Airbrush Thinner (71.261). Add 2-3 drops of Vallejo Flow Improver (71.262) per 10 drops of thinned paint. Spray at 1.5-2.0 bar pressure."
   },
   {
-    "title": "Bending Photo-Etch with Eduard PE Bending Jigs",
-    "text": "Eduard's PE bending jigs allow precise, controlled bending of photo-etch parts. First, soften the part with a flame or hot air. Place the part in the jig and gently close it. Apply even pressure until the part cools. Remove the part slowly. Never force the jig — it's designed to bend, not break."
+    "title": "Base Coat Technique with Vallejo Model Color",
+    "text": "Apply Vallejo Model Color using a spray can or airbrush for base coats. Hold the can/nozzle at a 45-degree angle, 8-10 inches away from the model. Apply light, even coats, allowing each to dry before applying the next."
   },
   {
-    "title": "Cleaning Airbrush Needles with Iwata Airbrush Cleaner",
-    "text": "Regular cleaning of airbrush needles ensures consistent performance. Soak the needle in Iwata Airbrush Cleaner for 15 minutes. Use a soft brush to scrub gently, then rinse with water. Allow it to dry completely before reassembling. This removes paint and other debris, preventing clogs."
+    "title": "Camouflage Masking with Tamiya Tape",
+    "text": "For complex camouflage patterns, use Tamiya Narrow Masking Tape (89061). Measure and cut tape sections for each pattern, press gently onto the model. Spray the masked areas with Vallejo Model Air, allowing each color to dry before removing the tape."
   },
   {
-    "title": "Masking with Tamiya Tape vs. Kabuki Tape",
-    "text": "For sharp edges, use Tamiya Masking Tape. For curves and complex shapes, Kabuki Tape excels. Tamiya tape is thinner, leaving less adhesive residue, but it's harder to stretch around curves. Kabuki tape is thicker, more flexible, but leaves more adhesive. Choose based on your needs; both require a sharp, clean cut for optimal results."
+    "title": "Applying Washes — AK Interactive vs. AMMO",
+    "text": "AK Interactive (AK) washes are oil-based, AMMO by Mig Jimenez (AMMO) are water-based. For AK, apply with a brush, let dry, then wipe off excess with a soft cloth. For AMMO, apply with a brush or airbrush, let dry, then clean up edges with a moistened brush. Both can be thinned with their respective thinners."
   },
   {
-    "title": "Sanding Sticks Progression with ICM Sanding Sticks",
-    "text": "ICM sanding sticks come in various grits (120, 240, 400, 600) for progressive sanding. Start with 120 for coarse surface issues, progress to 240 for general smoothing, then 400 for removing finer scratches, finishing with 600 for a smooth, gloss-ready surface. Always wet sand to prevent heat buildup and maintain control."
+    "title": "Chipping with Sponge Technique",
+    "text": "Mix 1:1 Vallejo Model Color with Vallejo Gloss Varnish (70.520) for chipping effect. Apply with sponge, dabbing gently onto the model. Let dry, then carefully rub off excess with a soft cloth. For a harder edge, use a flat-headed pin to scrape off excess."
   }
 ]}
