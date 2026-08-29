@@ -1,24 +1,22 @@
-{
-  "tips": [
-    {
-      "title": "Aligning Wings with a Jig - Trumpeter Example",
-      "text": "For Trumpeter's 1/48 F-16, create a wing alignment jig using a scrap of wood and a drill bit matching the wing's mounting peg. Insert the peg into the jig, apply Tamiya Extra Thin Cement along the wing root's edge, then gently press the wing onto the fuselage. Hold it in place for 30 seconds. Remove the jig, let it cure for 30 minutes."
-    },
-    {
-      "title": "Installing Photo-Etch Parts - Eduard PE Set",
-      "text": "Before installing Eduard PE parts, soak them in warm water for a few minutes. This makes bending easier. Use Eduard's 'Super Glue' for attachment. Apply a small dot on the part, wait 10 seconds, then attach it to the model. For intricate parts, use tweezers and a hobby knife to trim excess."
-    },
-    {
-      "title": "Working with Resin Conversion Kits - Clear Prop Models",
-      "text": "Resin parts are delicate. Before assembly, test fit all pieces. Use super glue for joins, applying it sparingly. For strength, insert a thin brass rod (0.5mm) into drilled holes. After assembly, use Vallejo Plastic Putty to fill seams, let dry, then sand smooth."
-    },
-    {
-      "title": "Assembling Tracks - Arma Hobby Individual Links",
-      "text": "Arma Hobby's individual link tracks require careful handling. Dry fit all links, then apply Tamiya Extra Thin Cement to each joint. Allow 30 seconds for the cement to become tacky. Press the links together, maintaining the correct track width. Once assembled, attach the track runs to the model's road wheels."
-    },
-    {
-      "title": "Strengthening Thin Parts with Brass Rod - Meng Tanks",
-      "text": "Meng's tanks often have thin, fragile parts. Strengthen them by drilling small holes and inserting brass rod (0.5mm or 1mm). Cut the rod to length, apply super glue to both the rod and the drilled hole, then insert. Clamp the part gently until the glue sets. Sand any excess rod flush with the surface."
-    }
-  ]
-}
+{"tips": [
+  {
+    "title": "Removing Old Paint from Kits",
+    "text": "To remove old paint from kit parts without damaging details, use a combination of alcohol and soap. Fill a small jar with warm water, add a few drops of dish soap and isopropyl alcohol. Place parts in the jar, swirl gently, then let soak for 15-30 minutes. Scrub with a soft toothbrush if needed, rinse with water, and dry. For tougher paint, use Mr. Hobby Mr. Color Thinner first, then alcohol-soap bath."
+  },
+  {
+    "title": "Fixing Broken Photo-Etch Parts",
+    "text": "To repair broken photo-etch parts, use CA (Cyanoacrylate) glue like Testors Clear Sil-Gel. Apply a small amount onto the broken edge using a needle or brush, press parts together quickly and hold for 30 seconds. For better alignment, use tweezers and a small clamp. Once cured, paint over the repair with a matching color to hide it."
+  },
+  {
+    "title": "Recovering Clogged Airbrushes",
+    "text": "To unclog a plugged airbrush nozzle, first soak it in Vallejo Airbrush Cleaner for 15 minutes. Then, gently push a needle (like a #18) through the nozzle to clear any dried paint. If still clogged, disassemble the airbrush, soak parts in acetone for 30 minutes, then scrub with a toothbrush and rinse with water. Reassemble and test."
+  },
+  {
+    "title": "Repairing Warped Parts",
+    "text": "To fix warped plastic parts, place them between two pieces of glass or a flat surface. Lightly dampen a cloth with boiling water, wring it out, and place it on the warped side. Apply gentle pressure with the glass/cloth, allow cooling, then remove. For severe warping, use a hairdryer on low heat to gradually heat the warped area while applying gentle pressure."
+  },
+  {
+    "title": "Avoiding Frost from Rattle Cans",
+    "text": "To prevent frost from forming on models when using rattle cans, apply a thin, even coat of Mr. Hobby Mr. Leveling Thinner first, allow it to flash off for 2-3 minutes, then apply the paint. This creates a smooth, even surface for the paint to adhere to, reducing the risk of frost. Avoid painting in cold or humid conditions."
+  }
+]}
