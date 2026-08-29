@@ -1,22 +1,22 @@
 {"tips": [
   {
-    "title": "Selecting Paint Type: Acrylic vs Enamel vs Lacquer",
-    "text": "Choose based on desired finish and application method. For brush painting, enamels like Tamiya Acrylic or Vallejo Model Color offer great adhesion and easy cleanup with water. Acrylics, like Vallejo Air or AMMO by Mig Jimenez, are ideal for airbrushing due to their pigment concentration and flow. Lacquers like Tamiya Spray Lacquer provide a gloss finish but require a well-ventilated area."
+    "title": "Scribing Panel Lines with RB Productions Tools",
+    "text": "For crisp panel lines, use RB Productions' scribing tools. Choose the appropriate size (0.2mm, 0.3mm, or 0.5mm) based on your model's scale. Hold the tool like a pencil, apply gentle pressure, and follow the panel line. Start from one end and push along the line, don't pull back. For best results, use a sharp tool and scribe on lightly sanded, bare plastic."
   },
   {
-    "title": "Choosing Sandpaper Grits for Different Stages",
-    "text": "Start with coarse grits (120-220) for removing mold seams and filling imperfections. Mid-range grits (320-400) are suitable for smoothing surfaces after filling and sanding seams. Fine grits (600-800) prepare the model for painting by removing any remaining sanding marks. Use wet-or-dry sandpaper for best results, applying pressure evenly and sanding in one direction."
+    "title": "Photo-Etch Bending with Eduard's Jigs",
+    "text": "Eduard's photo-etch bending jigs help create accurate angles for details like landing gear and antennae. Before bending, lightly scratch the bending point with a sharp knife. Place the jig on a flat surface, position the photo-etch part on the jig's bend, and press gently with tweezers. Bend gradually, checking the angle frequently. For tight bends, use a sharp needle to create a precise bend."
   },
   {
-    "title": "Filler for Gaps: Tamiya Putty vs Vallejo Plastic Putty",
-    "text": "Tamiya Putty (Item 87501) is ideal for fine gaps and small imperfections due to its thin consistency. Vallejo Plastic Putty (71.261) is thicker, making it better suited for filling large gaps and heavy seams. Both require Vallejo Airbrush Thinner (71.152) to thin and apply with an airbrush. Let dry completely before sanding."
+    "title": "Airbrush Needle Cleaning with Iwata Brush Washer",
+    "text": "Keep your Iwata airbrush needle clean for smooth paint flow. After each color change, run Iwata Airbrush Cleaner through the brush. Then, use the Iwata Brush Washer to scrub the needle. Dip the washer in cleaner, insert it into the brush body, and rotate the trigger to scrub the needle. Rinse and dry thoroughly before resuming painting."
   },
   {
-    "title": "Photo-Etch vs Resin Detail Parts",
-    "text": "Photo-etch (Eduard, Eduard Xtra, ICM) offers fine detail but requires careful handling, bending, and adhesion. Resin detail parts (like Arma Hobby, Clear Prop Models) provide pre-shapen detail but can be fragile. Consider the level of detail needed and your comfort with the material before purchasing. Practice bending photo-etch on spare parts before applying to your model."
+    "title": "Masking with Tamiya Tape vs Kabuki Tape",
+    "text": "Choose between Tamiya tape (thinner, more delicate) and Kabuki tape (thicker, more robust) based on your masking needs. For complex, fine maskings like air intakes, use Tamiya tape. For large, flat surfaces like wing-root merges, use Kabuki tape. Always press down firmly and use a sharp blade to trim."
   },
   {
-    "title": "Decal Setting Solutions: Micro Set/Sol vs Mr. Mark Softer",
-    "text": "Micro Set/Sol (7500 and 7501) is a classic two-part decal setting solution that softens decals for easy positioning. Mr. Mark Softer (038) is a single-part solution that works well with modern water-based decals. Both are applied sparingly under the decal, allowed to soak in, and then the decal is gently positioned using a soft brush. Excess solution can be wiped away with a damp cloth before drying."
+    "title": "Sanding Stick Progression for Smooth Surfaces",
+    "text": "Achieve a smooth finish with ICM's sanding sticks. Start with 240-grit for general shaping, followed by 320-grit for removing scratches, and finish with 400-grit for a fine, smooth surface. Sand parallel to panel lines, never in circles. For hard-to-reach areas, use ICM's flexible sanding sticks. Wet-sand with water for better control and easier clean-up."
   }
 ]}
