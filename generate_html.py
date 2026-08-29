@@ -625,8 +625,9 @@ if os.path.exists('archive'):
 
                 with open(f'archive/{f}', 'r', encoding='utf-8') as af:
                     content = af.read()
-                    topic_match = re.search(r'topic-badge[^>]*>([^<]+)', content)
+                    topic_match = re.search(r'class="topic-badge"[^>]*>([^<]+)', content)
                     topic_text = topic_match.group(1).strip() if topic_match else 'Unknown'
+                    topic_text = topic_text.replace('&#128203;', '').replace('&#128203', '').strip()
 
                 archive_files.append({
                     'filename': f,
