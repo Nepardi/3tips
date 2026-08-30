@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add tips.json index.html topics.json archive/
+          git add tips.json index.html topics.json archive/ rss.xml
           git diff --quiet --cached || git commit -m "Tips update + domain scalemodeltips.eu"
           git push
         shell: cmd
