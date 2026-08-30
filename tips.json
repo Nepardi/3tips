@@ -1,22 +1,22 @@
 {"tips": [
   {
-    "title": "Removing Old Paint from Kits",
-    "text": "To strip old paint from kits, use Mr. Hobby Super Thinner (Toluene) or Acetone. Apply sparingly on a cotton swab, gently rub painted areas. For stubborn paint, use Acetone with a soft brush, rinse with water, and dry thoroughly before painting. Always wear gloves and work in a well-ventilated area."
+    "title": "Choosing the Right Cement for ABS vs Polystyrene",
+    "text": "Tamiya Extra Thin Cement bonds polystyrene perfectly by melting the plastic together, but it struggles with ABS parts found in many modern kits (breeches, gun barrels, ICM and Arma Hobby aircraft propellers). For ABS, switch to Tamiya Cement (Item 87003) in the green bottle, which contains ABS-compatible solvents. Apply sparingly with a fine brush to both surfaces, press together for 10 seconds, and let cure for 24 hours before sanding. Test the bond on a spare sprue first."
   },
   {
-    "title": "Fixing Broken Photo-Etch Parts",
-    "text": "To repair broken photo-etched parts, use CA (Cyanoacrylate) glue like Tamiya Extra Thin Cement. Apply a small amount to the joining edge, press parts together immediately. Use tweezers or clamps to hold them in place until set. Sand any excess glue with fine grit sandpaper."
+    "title": "Selecting Paint Type: Acrylic vs Enamel vs Lacquer",
+    "text": "For most scale models, acrylic paints from brands like Vallejo Model Air or Model Color offer a balance between ease of use, adhesion, and finish. For enamel paints, consider Tamiya Acrylics or AMMO by Mig Jimenez for their excellent adhesion and color vibrancy. Lacquers, like those from Vallejo or Citadel, provide a smooth, glossy finish but are harder to work with. Choose based on desired finish, drying time, and compatibility with your airbrush."
   },
   {
-    "title": "Recovering Clogged Airbrushes",
-    "text": "To unclog an Iwata airbrush, disassemble it and soak the nozzle and needle in Acetone for 15 minutes. Use a soft brush to scrub gently, then reassemble and test-spray with Vallejo Airbrush Thinner. If clog persists, repeat process or consult manufacturer's cleaning kit."
+    "title": "Choosing Sandpaper Grits for Each Stage",
+    "text": "For initial sanding of injection marks and seams, use 240-320 grit sandpaper. After assembly, switch to 400 grit for preparing surfaces for paint. After painting, use 600 grit to remove dust and imperfections before applying decals. Finally, polish with 1000-1500 grit wet-or-dry sandpaper for a smooth finish before weathering. Always sand parallel to panel lines to avoid scratches."
   },
   {
-    "title": "Fixing Warped Parts",
-    "text": "To repair warped plastic parts, place the piece between two flat surfaces, then gently heat with a hairdryer on low setting. As it warms, carefully apply pressure to straighten it. Once flattened, allow it to cool completely while held in place. For severe warping, use a heat gun and clamp."
+    "title": "Filling Gaps: Vallejo Plastic Putty vs Tamiya Putty",
+    "text": "Vallejo Plastic Putty is great for larger gaps and deep scratches due to its high plasticity. Apply with a palette knife or spatula, let dry, then sand flush with the surface using 240-320 grit sandpaper. Tamiya Putty is better suited for fine gaps and small scratches. Apply sparingly with a brush, let dry, and sand with 400 grit sandpaper. Both can be painted over once sanded smooth."
   },
   {
-    "title": "Avoiding Frost from Rattle Cans",
-    "text": "To prevent frost from forming on rattle cans, warm them gently in warm water (not hot) for 5-10 minutes before use. Shake vigorously to mix paint thoroughly. Apply paint in well-ventilated areas and avoid painting in cold, damp conditions. Always test spray first on scrap material."
+    "title": "Decal Setting Solutions: Micro Set vs Mr. Mark Softer",
+    "text": "Micro Set is a gentle decal setting solution that softens decals for easier application and improves adhesion. Soak decals for 10-20 seconds, then apply to the model. Mr. Mark Softer is a stronger solution for stubborn or thick decals. Soak for 30-60 seconds, then apply. Both can be used with Microscale Decal Solvent (Item 8701) for easier decal removal if needed. Always test on a spare decal first."
   }
 ]}
