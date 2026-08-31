@@ -1,24 +1,22 @@
-{
-  "tips": [
-    {
-      "title": "Airbrushing Vallejo Model Air — Optimal Thinning",
-      "text": "Vallejo Model Air is already thin for airbrushing but can be thinned further for smoother results. Mix at a 2:1 ratio with Vallejo Airbrush Thinner (71.261). Add 2-3 drops of Vallejo Flow Improver (71.262) per 10 drops of thinned paint. Spray at 1.5-2.0 bar pressure. Test consistency on a white plastic spoon."
-    },
-    {
-      "title": "Base Coating with Tamiya Spray Cans — The Two-Coat Method",
-      "text": "For optimal coverage, use Tamiya Spray Cans (TS-29/36) in two thin coats. Lightly sand between coats with 2000-grit wet-n-dry paper, then wipe clean with a damp cloth. Let dry for 24 hours before proceeding with detail painting."
-    },
-    {
-      "title": "Camouflage Masking with Mr. Hobby Tape — The Easy Way",
-      "text": "Use Mr. Hobby Masking Tape (19mm) for creating clean, straight edges. Apply tape in a 'Z' or 'N' pattern to avoid edge lifting. Press firmly with a bone folder or roller. Remove tape immediately after painting each color for best results."
-    },
-    {
-      "title": "Applying AK Interactive Washes — The Wipe-Off Technique",
-      "text": "AK Interactive Washes (AK015/025) are highly pigmented. Apply sparingly with a brush, then immediately wipe off excess with a damp cotton swab or soft cloth, working from the center outwards. Let dry, then remove residue with a clean, dry cloth."
-    },
-    {
-      "title": "Chipping Technique with Sponge — Controlled Distressing",
-      "text": "For controlled chipping, dip a natural sea sponge (not synthetic) into a mix of Vallejo Model Color (thinned 1:1) and a touch of Vallejo Medium (71.260). Gently dab onto your model where you want chips to appear. Blot excess paint onto a paper towel before dabbing. Blow-dry between layers for faster drying."
-    }
-  ]
-}
+{"tips": [
+  {
+    "title": "Assembly of Multi-Part Gun Barrels (Trumpeter, AFV Club)",
+    "text": "Before gluing Trumpeter or AFV Club multi-part gun barrels, ensure all parts are clean and dry. Apply a small amount of Tamiya Extra Thin Cement to the joint, then carefully align and hold parts together for 30 seconds. Once assembled, use a fine brush and Vallejo Airbrush Thinner to clean any cement residue. Allow barrels to cure for 24 hours before painting."
+  },
+  {
+    "title": "Using Jigs for Wing Alignment (Eduard)",
+    "text": "When assembling Eduard kits with fine wing joints, create a jig using scrap plastic or wood. Cut the jig to match the wing's inner profile. Apply Tamiya Extra Thin Cement along the wing root, align wings using the jig, and clamp gently. Ensure both wings are level before curing for 24 hours. Remove jig, and sand any slight imperfections."
+  },
+  {
+    "title": "Installing Photo-Etch Parts (Eduard)",
+    "text": "Before installing Eduard photo-etch parts, clean and dry-fit them first. Use Eduard's PE Needle-Nose Tweezers for precise handling. Apply a small amount of CA glue (like Solvent Cement Super Glue) to the back of the part, then carefully place it onto the model. Allow curing for 30 seconds, then use tweezers to gently press the part in place. Use a toothpick dipped in Vallejo Airbrush Thinner to remove any excess glue."
+  },
+  {
+    "title": "Working with Resin Conversion Kits (Clear Prop Models)",
+    "text": "Before installing Clear Prop Models resin parts, clean up any molding lines using a #11 X-Acto knife and fine sandpaper. Lightly glue parts using super glue (like Loctite Super Glue Ultra Gel Control) on the model's surface, ensuring a good fit. Once cured, fill any gaps with Vallejo Plastic Putty, let dry, and sand smooth. Restore surface detail with an RB Productions scriber."
+  },
+  {
+    "title": "Assembling Tracks (Individual Links vs Vinyl)",
+    "text": "For individual track links (like Meng or ICM), glue them together using Tamiya Extra Thin Cement. Apply cement to the joint, align links, and clamp gently. After curing, use Vallejo Airbrush Thinner to clean any residue. For vinyl tracks (like Arma Hobby), cut them to length, and attach to the model using super glue. Once attached, carefully bend tracks to fit the wheel's profile. After curing, use a toothpick dipped in Vallejo Airbrush Thinner to remove any excess glue."
+  }
+]}
