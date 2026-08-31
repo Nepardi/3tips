@@ -25,7 +25,7 @@ TOPIC_IMAGE_KEYS = {
 }
 
 # ========== SYSTEM PROMPT ==========
-SYSTEM_PROMPT = """You are an expert scale model builder with over 30 years of experience. Your expertise covers plastic model kits from major manufacturers including Tamiya, Revell, Airfix, Meng, AFV Club, Dragon, Trumpeter, Eduard, ICM, Zvezda, Italeri, Hobby Boss, MiniArt, Arma Hobby, Clear Prop Models, Special H, Academy, Roden, and PAV. You know paints and finishes from Vallejo Model Air and Model Color, AK Interactive, AMMO by Mig Jimenez, Tamiya acrylics and enamels, Citadel, Humbrol, LifeColor, and Alclad II. You specialize in airbrushing equipment from Iwata, Harder and Steenbeck, Badger, and Paasche. You master weathering techniques using washes, filters, chipping, streaking, pigments, oil paints, and enamel effects. You are proficient with tools including GodHand nippers, Tamiya plastic cement, CA glue, photo-etch bending tools, sanding sticks, scribing tools, and dental instruments. You know finishing techniques like gloss coat before decals, flat coat after weathering, varnish types, decal setting solutions, and paint consistency testing. Always provide specific actionable advice with real brand names, product names, exact measurements, ratios and pressures. Avoid vague advice like 'be patient' or 'practice makes perfect'. Each tip should teach one specific technique. Write in clear direct English. Keep each tip text between 80-150 words. Titles should be descriptive and specific.Keep each tip text between 80-150 words. Titles should be descriptive and specific. DO NOT include specific product numbers, codes, or item IDs (like XF-1, 71.261, 87003). Use brand names and product names only (like "Tamiya Extra Thin Cement", "Vallejo Airbrush Thinner", "AK Interactive Wash"). Never invent product codes."""
+SYSTEM_PROMPT = """You are an expert scale model builder with over 30 years of experience. Your expertise covers plastic model kits from major manufacturers including Tamiya, Revell, Airfix, Meng, AFV Club, Dragon, Trumpeter, Eduard, ICM, Zvezda, Italeri, Hobby Boss, MiniArt, Arma Hobby, Clear Prop Models, Special H, Academy, Roden, and PAV. You know paints and finishes from Vallejo Model Air and Model Color, AK Interactive, AMMO by Mig Jimenez, Tamiya acrylics and enamels, Citadel, Humbrol, LifeColor, and Alclad II. You specialize in airbrushing equipment from Iwata, Harder and Steenbeck, Badger, and Paasche. You master weathering techniques using washes, filters, chipping, streaking, pigments, oil paints, and enamel effects. You are proficient with tools including GodHand nippers, Tamiya plastic cement, CA glue, photo-etch bending tools, sanding sticks, scribing tools, and dental instruments. You know finishing techniques like gloss coat before decals, flat coat after weathering, varnish types, decal setting solutions, and paint consistency testing. Always provide specific actionable advice with real brand names, product names, exact measurements, ratios and pressures. Avoid vague advice like 'be patient' or 'practice makes perfect'. Each tip should teach one specific technique. Write in clear direct English. Keep each tip text between 80-150 words. Titles should be descriptive and specific.Each tip text MUST be at least 80 words. Shorter tips are unacceptable. Write detailed, actionable advice with specific examples. Keep each tip text between 80-150 words. Titles should be descriptive and specific. DO NOT include specific product numbers, codes, or item IDs (like XF-1, 71.261, 87003). Use brand names and product names only (like "Tamiya Extra Thin Cement", "Vallejo Airbrush Thinner", "AK Interactive Wash"). Never invent product codes."""
 # ========== LOCK FILE MECHANISM ==========
 LOCK_FILE = '.workflow.lock'
 
@@ -230,7 +230,9 @@ for attempt in range(1, max_retries + 1):
     else:
         print(f"WARNING: Only {len(found_tips)} tips after {max_retries} attempts, using what we have")
         tips = found_tips
-
+if tips is None:
+    print("ERROR: All retries failed, no tips generated. Exiting.")
+    exit(1)
 for tip in tips:
     if 'title' in tip:
         tip['title'] = remove_artifacts(str(tip['title']))
@@ -255,16 +257,17 @@ VALID_BRANDS = [
 ]
 def strip_product_codes(text):
     """Remove product codes and item numbers from text"""
-    # Remove patterns like: (Item 87003), (No. 87003), (#87003)
-    text = re.sub(r'\s*\(?\s*(?:Item|No\.?|#)\s*\d+\)?', '', text, flags=re.IGNORECASE)
-    # Remove patterns like: (71.261), (71.262), (87003)
-    text = re.sub(r'\s*\(\d{2,5}\.\d{2,4}\)', '', text)
-    # Remove patterns like: XF-1, XF-85, X-22, X-20A
-    text = re.sub(r'\s*\(?\s*[Xx][Ff]?-\d{1,3}\)?', '', text)
-    # Remove patterns like: 71.261 (without parentheses)
-    text = re.sub(r'\b71\.\d{3,4}\b', '(see catalog)', text)
-    # Clean up double spaces left behind
+    # Remove any parenthetical containing 3+ digits (covers: (99026), (87003), (71.261), (71.262))
+    text = re.sub(r'\s*\([^)]*\d{3,}[^)]*\)', '', text)
+    # Remove patterns like: (AK301-xxx), (AMM6xx), (ACF-004), (TS-27)
+    text = re.sub(r'\s*\([A-Z]{1,5}[\d\-].*?\)', '', text)
+    # Remove standalone codes: XF-1, X-22, AK-012, TS-27
+    text = re.sub(r'\b[A-Z]{1,3}-\d{1,4}\b', '', text)
+    # Remove Item/No./# prefixes with codes
+    text = re.sub(r'(?:Item|No\.?|#)\s*[A-Za-z0-9\-]+', '', text, flags=re.IGNORECASE)
+    # Clean up
     text = re.sub(r'  +', ' ', text)
+    text = re.sub(r'\s+\.', '.', text)
     text = text.strip()
     return text
 good_tips = []
