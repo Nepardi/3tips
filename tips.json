@@ -1,22 +1,24 @@
-{"tips": [
-  {
-    "title": "Scribing Panel Lines with RB Productions Tools",
-    "text": "For crisp panel lines, use RB Productions scribing tools. Hold the tool perpendicular to the surface, apply gentle pressure, and pull straight towards you. Start from one edge and scribe along the length of the panel. For deep scribing, use the larger tool first, then follow up with the smaller tool. Always scribe away from delicate details to avoid accidentally damaging them."
-  },
-  {
-    "title": "Photo-Etch Bending with Eduard Bending Jigs",
-    "text": "Eduard photo-etch bending jigs allow precise bending without breaking. Place the jig on a flat surface, then position the photo-etch part over the desired angle. Using tweezers, carefully bend the part along the jig's edge. Apply even pressure and bend incrementally to avoid breaking the part. For 90° bends, use the corner of the jig."
-  },
-  {
-    "title": "Airbrush Needle Cleaning with Iwata Brush Cleaner",
-    "text": "Keep your Iwata airbrush performing smoothly with regular needle cleaning. After each use, remove the needle, soak it in Iwata Brush Cleaner for 15 minutes, then scrub it gently with a soft toothbrush. Rinse with warm water and dry thoroughly before reassembling. Once a month, soak the needle overnight in cleaner to remove tougher residues."
-  },
-  {
-    "title": "Masking with Tamiya Masking Tape vs Kabuki Tape",
-    "text": "Tamiya Masking Tape is great for sharp edges, but can leave residue. Kabuki Tape is easier to remove but may fray. For best results, use Tamiya for sharp edges and Kabuki for curved surfaces. Always cut Kabuki tape with scissors for cleaner edges. Before applying, lightly score the tape's backing with a knife to make it easier to tear."
-  },
-  {
-    "title": "Sanding Stick Progression for Smooth Surfaces",
-    "text": "Achieve smooth surfaces using a progression of sanding sticks from Arma Hobby. Start with 240 grit, followed by 400, then 600 grit. Wet-sand in one direction, using light pressure and a firm, steady hand. After each grit, wipe off residue with a damp cloth and check for any missed areas. For hard-to-reach places, use folded sanding paper held with tweezers."
-  }
-]}
+{
+  "tips": [
+    {
+      "title": "Airbrushing Vallejo Model Air — Optimal Thinning",
+      "text": "Vallejo Model Air is already thin for airbrushing but can be thinned further for smoother results. Mix at a 2:1 ratio with Vallejo Airbrush Thinner (71.261). Add 2-3 drops of Vallejo Flow Improver (71.262) per 10 drops of thinned paint. Spray at 1.5-2.0 bar pressure. Test consistency on a white plastic spoon."
+    },
+    {
+      "title": "Base Coating with Tamiya Spray Cans — The Two-Coat Method",
+      "text": "For optimal coverage, use Tamiya Spray Cans (TS-29/36) in two thin coats. Lightly sand between coats with 2000-grit wet-n-dry paper, then wipe clean with a damp cloth. Let dry for 24 hours before proceeding with detail painting."
+    },
+    {
+      "title": "Camouflage Masking with Mr. Hobby Tape — The Easy Way",
+      "text": "Use Mr. Hobby Masking Tape (19mm) for creating clean, straight edges. Apply tape in a 'Z' or 'N' pattern to avoid edge lifting. Press firmly with a bone folder or roller. Remove tape immediately after painting each color for best results."
+    },
+    {
+      "title": "Applying AK Interactive Washes — The Wipe-Off Technique",
+      "text": "AK Interactive Washes (AK015/025) are highly pigmented. Apply sparingly with a brush, then immediately wipe off excess with a damp cotton swab or soft cloth, working from the center outwards. Let dry, then remove residue with a clean, dry cloth."
+    },
+    {
+      "title": "Chipping Technique with Sponge — Controlled Distressing",
+      "text": "For controlled chipping, dip a natural sea sponge (not synthetic) into a mix of Vallejo Model Color (thinned 1:1) and a touch of Vallejo Medium (71.260). Gently dab onto your model where you want chips to appear. Blot excess paint onto a paper towel before dabbing. Blow-dry between layers for faster drying."
+    }
+  ]
+}
