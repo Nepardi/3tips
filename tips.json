@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Choosing the Right Glue for Different Plastics",
-      "text": "For polystyrene (PS) parts common in most kits, use Tamiya Extra Thin Cement (Item 87001). For ABS parts found in some modern kits, use Tamiya Cement (Item 87003) in the green bottle. For soft or delicate PE parts, use CA (Cyanoacrylate) glue like Loctite Super Glue Ultra. Apply sparingly, press parts together immediately, and let cure for recommended time before handling."
+      "title": "Scribing Panel Lines with RB Productions Panel Line Tool",
+      "text": "For crisp panel lines, use RB Productions panel line tool. First, lightly scribe with the 0.3mm tool on raised details, then deepen with the 0.5mm tool on recessed areas. Apply gentle pressure, moving the tool along the line in one smooth motion. Use a sharp blade (X-Acto #11) for best results. After scribing, lightly sand with 5000 grit paper to remove burrs."
     },
     {
-      "title": "Selecting the Right Paint Type",
-      "text": "For most applications, use Vallejo Model Air or Model Color acrylics. They're water-based, easy to clean, and provide excellent adhesion. For metallic or clear finishes, consider Vallejo Metal Color or Alclad II. For enamel effects, use AMMO by Mig Jimenez enamels. Always thin paints with their respective brands' thinner for best results."
+      "title": "Bending Photo-Etch with Eduard Bending Jigs",
+      "text": "Eduard bending jigs allow precise bending of photo-etch parts. Soak the part in warm water for 30 seconds, then bend it over the jig. For tight bends, use the narrow jig (0.3mm). For wider bends, use the medium jig (0.5mm). Apply even pressure, avoiding over-bending. After bending, dry the part immediately with a hairdryer on low heat."
     },
     {
-      "title": "Choosing the Right Sandpaper Grits",
-      "text": "For initial surface preparation, use 150-220 grit sandpaper to remove mold lines and flash. For smoothing putty or filler, use 220-320 grit. For final sanding before painting, use 400-600 grit. Always wet-sand to minimize dust and swirl marks. Use sanding sticks or blocks for even pressure."
+      "title": "Airbrush Needle Cleaning with Iwata Airbrush Cleaner",
+      "text": "Regular cleaning maintains airbrush performance. After each use, disassemble the needle and nozzle. Soak them in Iwata Airbrush Cleaner for 15 minutes, then scrub with a toothbrush. Rinse with water and dry thoroughly. Once a month, soak the parts in acetone to dissolve any dried paint residue. Always reassemble the needle with the flat side facing the front."
     },
     {
-      "title": "Selecting the Right Filler for Gaps",
-      "text": "For small gaps and seams, use Tamiya Putty (Item 87126). For larger gaps or porous surfaces, mix Vallejo Plastic Putty with water until it reaches a creamy consistency. Apply with a brush or spatula, let dry, sand smooth, and touch up with paint. Alternatively, fill gaps with CA glue and baking soda for a rapid, abrasive filler."
+      "title": "Masking with Tamiya and Kabuki Tapes",
+      "text": "For complex masking, use Tamiya tape for straight edges and Kabuki tape for curves. Tamiya tape is easier to apply but leaves more residue. Kabuki tape is more expensive but provides better adhesion and easier removal. For hard-to-reach areas, use Tamiya's masking stick (74522). Apply tapes with firm, even pressure, and remove them carefully after painting."
     },
     {
-      "title": "Choosing the Right Decal Setting Solutions",
-      "text": "For most cases, use Microscale Micro Set (Item 71.260) to soften and Micro Sol (Item 71.261) to slide decals into place. For thicker or more fragile decals, use Mr. Mark Softer (Item 73002) for gentle setting without dissolving the decal paper. Always follow up with Micro Sol to ensure full adhesion."
+      "title": "Sanding Sticks Progression with ICM Sanding Sticks",
+      "text": "ICM sanding sticks allow controlled sanding of model surfaces. Start with 320 grit for heavy stock removal, then 400 grit for smoothing, and finish with 800 grit for a smooth surface. Wet sand using lubricant (ICM Sanding Liquid) to prevent clogging. Sand in linear motions, working diagonally to avoid damaging the surface. After sanding, wipe off residue with a damp cloth."
     }
   ]
 }
