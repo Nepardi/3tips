@@ -1,24 +1,22 @@
-{
-  "tips": [
-    {
-      "title": "Scribing Panel Lines with RB Productions Panel Line Tool",
-      "text": "For crisp panel lines, use RB Productions panel line tool. First, lightly scribe with the 0.3mm tool on raised details, then deepen with the 0.5mm tool on recessed areas. Apply gentle pressure, moving the tool along the line in one smooth motion. Use a sharp blade (X-Acto #11) for best results. After scribing, lightly sand with 5000 grit paper to remove burrs."
-    },
-    {
-      "title": "Bending Photo-Etch with Eduard Bending Jigs",
-      "text": "Eduard bending jigs allow precise bending of photo-etch parts. Soak the part in warm water for 30 seconds, then bend it over the jig. For tight bends, use the narrow jig (0.3mm). For wider bends, use the medium jig (0.5mm). Apply even pressure, avoiding over-bending. After bending, dry the part immediately with a hairdryer on low heat."
-    },
-    {
-      "title": "Airbrush Needle Cleaning with Iwata Airbrush Cleaner",
-      "text": "Regular cleaning maintains airbrush performance. After each use, disassemble the needle and nozzle. Soak them in Iwata Airbrush Cleaner for 15 minutes, then scrub with a toothbrush. Rinse with water and dry thoroughly. Once a month, soak the parts in acetone to dissolve any dried paint residue. Always reassemble the needle with the flat side facing the front."
-    },
-    {
-      "title": "Masking with Tamiya and Kabuki Tapes",
-      "text": "For complex masking, use Tamiya tape for straight edges and Kabuki tape for curves. Tamiya tape is easier to apply but leaves more residue. Kabuki tape is more expensive but provides better adhesion and easier removal. For hard-to-reach areas, use Tamiya's masking stick (74522). Apply tapes with firm, even pressure, and remove them carefully after painting."
-    },
-    {
-      "title": "Sanding Sticks Progression with ICM Sanding Sticks",
-      "text": "ICM sanding sticks allow controlled sanding of model surfaces. Start with 320 grit for heavy stock removal, then 400 grit for smoothing, and finish with 800 grit for a smooth surface. Wet sand using lubricant (ICM Sanding Liquid) to prevent clogging. Sand in linear motions, working diagonally to avoid damaging the surface. After sanding, wipe off residue with a damp cloth."
-    }
-  ]
-}
+{"tips": [
+  {
+    "title": "Thinning Vallejo Model Air vs Model Color",
+    "text": "Vallejo Model Air is designed for airbrushing and doesn't require thinning. For Model Color, mix at a 2:1 ratio with Vallejo Airbrush Thinner (71.261). Add 2-3 drops of Vallejo Flow Improver (71.262) per 10 drops of thinned paint. Airbrush at 1.5-2.0 bar pressure using an Iwata HP-CS or Harder & Steenbeck Evolution."
+  },
+  {
+    "title": "Base Coat Technique with Vallejo",
+    "text": "Start with Vallejo Acrylic Primer (71.036) to prepare your model's surface. Apply two light coats with your airbrush, allowing 24 hours between coats. Once dry, apply two coats of Vallejo Model Color (70.0xx series) using a fine nozzle (0.2-0.3mm) and 1.5-2.0 bar pressure, maintaining a consistent distance of 4-6 inches."
+  },
+  {
+    "title": "Camouflage Masking with Eduard Mask Set",
+    "text": "Use Eduard's pre-cut masking sets (718xx series) for complex camouflage schemes. Apply masking film to the model, pressing down gently to avoid creases. Use a toothpick or scribing tool to burnish the edges, ensuring a tight seal. Apply paint with an airbrush, maintaining consistent pressure and distance. Remove masks carefully after paint is completely dry."
+  },
+  {
+    "title": "Applying AK Interactive Washes",
+    "text": "Thin AK Interactive Washes (AK-010xx series) with AK Interactive Thinner (AK-2001) at a 1:1 ratio. Apply with a fine brush, working from top to bottom to avoid creating pools. Allow 5-10 minutes drying time before gently wiping off excess with a damp cotton swab. Seal with Vallejo Acrylic Gloss Varnish (71.038) before applying flat coat."
+  },
+  {
+    "title": "Chipping with Sponge Technique",
+    "text": "For chipping effects, use a synthetic sponge (Mr. Hobby 2067) and Tamiya Acrylic Paint (TS-xxx series) mixed with Tamiya Acrylic Thinner (76101) at a 1:1 ratio. Dip the sponge into the paint mixture, gently pat onto the model where chipping is desired. Blot with a tissue while wet, then allow to dry completely. Seal with Vallejo Acrylic Matt Varnish (71.037) for a subtle effect."
+  }
+]}
