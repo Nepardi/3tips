@@ -1,22 +1,22 @@
 {"tips": [
   {
-    "title": "Thinning Vallejo Model Air vs Model Color",
-    "text": "Vallejo Model Air is designed for airbrushing and doesn't require thinning. For Model Color, mix at a 2:1 ratio with Vallejo Airbrush Thinner (71.261). Add 2-3 drops of Vallejo Flow Improver (71.262) per 10 drops of thinned paint. Airbrush at 1.5-2.0 bar pressure using an Iwata HP-CS or Harder & Steenbeck Evolution."
+    "title": "Assembling Multi-Part Gun Barrels (Trumpeter, AFV Club)",
+    "text": "For multi-part gun barrels like Trumpeter's 1/35 M1A2 SEP or AFV Club's 1/48 Tiger I, dry-fit parts first. Apply Tamiya Extra Thin Cement to one end of the inner barrel, join it with the next part, and hold them together with tweezers. Let it cure for 30 seconds. Repeat this for all sections. Before applying paint, use a brass rod to gently align and strengthen the barrel."
   },
   {
-    "title": "Base Coat Technique with Vallejo",
-    "text": "Start with Vallejo Acrylic Primer (71.036) to prepare your model's surface. Apply two light coats with your airbrush, allowing 24 hours between coats. Once dry, apply two coats of Vallejo Model Color (70.0xx series) using a fine nozzle (0.2-0.3mm) and 1.5-2.0 bar pressure, maintaining a consistent distance of 4-6 inches."
+    "title": "Jig for Wing Alignment with Eduard Alignment Pegs",
+    "text": "For wings that need to be perfectly aligned, use Eduard Alignment Pegs. Drill small holes in the wing roots, insert the pegs, and close the fuselage halves. Tighten the pegs to apply pressure, ensuring the wings are flush. Leave the assembly clamped until the glue sets. Remove pegs, sand any marks, and proceed with painting."
   },
   {
-    "title": "Camouflage Masking with Eduard Mask Set",
-    "text": "Use Eduard's pre-cut masking sets (718xx series) for complex camouflage schemes. Apply masking film to the model, pressing down gently to avoid creases. Use a toothpick or scribing tool to burnish the edges, ensuring a tight seal. Apply paint with an airbrush, maintaining consistent pressure and distance. Remove masks carefully after paint is completely dry."
+    "title": "Installing Eduard Photo-Etch Parts with Super Glue",
+    "text": "Before applying Super Glue to Eduard photo-etch parts, bend them using a GodHand nipper's flat side. Apply a small amount of Super Glue to the back of the part, let it capillary action for 5 seconds, then attach it to the model. Hold gently with tweezers for 30 seconds. Once set, use a toothpick dipped in acetone to remove any excess glue."
   },
   {
-    "title": "Applying AK Interactive Washes",
-    "text": "Thin AK Interactive Washes (AK-010xx series) with AK Interactive Thinner (AK-2001) at a 1:1 ratio. Apply with a fine brush, working from top to bottom to avoid creating pools. Allow 5-10 minutes drying time before gently wiping off excess with a damp cotton swab. Seal with Vallejo Acrylic Gloss Varnish (71.038) before applying flat coat."
+    "title": "Working with Resin Conversion Kits (Clear Prop Models)",
+    "text": "For resin kits like Clear Prop Models' 1/48 F-16C Vipers, clean parts with soap and water, then wash with isopropyl alcohol. Dry-fit parts to ensure a good fit. Use CA glue to attach parts, applying a drop to both mating surfaces. Join parts quickly and clamp them until set. After painting, use Vallejo Plastic Putty to fill any gaps, sand, and prime."
   },
   {
-    "title": "Chipping with Sponge Technique",
-    "text": "For chipping effects, use a synthetic sponge (Mr. Hobby 2067) and Tamiya Acrylic Paint (TS-xxx series) mixed with Tamiya Acrylic Thinner (76101) at a 1:1 ratio. Dip the sponge into the paint mixture, gently pat onto the model where chipping is desired. Blot with a tissue while wet, then allow to dry completely. Seal with Vallejo Acrylic Matt Varnish (71.037) for a subtle effect."
+    "title": "Assembling Tracks: Individual Link vs Vinyl vs Workable",
+    "text": "For tracks, consider individual link (Meng 1/35 M113), vinyl (Arma Hobby 1/35 T-34/85), or workable (ICM 1/35 T-72B). For individual links, use tweezers to dip each link in Tamiya Extra Thin Cement, attach it to the track, and hold briefly. For vinyl, soak the track in warm water until flexible, then attach to the model using liquid cement. For workable, bend and attach directly to the model."
   }
 ]}
