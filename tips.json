@@ -1,22 +1,24 @@
-{"tips": [
-  {
-    "title": "Choosing the Right Glue for Different Plastics",
-    "text": "For polystyrene, use Tamiya Extra Thin Cement (Item 87001) to melt the plastic together. For ABS parts, switch to Tamiya Cement (Item 87003) due to its ABS-compatible solvents. Super Glue works well for both but sets instantly, so use sparingly with precise application. For complex repairs, mix Super Glue with baking soda for a putty-like filler."
-  },
-  {
-    "title": "Selecting the Correct Paint Type",
-    "text": "Acrylics like Vallejo Model Air and Model Color offer ease of use, quick drying, and wide color selection. Enamels like Tamiya Acrylic Paints provide excellent coverage and durability but take longer to dry. Lacquers like AMMO by Mig Jimenez offer a glossy finish but require a suitable thinner and careful application to prevent runs."
-  },
-  {
-    "title": "Choosing the Right Sandpaper Grits",
-    "text": "Use 240-grit sandpaper for initial sanding of joints and filling. After filling with Tamiya Putty or Vallejo Plastic Putty, use 400-grit for smoothing. For fine sanding before painting, use 600-grit to avoid scratches. Always wet sand to avoid clogging and use a sanding block for even pressure."
-  },
-  {
-    "title": "Filler for Gaps: Tamiya Putty vs Vallejo Plastic Putty",
-    "text": "Tamiya Putty (Item 87050) is easy to apply and sands smoothly, but it shrinks slightly on drying. Vallejo Plastic Putty (71.041) fills larger gaps without shrinking but can be harder to sand smooth. For best results, use Vallejo for deep gaps, let it dry, then fill smaller gaps with Tamiya Putty before sanding."
-  },
-  {
-    "title": "Photo-Etch vs Resin Detail Parts",
-    "text": "Photo-etch (PE) from brands like Eduard offers intricate detail but requires careful handling and bending. Use a PE bending tool and tweezers for precise manipulation. Resin detail parts (e.g., from ICM) provide pre-shaped details but may require drilling for attachment. Choose PE for complex details like Cockpit Furniture, and resin for bulky items like Antennae or Access Handles."
-  }
-]}
+{
+  "tips": [
+    {
+      "title": "The Two-Cut Method with GodHand SPN-120 Nippers",
+      "text": "GodHand SPN-120 Ultimate Nippers have razor-sharp edges that leave almost no stress mark, but they are fragile and will chip if used on thick gates. Use the two-cut method: first cut the gate 2mm from the part with cheaper nippers like Tamiya 74123, then make the final flush cut with the GodHand. Never twist or pull the part off — always cut straight through. This works especially well on delicate Eduard photo-etch frets and Clear Prop Models canopy parts."
+    },
+    {
+      "title": "Panel Line Scribing with RB Productions Tools",
+      "text": "For crisp panel line scribing, use tools from RB Productions like the Scribing Tool Set. Hold the tool vertically, apply light pressure, and draw it along the panel line. For deep scribing, use the thicker needles; for fine detail, use the thinner ones. Always check the depth of scribe marks with a magnifying glass to ensure consistency."
+    },
+    {
+      "title": "Photo-Etch Bending with Eduard Jigs",
+      "text": "Eduard's photo-etch bending jigs, like the PE Bending Jig Set, help create consistent, accurate bends. To use, place the PE part in the jig's notch, then use tweezers to bend the part along the jig's edge. For tight radii, use the smallest jig. Always bend PE parts after painting and before attachment to avoid damaging the part."
+    },
+    {
+      "title": "Airbrush Needle Cleaning with Iwata's Brush Cleaner",
+      "text": "Regular cleaning of your Iwata airbrush needle extends its lifespan. Soak the needle in Iwata's Brush Cleaner for 15 minutes, then scrub gently with a soft brush. Rinse with water and dry thoroughly before reassembly. This removes paint residue and prevents clogging."
+    },
+    {
+      "title": "Sanding Stick Progression for Perfect Surface Finish",
+      "text": "Achieve a perfect surface finish using a progression of sanding sticks like those from Arma Hobby or ICM. Start with 600 grit for heavy sanding, then progress to 800, 1000, and 1200 grit for fine sanding. Wet sand each grit on a flat surface, then wipe off residue with a damp cloth between grits. Finally, use a 2000 grit micro-mesh cloth for a mirror finish."
+    }
+  ]
+}
