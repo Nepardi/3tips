@@ -41,9 +41,9 @@ jobs:
           type tips.json
         shell: cmd
 
-      - name: Install Bluesky dependencies
-        run: pip install atproto
-        shell: cmd
+      - name: Check Bluesky dependencies
+  	run: python -c "import atproto; print('atproto is installed')"
+  	shell: powershell
 
       - name: Post to Bluesky
         env:
