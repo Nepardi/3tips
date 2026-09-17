@@ -167,8 +167,8 @@ for attempt in range(1, max_retries + 1):
         raw_output = result.get('response', '')
         print(f"API returned {len(raw_output)} chars")
 
-        with open('tips.json', 'w', encoding='utf-8') as f:
-            f.write(raw_output)
+       # with open('tips.json', 'w', encoding='utf-8') as f:
+       #    f.write(raw_output)
 
     except Exception as e:
         print(f"ERROR calling Ollama API: {e}")
@@ -307,7 +307,11 @@ if good_tips:
     print(f"Sanity check: {len(tips)} tips passed")
 else:
     print("Sanity check: ALL tips rejected, keeping originals")
-print(f"OK: Using {len(tips)} tips")
+
+# Write cleaned tips to disk (used by bluesky_post.py)
+with open('tips.json', 'w', encoding='utf-8') as f:
+    json.dump({'tips': tips}, f, indent=2)
+print("Cleaned tips.json saved")
 
 # ========== STEP 4: GENERATE HTML ==========
 topic_display = {
