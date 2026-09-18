@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "The Two-Cut Method with GodHand SPN-120 Nippers",
-      "text": "GodHand SPN-120 Ultimate Nippers have razor-sharp edges that leave almost no stress mark, but they are fragile and will chip if used on thick gates. Use the two-cut method: first cut the gate 2mm from the part with cheaper nippers like Tamiya 74123, then make the final flush cut with the GodHand. Never twist or pull the part off — always cut straight through. This works especially well on delicate Eduard photo-etch frets and Clear Prop Models canopy parts."
+      "title": "Airbrushing Vallejo Model Air \u2014 Pressure Control",
+      "text": "Vallejo Model Air is thinner than Model Color, requiring a higher pressure for airbrushing. Start with 1.5-2.0 bar pressure using an Iwata HP-BCS or Harder & Steenbeck Evolution 75. Mix paint with Vallejo Airbrush Thinner at a 2:1 ratio for better flow. Add 1-2 drops of Vallejo Flow Improver per 10 drops of thinned paint to prevent clogging."
     },
     {
-      "title": "Panel Line Scribing with RB Productions Tools",
-      "text": "For crisp panel line scribing, use tools from RB Productions like the Scribing Tool Set. Hold the tool vertically, apply light pressure, and draw it along the panel line. For deep scribing, use the thicker needles; for fine detail, use the thinner ones. Always check the depth of scribe marks with a magnifying glass to ensure consistency."
+      "title": "Base Coat with Vallejo Model Color \u2014 Gloss Finish",
+      "text": "For a smooth base coat with Vallejo Model Color, use a gloss finish like Vallejo Gloss Varnish. Airbrush at 1.0-1.5 bar pressure with paint mixed 1:1 with Vallejo Airbrush Thinner. Apply two light coats, allowing 15 minutes' drying time between coats. Use a 0.4-0.5mm needle for even coverage."
     },
     {
-      "title": "Photo-Etch Bending with Eduard Jigs",
-      "text": "Eduard's photo-etch bending jigs, like the PE Bending Jig Set, help create consistent, accurate bends. To use, place the PE part in the jig's notch, then use tweezers to bend the part along the jig's edge. For tight radii, use the smallest jig. Always bend PE parts after painting and before attachment to avoid damaging the part."
+      "title": "Camouflage Masking \u2014 Tamiya Tape and Mr. Hobby Markers",
+      "text": "For intricate camouflage patterns, use Tamiya Fine Masking Tape to protect areas from overspray. Press down firmly to avoid paint bleed. Apply Mr. Hobby Mark Softer to edges to prevent paint from sticking, then airbrush Vallejo Model Color at 1.0-1.5 bar pressure. Remove tape while paint is still wet for cleaner edges."
     },
     {
-      "title": "Airbrush Needle Cleaning with Iwata's Brush Cleaner",
-      "text": "Regular cleaning of your Iwata airbrush needle extends its lifespan. Soak the needle in Iwata's Brush Cleaner for 15 minutes, then scrub gently with a soft brush. Rinse with water and dry thoroughly before reassembly. This removes paint residue and prevents clogging."
+      "title": "Applying AK Interactive Washes \u2014 Dilution and Application",
+      "text": "AK Interactive Washes are highly pigmented and should be diluted with AK Interactive Wash Medium at a 1:1 ratio. Apply using a soft brush or dropper, working the wash into panel lines and crevices. Allow to dry undisturbed, then remove excess with a damp cloth or cotton swab. For a more subtle effect, dilute with more medium."
     },
     {
-      "title": "Sanding Stick Progression for Perfect Surface Finish",
-      "text": "Achieve a perfect surface finish using a progression of sanding sticks like those from Arma Hobby or ICM. Start with 600 grit for heavy sanding, then progress to 800, 1000, and 1200 grit for fine sanding. Wet sand each grit on a flat surface, then wipe off residue with a damp cloth between grits. Finally, use a 2000 grit micro-mesh cloth for a mirror finish."
+      "title": "Chipping with Sponge Technique \u2014 Vallejo Acrylics and AMMO",
+      "text": "To create a chipped effect, lightly dip a damp sponge (like a makeup sponge) into Vallejo Model Color or AMMO by Mig Jimenez Acrylic Paints. Dab onto the model where chips would appear, then gently wipe off excess with a damp cloth. Seal with Vallejo Acrylic Gloss Varnish, then apply AMMO's Chipping Solution and watch the chips form."
     }
   ]
 }
