@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Airbrushing Vallejo Model Air \u2014 Pressure Control",
-      "text": "Vallejo Model Air is thinner than Model Color, requiring a higher pressure for airbrushing. Start with 1.5-2.0 bar pressure using an Iwata HP-BCS or Harder & Steenbeck Evolution 75. Mix paint with Vallejo Airbrush Thinner at a 2:1 ratio for better flow. Add 1-2 drops of Vallejo Flow Improver per 10 drops of thinned paint to prevent clogging."
+      "title": "Assembling Multi-Part Gun Barrels: Trumpeter vs AFV Club",
+      "text": "For Trumpeter kits, attach the smallest barrel section first using Tamiya Extra Thin Cement, then align and glue subsequent sections with tweezers. For AFV Club kits, insert the smallest section into the largest, apply cement, and twist gently until aligned. Use accelerator (e.g., Tamiya Time Accelerator) for faster bonding."
     },
     {
-      "title": "Base Coat with Vallejo Model Color \u2014 Gloss Finish",
-      "text": "For a smooth base coat with Vallejo Model Color, use a gloss finish like Vallejo Gloss Varnish. Airbrush at 1.0-1.5 bar pressure with paint mixed 1:1 with Vallejo Airbrush Thinner. Apply two light coats, allowing 15 minutes' drying time between coats. Use a 0.4-0.5mm needle for even coverage."
+      "title": "Jig for Wing Alignment: ICM Spad VII",
+      "text": "When assembling ICM's Spad VII wings, cut a rectangular hole in a thin cardboard sheet, aligning it with the wing's dihedral angle. Insert the wings into the hole, ensuring they meet flush. Apply Tamiya Extra Thin Cement along the join, clamping gently with a small wooden block. Let cure overnight."
     },
     {
-      "title": "Camouflage Masking \u2014 Tamiya Tape and Mr. Hobby Markers",
-      "text": "For intricate camouflage patterns, use Tamiya Fine Masking Tape to protect areas from overspray. Press down firmly to avoid paint bleed. Apply Mr. Hobby Mark Softer to edges to prevent paint from sticking, then airbrush Vallejo Model Color at 1.0-1.5 bar pressure. Remove tape while paint is still wet for cleaner edges."
+      "title": "Installing Eduard Photo-Etch Parts",
+      "text": "Before bending Eduard PE parts, score the bend line with a sharp blade. Use Eduard's PE bending tool at 90\u00b0 to 120\u00b0 pressure, applying consistent force. For complex bends, anneal parts in a pan of boiling water for 10 minutes, then bend. After installation, attach PE with CA glue, reinforcing from the underside with small drops of super glue."
     },
     {
-      "title": "Applying AK Interactive Washes \u2014 Dilution and Application",
-      "text": "AK Interactive Washes are highly pigmented and should be diluted with AK Interactive Wash Medium at a 1:1 ratio. Apply using a soft brush or dropper, working the wash into panel lines and crevices. Allow to dry undisturbed, then remove excess with a damp cloth or cotton swab. For a more subtle effect, dilute with more medium."
+      "title": "Working with Resin Conversion Kits: Clear Prop Models",
+      "text": "Clean Clear Prop Models resin parts with soap and water, allowing them to air-dry. Remove any excess resin with a sharp blade. Assemble parts using CA glue (e.g., Tamiya Extra Thin CA), applying drops on the mating surfaces. Use tweezers for alignment, letting parts cure for 30 seconds before handling."
     },
     {
-      "title": "Chipping with Sponge Technique \u2014 Vallejo Acrylics and AMMO",
-      "text": "To create a chipped effect, lightly dip a damp sponge (like a makeup sponge) into Vallejo Model Color or AMMO by Mig Jimenez Acrylic Paints. Dab onto the model where chips would appear, then gently wipe off excess with a damp cloth. Seal with Vallejo Acrylic Gloss Varnish, then apply AMMO's Chipping Solution and watch the chips form."
+      "title": "Assembling Tracks: Individual Link vs Vinyl vs Workable",
+      "text": "For individual link tracks (e.g., Meng /85), use tweezers to align and glue links with Tamiya Extra Thin Cement. For vinyl tracks, soak in warm water for 30 seconds, then carefully stretch and glue with CA glue. For workable tracks, carefully bend links to fit, gluing with CA glue. Always dry-fit before gluing to ensure proper alignment."
     }
   ]
 }
