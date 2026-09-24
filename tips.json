@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Removing Old Paint from Kits",
-      "text": "To strip old paint from kits, use a suitable paint stripper like Citadel's 'Dettol' or 'Warm Water' paint strippers. Apply liberally, let it sit for 30 minutes, then scrub with a soft brush. Rinse thoroughly with warm water. For stubborn paint, repeat or use a stronger stripper like AK Interactive's 'Thinner Medium'. Avoid using aggressive strippers on fragile parts."
+      "title": "Selecting the Right Paint Type for Airbrushing",
+      "text": "For most model applications, Vallejo Airbrush Thinner and Vallejo Model Air paints are ideal due to their consistency and pigments. Acrylics like Vallejo are water-based, non-toxic, and easy to clean up. Enamels like Tamiya offer rich colors but have stronger solvents. Lacquers like Alclad II are great for metallics but require specific thinners. Always test your paints and thinners mixed together before use."
     },
     {
-      "title": "Fixing Broken Photo-Etch Parts",
-      "text": "Broken photo-etched parts can be repaired with CA (Cyanoacrylate) glue. Apply a small amount to the break, immediately press the parts together, and hold for a few seconds. For larger gaps, use a CA glue with accelerator like Mr. Hobby's 'Super Clear'. Avoid using too much glue, which can cause excess build-up."
+      "title": "Choosing the Right Sandpaper Grits for Different Stages",
+      "text": "Start with 120-150 grit sandpaper for initial filling and shaping of putty. Proceed with 220-240 grit for general smoothing after sanding seams. For final preparation before painting, use 400-600 grit for a smooth surface. Wet sanding with a lubricant like soap water or Tamiya Polishing Compound prevents swirl marks. Always sand perpendicular to the panel lines."
     },
     {
-      "title": "Recovering Clogged Airbrushes",
-      "text": "To unclog an airbrush, first disassemble and clean it thoroughly with Vallejo Airbrush Cleaner. For stubborn clogs, use a pipe cleaner dipped in acetone or a toothpick soaked in cleaner. For severe clogs, soak the airbrush overnight in acetone, then reassemble and test-spray with water until clear. Regular maintenance with Vallejo Airbrush Thinner between colors prevents clogging."
+      "title": "Filling Gaps with Vallejo Plastic Putty",
+      "text": "Vallejo Plastic Putty fills gaps and holes perfectly on plastic models. Apply a small amount with a toothpick or applicator, let it set for 10 minutes, then shape with a wet brush. For larger gaps, apply Vallejo Thick Putty first, let it set for 30 minutes, then fill with Plastic Putty. Sand smooth with 120-150 grit, then 220-240 grit after drying."
     },
     {
-      "title": "Repairing Warped Parts",
-      "text": "To fix warped parts, gently bend them back into shape over a flat surface. For severe warping, soak the part in warm water for 10 minutes, then carefully bend it back. Hold in place until dry. For plastic parts, use Tamiya's 'Extra Thin Cement' along the warp, then gently bend back. Allow to set, then trim excess cement."
+      "title": "Choosing Between Photo-Etch vs Resin Detail Parts",
+      "text": "Photo-etch parts from Eduard or ICM offer intricate detail but require careful bending and adhering. Use Eduard's dedicated tweezers for precise manipulation, and super glue for adhesion. Resin parts from brands like Clear Prop Models provide easier handling but may require some cleanup. Choose based on the level of detail desired versus ease of assembly."
     },
     {
-      "title": "Avoiding Frost from Rattle Cans",
-      "text": "To prevent frost from forming on painted parts when using rattle cans, apply paint in well-ventilated areas, keep parts away from direct sunlight or heat sources, and maintain a consistent temperature. Avoid painting in cold, damp environments. If frost appears, wipe immediately with a damp cloth, then allow to dry and apply a light sanding with fine-grit sandpaper before recoating."
+      "title": "Decal Setting Solutions: Micro Set/Sol vs Mr. Mark Softer",
+      "text": "Micro Set/Sol is a classic decal setting solution for use before applying decals. It promotes adhesion and helps decals conform to curves. Mr. Mark Softer is a gentle decal softener used after decals have dried to make them fully conform to the surface. For best results, use Micro Set/Sol first, then apply decals, and finally use Mr. Mark Softer to ensure perfect conformity."
     }
   ]
 }
