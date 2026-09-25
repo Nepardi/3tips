@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Selecting the Right Paint Type for Airbrushing",
-      "text": "For most model applications, Vallejo Airbrush Thinner and Vallejo Model Air paints are ideal due to their consistency and pigments. Acrylics like Vallejo are water-based, non-toxic, and easy to clean up. Enamels like Tamiya offer rich colors but have stronger solvents. Lacquers like Alclad II are great for metallics but require specific thinners. Always test your paints and thinners mixed together before use."
+      "title": "Scribing Panel Lines with RB Productions Tools",
+      "text": "To achieve crisp panel lines, use RB Productions scribing tools. They have interchangeable blades and allow for adjustable depth. For ICM kits, start with the deepest blade (0.2mm) for heavy panel lines, then use progressively shallower blades (0.15mm, 0.1mm) for fine details. Apply gentle pressure, moving the tool parallel to the panel line. Always test on scrap parts first."
     },
     {
-      "title": "Choosing the Right Sandpaper Grits for Different Stages",
-      "text": "Start with 120-150 grit sandpaper for initial filling and shaping of putty. Proceed with 220-240 grit for general smoothing after sanding seams. For final preparation before painting, use 400-600 grit for a smooth surface. Wet sanding with a lubricant like soap water or Tamiya Polishing Compound prevents swirl marks. Always sand perpendicular to the panel lines."
+      "title": "Airbrush Needle Cleaning Technique",
+      "text": "Clean your Iwata airbrush needle regularly with Vallejo Airbrush Thinner and a soft brush. For stubborn paint buildup, use a dental pick to scrape gently. Never use pins or needles to clean the needle, as they can damage it. After cleaning, blow air through the needle to ensure it's clear."
     },
     {
-      "title": "Filling Gaps with Vallejo Plastic Putty",
-      "text": "Vallejo Plastic Putty fills gaps and holes perfectly on plastic models. Apply a small amount with a toothpick or applicator, let it set for 10 minutes, then shape with a wet brush. For larger gaps, apply Vallejo Thick Putty first, let it set for 30 minutes, then fill with Plastic Putty. Sand smooth with 120-150 grit, then 220-240 grit after drying."
+      "title": "Masking with Tamiya Tape vs Kabuki Tape",
+      "text": "Tamiya tape is great for general use, but for complex shapes and fine details, use Kabuki tape. Kabuki tape has a more flexible backing and adheres better to curves. For masking large areas, use Tamiya tape; for intricate details, use Kabuki tape. Always test adhesion on scrap parts first."
     },
     {
-      "title": "Choosing Between Photo-Etch vs Resin Detail Parts",
-      "text": "Photo-etch parts from Eduard or ICM offer intricate detail but require careful bending and adhering. Use Eduard's dedicated tweezers for precise manipulation, and super glue for adhesion. Resin parts from brands like Clear Prop Models provide easier handling but may require some cleanup. Choose based on the level of detail desired versus ease of assembly."
+      "title": "Progression with Sanding Sticks",
+      "text": "For smooth surfaces, use sanding sticks in progressive grits starting from coarse to fine. Begin by lightly sanding along the panel lines with the coarse grit, then follow up with medium and fine grits. Sand in the direction of the panel lines to avoid visible scratches. Use light pressure and regular sandpaper, not foam sticks."
     },
     {
-      "title": "Decal Setting Solutions: Micro Set/Sol vs Mr. Mark Softer",
-      "text": "Micro Set/Sol is a classic decal setting solution for use before applying decals. It promotes adhesion and helps decals conform to curves. Mr. Mark Softer is a gentle decal softener used after decals have dried to make them fully conform to the surface. For best results, use Micro Set/Sol first, then apply decals, and finally use Mr. Mark Softer to ensure perfect conformity."
+      "title": "Scratch-Building with Evergreen Styrene Sheet",
+      "text": "Evergreen styrene sheet is perfect for scratch-building details. To create a simple antenna, draw the shape on the sheet, then use a sharp hobby knife and a metal ruler to cut it out. Round off sharp corners with a fine file or sandpaper. Use Tamiya Extra Thin Cement to attach it to the model. For complex shapes, use a combination of cutting, bending, and gluing."
     }
   ]
 }
