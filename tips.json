@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Scribing Panel Lines with RB Productions Tools",
-      "text": "To achieve crisp panel lines, use RB Productions scribing tools. They have interchangeable blades and allow for adjustable depth. For ICM kits, start with the deepest blade (0.2mm) for heavy panel lines, then use progressively shallower blades (0.15mm, 0.1mm) for fine details. Apply gentle pressure, moving the tool parallel to the panel line. Always test on scrap parts first."
+      "title": "Airbrushing Vallejo Model Air \u2014 Thinning Ratio and Pressure",
+      "text": "Vallejo Model Air is designed for airbrushing, but thinning improves atomization. Mix at a 2:1 ratio with Vallejo Airbrush Thinner for optimal flow. Add 3-4 drops of Vallejo Flow Improver per 10 drops of thinned paint for better coverage. Spray at 1.5-2.0 bar pressure. Test on a white plastic spoon \u2014 if the paint spiders outward evenly, you're ready to paint."
     },
     {
-      "title": "Airbrush Needle Cleaning Technique",
-      "text": "Clean your Iwata airbrush needle regularly with Vallejo Airbrush Thinner and a soft brush. For stubborn paint buildup, use a dental pick to scrape gently. Never use pins or needles to clean the needle, as they can damage it. After cleaning, blow air through the needle to ensure it's clear."
+      "title": "Base Coat Technique with Alclad II \u2014 Pre-shading and Sealing",
+      "text": "Apply Alclad II Chrome or Metal base coats using multiple thin layers. Pre-shade panels with a lighter shade of Alclad II to create depth. Let each coat dry for 30 minutes before applying the next. Seal with Alclad II Micro-Sol or Micro-Surfacer before applying weathering effects."
     },
     {
-      "title": "Masking with Tamiya Tape vs Kabuki Tape",
-      "text": "Tamiya tape is great for general use, but for complex shapes and fine details, use Kabuki tape. Kabuki tape has a more flexible backing and adheres better to curves. For masking large areas, use Tamiya tape; for intricate details, use Kabuki tape. Always test adhesion on scrap parts first."
+      "title": "Camouflage Masking \u2014 Tamiya Tape and Mr. Hobby Tape",
+      "text": "For complex camouflage patterns, use Tamiya Masking Tape for straight edges and Mr. Hobby Masking Tape for curved surfaces. Apply tape in a warm, dust-free environment to prevent paint from getting under the edges. Seal with Mr. Hobby Masking Fluid before painting to prevent paint from bleeding."
     },
     {
-      "title": "Progression with Sanding Sticks",
-      "text": "For smooth surfaces, use sanding sticks in progressive grits starting from coarse to fine. Begin by lightly sanding along the panel lines with the coarse grit, then follow up with medium and fine grits. Sand in the direction of the panel lines to avoid visible scratches. Use light pressure and regular sandpaper, not foam sticks."
+      "title": "Applying AK Interactive Washes \u2014 Dilution and Application",
+      "text": "AK Interactive Washes are ready to use but can be diluted with AK Interactive Thinner for lighter effects. Dilute at a 1:1 ratio for a stronger wash or 1:2 for a lighter touch. Apply washes with a brush, focusing on panel lines and recesses. Work quickly but carefully, removing excess wash with a damp cloth or cotton swab before it dries."
     },
     {
-      "title": "Scratch-Building with Evergreen Styrene Sheet",
-      "text": "Evergreen styrene sheet is perfect for scratch-building details. To create a simple antenna, draw the shape on the sheet, then use a sharp hobby knife and a metal ruler to cut it out. Round off sharp corners with a fine file or sandpaper. Use Tamiya Extra Thin Cement to attach it to the model. For complex shapes, use a combination of cutting, bending, and gluing."
+      "title": "Chipping with Sponge Technique \u2014 Scale75 Chipping Medium",
+      "text": "Apply Scale75 Chipping Medium where you want chips to appear. Allow it to dry completely. Using a damp sponge (not too wet), gently dab the surface to create chips. The wetter the sponge, the larger the chips. Seal with a light coat of Vallejo Acrylic Gloss Varnish before weathering further."
     }
   ]
 }
