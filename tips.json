@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Selecting the Right Paint for Your Project",
-      "text": "Choose between Vallejo Acrylic, Vallejo Model Air, or Tamiya Acrylics for their ease of use, vibrant colors, and fast drying times. For enamel or lacquer finishes, use AMMO by Mig Jimenez Acrylic Paints or Humbrol Enamels, but expect slower drying times and more solvents. Vallejo Metal Color or Alclad II Aerosols provide excellent metal finishes. Always thin paints with their respective thinners (e.g., Vallejo Airbrush Thinner) for optimal flow."
+      "title": "Scribing Panel Lines with RB Productions Tools",
+      "text": "For crisp panel lines, use RB Productions scribing tools. Their 0.5mm and 0.3mm scribing needles are perfect for scale models. Hold the tool at a 45-degree angle and apply gentle pressure while moving along the panel line. Start from one end of the line to avoid damaging the surface. Use the wider needle for deeper lines and the finer one for details. For larger lines, consider using their 1mm needle."
     },
     {
-      "title": "Choosing the Right Sandpaper Grits for Each Stage",
-      "text": "For initial sanding after filling, use 120-150 grit sandpaper or sanding sticks to remove excess filler and prepare the surface. For smoothing and preparing for paint, switch to 240-320 grit, then finish with 400-600 grit for a smooth surface. For fine touch-ups, use 800-1000 grit wet or dry sandpaper. Always wet-sand with water or appropriate lubricant to prevent clogging and achieve the best results."
+      "title": "Masking with Tamiya Tape vs Kabuki tape",
+      "text": "Both Tamiya tape and Kabuki tape are suitable for masking, but they have different uses. Tamiya tape is easier to use and adheres well to most surfaces, making it ideal for simple shapes and curved surfaces. Kabuki tape, however, is more conformable and stickier, making it perfect for complex curves and intricate shapes. For best results, use Tamiya tape for general masking and Kabuki tape for complex shapes."
     },
     {
-      "title": "Filling Gaps: Tamiya vs Vallejo Putty",
-      "text": "For small gaps and scratches, use Tamiya Putty, which dries fast and can be sanded in 30 minutes. For larger gaps or panel lines, Vallejo Plastic Putty offers better coverage and can be applied thicker. Both can be used with Vallejo Retarder Medium to extend drying times. To make your own gap filler, mix super glue with baking soda, apply with a fine brush, let dry, and sand smooth. Always test on spare parts first."
+      "title": "Airbrush Needle Cleaning with Iwata Brush Guards",
+      "text": "To keep your Iwata airbrush needle clean and functioning smoothly, use Iwata brush guards for cleaning. After each painting session, remove the needle and wash it thoroughly with warm water and mild detergent. Then, scrub it gently with a soft brush and the brush guard to remove any dried paint. Rinse and dry the needle before reinserting it into the airbrush."
     },
     {
-      "title": "Photo-Etch vs Resin Detail Parts",
-      "text": "Photo-etch (PE) from Eduard, ICM, or other brands offers thin, highly detailed parts, perfect for replacing kit details. However, PE requires bending, cutting, and careful handling. Resin detail sets (e.g., Lion Roar, Cyber-Hobby) offer pre-shaped, high-quality parts but can be more expensive. Consider PE for simple replacement details, and resin for complex shapes or when quality is paramount."
+      "title": "Scratch-Building with Evergreen Styrene Sheet",
+      "text": "Evergreen styrene sheet is versatile for scratch-building. To make a curve, cut the sheet into strips, then soak it in warm water for 10-15 seconds. Bend the strip gently into the desired shape while it's wet. Let it dry completely in the shape. For complex curves, use multiple strips layered together. Use CA glue to attach parts and sand with fine grit sandpaper once dry."
     },
     {
-      "title": "Decal Setting Solutions: Micro Set/Sol vs Mr. Mark Softer",
-      "text": "For standard decals, use Micro Set (soaking solution) followed by Micro Sol (setting solution) to help decals conform and minimize silvering. For difficult-to-place or complex decals, use Mr. Mark Softer, which penetrates better and helps decals lie flat. Apply Micro Set or Mr. Mark Softer with a fine brush, let soak for 10-20 seconds, then carefully apply Micro Sol to set the decal. Always test on spare decals first."
+      "title": "Using Dental Tools for Detail Work",
+      "text": "Dental tools are invaluable for scale model detail work. For instance, use a dental probe (e.g., from a dental pick-up set) to create tiny holes or indentations. Gently push the probe into the surface, applying steady pressure. For removing small amounts of material, use a dental explorer to carefully scrape away excess plastic. Be cautious not to apply too much pressure and damage the model."
     }
   ]
 }
