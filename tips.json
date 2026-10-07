@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Airbrushing Vallejo Model Air \u2014 Pressure Matters",
-      "text": "Vallejo Model Air paints are thin and meant for airbrushing straight from the bottle. For best results, airbrush at 1.5-2.0 bar pressure using an Iwata HP-C+ or equivalent airbrush with a fine needle (0.2-0.3mm). Start with a light coat to avoid runs. Test paint consistency on a white plastic spoon \u2014 it should spread evenly, not spatter or form spider webs."
+      "title": "Assembling Trumpeter Multi-Part Gun Barrels",
+      "text": "For Trumpeter's detailed gun barrels (e.g., Trumpeter's 1/35 Soviet /85), dry-fit parts first. Use a toothpick dipped in Tamiya Extra Thin Cement to glue parts in place. Avoid applying cement to the entire length to prevent warping. Let cure for 30 minutes, then clean up excess cement with a needle and Vallejo Airbrush Thinner. Pin barrels to a cork board for handling during painting."
     },
     {
-      "title": "Base Coat Technique with Vallejo Model Color",
-      "text": "For a smooth base coat, first apply Vallejo Primer using an airbrush at 1.5 bar pressure. Once dry, apply Vallejo Model Color thinned 1:1 with Vallejo Airbrush Thinner, using an Iwata HP-C+ airbrush at 1.0-1.5 bar pressure. Spray multiple light coats, allowing each to dry completely before applying the next."
+      "title": "Aligning ICM Wings with a Simple Jig",
+      "text": "For ICM's 1/48 aircraft kits, create a wing alignment jig using a scrap piece of plywood. Mark the centerline on the wing root and jig. Apply CA glue along the wing root, place the wing on the jig, and let cure. Once set, remove the wing and sand the jig flat. Reuse the jig for the other wing, ensuring perfect alignment."
     },
     {
-      "title": "Camouflage Masking with Eduard PE Masks",
-      "text": "Eduard PE Masks provide precise coverage for complex camouflage schemes. Apply Softer Image Film Remover to the model's surface before applying masks. Press masks firmly in place, ensuring no overlap. Spray Vallejo Model Color thinned 1:1 through masks using an Iwata HP-C+ at 1.5 bar pressure. Allow paint to dry completely before removing masks."
+      "title": "Installing Eduard Photo-Etch Parts",
+      "text": "Soak Eduard photo-etch parts in warm water for 15 minutes to soften them. Use tweezers to gently bend parts using a photo-etch bending tool. Apply a tiny drop of CA glue at the attachment point on the model, then carefully position the photo-etch part. Press gently until the glue sets. Touch up any marks with Vallejo Model Color."
     },
     {
-      "title": "Applying AK Interactive Washes \u2014 Less is More",
-      "text": "AK Interactive Washes create depth and shadows. Mix washes with Vallejo Airbrush Thinner at a 2:1 ratio (2 parts thinner to 1 part wash). Apply using a flat, synthetic brush, working wash into panel lines and crevices. Allow to dry naturally, then remove excess with a damp cloth. For subtle effects, apply washes selectively, focusing on lower panels and areas where light would naturally fall."
+      "title": "Working with Clear Prop Models Resin Conversions",
+      "text": "With Clear Prop Models resin conversions, wash parts in warm soapy water to remove release agents. Assemble resin parts using CA glue, applying it sparingly. For joins, apply glue to one part only, then fit parts together immediately. Let cure for 24 hours. Sand any seam lines with fine grit sandpaper, then clean with Vallejo Airbrush Thinner."
     },
     {
-      "title": "Chipping with Sponge Technique \u2014 Realistic Wear",
-      "text": "For realistic chipping, use a damp, natural sea sponge (not synthetic). Apply Vallejo Model Color thinned 1:1 to the sponge using a brush. Gently dab paint onto the model's surface, focusing on areas prone to wear like corners and raised edges. Use varying pressures to create random, irregular chips. Allow paint to dry completely before applying decals."
+      "title": "Assembling Arma Hobby Tracks: Individual Links vs. Vinyl",
+      "text": "For Arma Hobby's individual track links (e.g., 1/35 WWII German Panzers), use CA glue to assemble them. Apply glue sparingly to one pin, fit links together, and let cure. For vinyl tracks, cut the track into manageable lengths, dip pins in CA glue, fit links together, and let cure. For workable tracks, follow the manufacturer's instructions. Always dry-fit tracks before painting to ensure proper alignment."
     }
   ]
 }
