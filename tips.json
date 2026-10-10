@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Selecting the Right Paint Type",
-      "text": "For scale models, acrylic paints from brands like Vallejo (Model Air, Model Color) and Tamiya offer the best balance between ease of use, adhesion, and finish. Acrylics dry quickly, clean up with water, and can be thinned with Vallejo Airbrush Thinner for optimal flow. Enamels like AMMO by Mig Jimenez or Tamiya Enamels are suitable for touch-ups and fine details but require enamel thinner and dry slowly. Lacquers provide a gloss finish but can be challenging to work with due to their fast drying time."
+      "title": "Scribing Panel Lines with RB Productions Tools",
+      "text": "For precise panel scribing, use RB Productions tools. First, lightly score the panel lines with a pencil to avoid deep scratches. Then, use the RB Productions Scriber to carefully trace along the lines, applying light pressure. For deep scribing, use the RB Productions Deep Scriber, but be cautious not to dig too deep. Finish with a gentle touch of a file or sandpaper to remove any burrs."
     },
     {
-      "title": "Choosing the Right Sandpaper Grits",
-      "text": "Start with 240-320 grit sandpaper for removing mold lines and scratches. Use 120 grit for filling gaps and 400+ grit for final smoothing before painting. For hard-to-reach areas, use sanding sticks or dental instruments. Always sand in the direction of the plastic's grain, and use water (for acrylics) or a suitable lubricant (for enamels) to prevent heat buildup."
+      "title": "Airbrush Needle Cleaning with Iwata Compressed Air",
+      "text": "Regularly clean your Iwata airbrush needle to maintain performance. After each use, disassemble the needle, and using compressed Iwata air, blow through it to remove any dried paint. Then, use an Iwata Airbrush Cleaning Brush to scrub the needle's tip, followed by a quick blast of air to dry. Reassemble the needle, and you're ready for your next session."
     },
     {
-      "title": "Filling Gaps: Vallejo Plastic Putty vs Tamiya Putty",
-      "text": "Vallejo Plastic Putty is a versatile, all-purpose putty that works well with Vallejo paints and cleans up easily with water. It's suitable for most plastic types and dries quickly. Tamiya Putty, however, is specifically designed for Tamiya polystyrene and bonds exceptionally well. It's harder to clean up but provides superior adhesion. For best results, use Tamiya Putty with Tamiya plastics and Vallejo Putty with other plastics."
+      "title": "Masking with Tamiya Tape vs. Kabuki Tape",
+      "text": "For curved surfaces, use Tamiya Tape for easy application and removal. For complex shapes or tight spots, opt for Kabuki Tape's precision. Apply Tamiya Tape in long strips, using a ruler to crease sharp corners. For Kabuki Tape, cut it into smaller pieces, applying it carefully with tweezers. Both tapes can be left on overnight before painting without fear of peeling."
     },
     {
-      "title": "Photo-Etch vs Resin Detail Parts",
-      "text": "Photo-etch parts from brands like Eduard and ICM offer delicate, highly detailed parts that can enhance your model significantly. They require careful handling, bending, and attachment with super glue. Resin detail parts, often supplied by aftermarket companies like Arma Hobby and Clear Prop Models, provide exceptional detail but can be fragile and require careful preparation and handling. Choose photo-etch for thin, structural details like grab handles and ladders, and resin for complex, robust parts like engine detail sets."
+      "title": "Sanding Stick Progression with ICM Models",
+      "text": "ICM Models' sanding sticks come in varying grits for progressive sanding. Start with ICM 240 grit for heavy stock removal, then progress to ICM 320, 400, and 600 grit for refining. After each stage, wipe the part with a damp cloth to remove dust. For the finest details, use ICM 800 grit or higher, followed by a microfiber cloth for a mirror finish."
     },
     {
-      "title": "Decal Setting Solutions: Micro Set/Sol vs Mr. Mark Softer",
-      "text": "Micro Set/Sol is a classic decal setting solution that softens and adheres decals to curved surfaces. Apply Micro Sol with a soft brush, allow it to soak in, then gently rub off excess with a damp cloth. Mr. Mark Softer offers a faster, more aggressive approach, but it's less suitable for fine detail work. It's ideal for large, flat decals and hard-to-reach areas. For optimal results, use Micro Set/Sol for most decals and reserve Mr. Mark Softer for larger, flatter decals."
+      "title": "Scratch-Building with Evergreen Styrene Sheet",
+      "text": "Evergreen Styrene Sheet is perfect for creating custom details or entire models. To cut parts, use a sharp hobby knife and a metal ruler for straight lines. For curves, use a self-healing cutting mat and a swivel knife. To bend styrene, carefully score the line with a needle tool, then use tweezers to bend along the score. Glue parts together using Tamiya Extra Thin Cement, allowing the solvent to do the work."
     }
   ]
 }
