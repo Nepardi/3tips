@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Removing Old Paint from Plastic Kits",
-      "text": "To strip old paint from plastic kits, use a chemical paint stripper like Citadel's 'Dettol' or Mr. Hobby's 'Mr. Thin'. Apply a thin layer with a brush, wait 10-15 minutes, then gently scrape off with a plastic scraper. For stubborn paint, soak the part in a jar with stripper for 24 hours, then scrub with a toothbrush."
+      "title": "Choosing the Right Cement for ABS vs Polystyrene",
+      "text": "Tamiya Extra Thin Cement bonds polystyrene perfectly by melting the plastic together, but it struggles with ABS parts found in many modern kits (breeches, gun barrels, ICM and Arma Hobby aircraft propellers). For ABS, switch to Tamiya ABS & Polystyrene Cement in the green bottle, which contains ABS-compatible solvents. Apply sparingly with a fine brush to both surfaces, press together for 10 seconds, and let cure for 24 hours before sanding. Test the bond on a spare sprue first."
     },
     {
-      "title": "Fixing Broken Photo-Etch Parts",
-      "text": "Broken photo-etched parts can be repaired using CA (Cyanoacrylate) glue. Align the parts under magnification, apply a small drop of CA glue on the join, and hold together for 30 seconds. Use tweezers to apply gentle pressure. Once set, paint over the join with Vallejo Model Color to conceal."
+      "title": "Selecting Paint Type for Model Kits",
+      "text": "For most model kits, Vallejo Acrylic Paints offer excellent adhesion and color choice. They're water-based, non-toxic, and easy to clean. However, for historical accuracy or special effects, consider enamels like AMMO by Mig Jimenez. For lacquers, use Alclad II for metal finishes, applying with an HVLP spray gun at 20-30 psi. Acrylics are generally best for detail work and weathering, while enamels and lacquers are better for large, flat surfaces."
     },
     {
-      "title": "Recovering Clogged Airbrushes",
-      "text": "To unclog an airbrush, disassemble it and soak the nozzle, needle, and cap in Vallejo Airbrush Cleaner for 15 minutes. Use a soft brush to scrub gently, then reassemble and test-spray with Vallejo Airbrush Thinner. If still clogged, use a needle-cleaning kit like Iwata's 'Eclipse' to remove dried paint from the needle."
+      "title": "Choosing the Right Sandpaper Grits",
+      "text": "For sanding plastic model parts, start with 220 grit for initial smoothing, followed by 320 grit for fine sanding. For resin parts, use 150 grit initially, then 220 grit. Always sand in one direction, then change the direction for the next grit. Wet sanding with water or soap solution reduces dust and improves cutting. After sanding, wipe parts with a damp cloth and let dry before painting."
     },
     {
-      "title": "Repairing Warped Plastic Parts",
-      "text": "Warped plastic parts can be repaired using hot water. Immerse the warped part in hot (not boiling) water for 5 minutes, then carefully bend it back into shape using tweezers. Lay it flat to dry, keeping the warped side down. For thicker parts, use a heat gun (like Tamiya's) to soften the plastic, then mold it back into shape."
+      "title": "Selecting Filler for Model Kit Gaps",
+      "text": "For small gaps, use Vallejo Plastic Putty, applied with a spatula, smoothed with a brush, and let dry before sanding. For larger gaps or deep recesses, mix Tamiya Extra Thin Cement with baking soda until it forms a thick paste. Apply with a toothpick, let dry, sand smooth. For complex shapes, use clear silicone putty from Clear Prop Models, applied thinly, let dry, and sand smooth."
     },
     {
-      "title": "Fixing Paint Reactions/Bubbling",
-      "text": "Paint reactions or bubbling can be caused by contamination or high humidity. To fix, sand the affected area lightly with fine sandpaper, wipe clean with alcohol, and apply a retouching paint like Vallejo's 'Mecha Color' using a fine brush. Seal with a gloss coat, then apply flat coat once fully dry."
+      "title": "Choosing Decal Setting Solutions",
+      "text": "For most decals, use Microscale Micro Set and Micro Sol to improve adhesion and reduce silvering. Apply Micro Set to the decal and the model surface, let sit for 10 seconds, then apply Micro Sol to the decal only. Let sit until the decal wrinkles, then use a soft brush to slide the decal into place. Let dry completely before handling. For self-adhesive waterslide decals, use Mr. Mark Softer to help slide the decal into position."
     }
   ]
 }
