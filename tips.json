@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Choosing the Right Cement for ABS vs Polystyrene",
-      "text": "Tamiya Extra Thin Cement bonds polystyrene perfectly by melting the plastic together, but it struggles with ABS parts found in many modern kits (breeches, gun barrels, ICM and Arma Hobby aircraft propellers). For ABS, switch to Tamiya ABS & Polystyrene Cement in the green bottle, which contains ABS-compatible solvents. Apply sparingly with a fine brush to both surfaces, press together for 10 seconds, and let cure for 24 hours before sanding. Test the bond on a spare sprue first."
+      "title": "Scribing Panel Lines with RB Productions Tools",
+      "text": "For crisp panel lines, use RB Productions' scribing tools. First, lightly score the panel lines with the pencil tip, then deepen them with the scriber. For deeper lines, use the 0.5mm scriber for visible panels and the 0.3mm for finer details. Work slowly and apply even pressure. Afterwards, gently sand with 5000 grit sandpaper to remove burrs. This technique works perfectly on kits like ICM's Il-2 Shturmovik."
     },
     {
-      "title": "Selecting Paint Type for Model Kits",
-      "text": "For most model kits, Vallejo Acrylic Paints offer excellent adhesion and color choice. They're water-based, non-toxic, and easy to clean. However, for historical accuracy or special effects, consider enamels like AMMO by Mig Jimenez. For lacquers, use Alclad II for metal finishes, applying with an HVLP spray gun at 20-30 psi. Acrylics are generally best for detail work and weathering, while enamels and lacquers are better for large, flat surfaces."
+      "title": "Photo-Etch Bending with Eduard's Bending Jigs",
+      "text": "Eduard's photo-etch bending jigs allow you to create complex shapes without warping. Apply super glue to the photo-etch part, place it in the jig, and press gently until set. For intricate parts, use a combination of jigs. After bending, clean up any excess glue with a hobby knife. This method is ideal for Arma Hobby's complex Pz.IV H decal set."
     },
     {
-      "title": "Choosing the Right Sandpaper Grits",
-      "text": "For sanding plastic model parts, start with 220 grit for initial smoothing, followed by 320 grit for fine sanding. For resin parts, use 150 grit initially, then 220 grit. Always sand in one direction, then change the direction for the next grit. Wet sanding with water or soap solution reduces dust and improves cutting. After sanding, wipe parts with a damp cloth and let dry before painting."
+      "title": "Airbrush Needle Cleaning with Iwata's Air-Cleaner",
+      "text": "Regular cleaning of your Iwata airbrush needle maintains optimal performance. After each session, backflush with Vallejo Airbrush Thinner and let it soak for 10 minutes. Then, use Iwata's Air-Cleaner kit to clean the needle under magnification. Use the smallest brush provided to scrub the needle's tip, then rinse with thinner and dry with a lint-free cloth. Regular cleaning prevents clogging and ensures consistent paint flow."
     },
     {
-      "title": "Selecting Filler for Model Kit Gaps",
-      "text": "For small gaps, use Vallejo Plastic Putty, applied with a spatula, smoothed with a brush, and let dry before sanding. For larger gaps or deep recesses, mix Tamiya Extra Thin Cement with baking soda until it forms a thick paste. Apply with a toothpick, let dry, sand smooth. For complex shapes, use clear silicone putty from Clear Prop Models, applied thinly, let dry, and sand smooth."
+      "title": "Masking with Tamiya Tape vs Kabuki Tape",
+      "text": "Tamiya tape is ideal for masking large, flat surfaces due to its width and self-adhesive backing. For intricate details, use Kabuki tape's narrow width and precise cutting capabilities. To switch between tapes, use a hobby knife to score the edge of the tape and carefully peel it off. For complex shapes, use a combination of both tapes. This technique is useful when applying different colors to a single panel, like on the Tamiya 1/48 Tomcat."
     },
     {
-      "title": "Choosing Decal Setting Solutions",
-      "text": "For most decals, use Microscale Micro Set and Micro Sol to improve adhesion and reduce silvering. Apply Micro Set to the decal and the model surface, let sit for 10 seconds, then apply Micro Sol to the decal only. Let sit until the decal wrinkles, then use a soft brush to slide the decal into place. Let dry completely before handling. For self-adhesive waterslide decals, use Mr. Mark Softer to help slide the decal into position."
+      "title": "Sanding Stick Progression with Tamiya Sanding Sticks",
+      "text": "For smooth surfaces, use Tamiya sanding sticks in a progression of grits. Start with 400 grit to remove mold seams, then progress to 800 and 1000 grit for a smooth finish. Wet-sand using water and a suitable lubricant like Tamiya Extra Thin Cement as a substitute for water. Sand in one direction, then switch to a perpendicular direction for the next grit. Always rinse and dry the surface between grits to avoid scratching. This technique works well on large, curved surfaces like the wings of the Trumpeter Su-27 Flanker."
     }
   ]
 }
