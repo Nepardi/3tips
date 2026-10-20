@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Fixing Silvered Decals After They Have Dried",
-      "text": "Silvered decals happen when air is trapped under the decal. To fix after drying: apply Mr. Mark Softer generously over the decal, wait 10 minutes, then press gently with a damp cotton swab from the center outward to force air bubbles out. Repeat twice more with fresh solution. If silvering persists, carefully slit the decal film with a fresh hobby knife blade in a crosshatch pattern, apply setting solution again, and press flat. Once fully settled, seal with a gloss coat. For stubborn cases, replace the decal and reapply with stronger solutions like Daco Strong."
+      "title": "Choosing the Right Cement for ABS vs Polystyrene",
+      "text": "Tamiya Extra Thin Cement bonds polystyrene perfectly by melting the plastic together, but it struggles with ABS parts found in many modern kits (breeches, gun barrels, ICM and Arma Hobby aircraft propellers). For ABS, switch to Tamiya ABS & Polystyrene Cement in the green bottle, which contains ABS-compatible solvents. Apply sparingly with a fine brush to both surfaces, press together for 10 seconds, and let cure for 24 hours before sanding. Test the bond on a spare sprue first."
     },
     {
-      "title": "Removing Old Paint from Model Kits",
-      "text": "To remove old paint from model kits, first soften the paint using an appropriate solvent like Tamiya Acetone or Vallejo Airbrush Cleaner. Apply with a brush, let it soak for 5-10 minutes, then gently scrape off the softened paint with a plastic scalpel or toothpick. For stubborn areas, use a dental pick or needle under the paint edge to lift it off. Always work in a well-ventilated area."
+      "title": "Selecting Paint Type: Acrylic vs Enamel vs Lacquer",
+      "text": "For most scale models, acrylics like Vallejo Acrylic Paints are versatile and easy to use. They're water-based, non-toxic, and offer a wide range of colors. Enamels like Tamiya Acrylic Paints are great for fine detail work due to their thin consistency but require a longer drying time. Lacquers like Alclad II provide a smooth, high-gloss finish ideal for clear parts but require specialized thinners and ventilation. Choose based on your model's requirements."
     },
     {
-      "title": "Fixing Broken Photo-Etch Parts",
-      "text": "To fix broken photo-etch parts, use a minimal amount of CA glue like Mr. Hobby Super Fast Clear or Revell Contacta. Apply a small drop on the inside of the joint, let it wick in, then quickly align the parts and hold them together with tweezers until set. For stronger repairs, use a tiny bit of super glue like Loctite Gel Control. Always use with proper ventilation."
+      "title": "Choosing Sandpaper Grits for Each Stage",
+      "text": "Start with 220-grit sandpaper for general use, smoothing out major imperfections. For filling gaps and seams, use 320-grit after applying filler. For preparing surfaces for paint, use 400-grit to remove any remaining imperfections. Fine-tune details with 500-grit before painting. Always sand in one direction to avoid creating scratches. Use wet sanding with water or appropriate lubricant for better control."
     },
     {
-      "title": "Recovering Clogged Airbrushes",
-      "text": "To recover a clogged airbrush, first disassemble it according to the manufacturer's instructions (e.g., Iwata, Badger). Soak the nozzle, needle, and other parts in Vallejo Airbrush Thinner or Iwata Airbrush Cleaner for 10-15 minutes. Gently scrub with a soft brush, then reassemble the airbrush and test spray. If still clogged, use a needle-cleaning tool to clear the nozzle and needle."
+      "title": "Selecting Filler for Gaps: Tamiya Putty vs Vallejo Plastic Putty vs Super Glue + Baking Soda",
+      "text": "Tamiya Putty is ideal for filling large gaps and seams. Apply with a toothpick or brush, let dry, then gently scrape off excess with a razor blade. Vallejo Plastic Putty is softer and more suitable for fine gaps. Apply with a fine brush, let dry, then sand smooth. For small gaps, mix a few drops of super glue with baking soda until it forms a thick paste. Apply with a toothpick, let dry, then sand smooth."
     },
     {
-      "title": "Avoiding Frost from Rattle Cans",
-      "text": "To avoid frost from rattle cans, spray in well-ventilated areas, preferably above 60\u00b0F (15\u00b0C). Shake the can vigorously for at least 1 minute before spraying. Hold the can upright and maintain a consistent distance (8-10 inches) from the model. For best results, use a primer specifically designed for your paint type, like Vallejo Surface Primer or Tamiya Fine Surface Primer. Always follow manufacturer guidelines for thinning and application."
+      "title": "Photo-Etch vs Resin Detail Parts",
+      "text": "Photo-etch parts like those from Eduard offer exceptional detail but require careful bending and handling. Use Eduard's Photo-Etch Bending Tools to curve parts gently without breaking them. For large, complex details, resin parts from companies like MiniArt or Arma Hobby can be easier to handle but may require additional cleaning and preparation. Choose based on the size and complexity of the detail needed."
     }
   ]
 }
