@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Thinning Vallejo Model Air vs Model Color for Airbrushing",
-      "text": "For Vallejo Model Air, mix 1:1 paint to thinner using Vallejo Airbrush Thinner. For Model Color, mix 1:2 paint to thinner due to its thicker consistency. Add 2-3 drops of Vallejo Flow Improver per 10 drops of thinned paint for both. Spray Model Air at 1.2-1.8 bar, Model Color at 1.8-2.2 bar pressure."
+      "title": "Aligning Wings with a Tamiya Jig",
+      "text": "For Trumpeter or Meng kits with large wing surfaces, use a Tamiya Wing Alignment Jig. Glue one wing half to the jig, align the other half on top, and apply cement. Let cure for 30 minutes, then carefully remove the jig. Ensure both wings are even using a straight edge, then glue to the fuselage."
     },
     {
-      "title": "Base Coat Technique with Tamiya Spray Cans",
-      "text": "For base coats, use Tamiya Spray Cans. Shake well before use and apply in thin, even coats. Hold the can 12-18 inches away from the model. Apply 2-3 light coats, allowing 5-10 minutes drying time between coats. For darker colors, consider 4-5 light coats to avoid over-spray."
+      "title": "Assembling Multi-Part Gun Barrels (AFV Club)",
+      "text": "For AFV Club's detailed gun barrels, dry-fit parts first. Use Tamiya Extra Thin Cement for small parts; let cure for 15 minutes. Glue the smallest parts first, using tweezers, then work up to larger parts. For the final step, apply cement to the barrel's exterior seam, let cure for 30 minutes, then sand smooth with 400 grit."
     },
     {
-      "title": "Camouflage Masking with Eduard Masks",
-      "text": "Use Eduard Masks for complex camouflage schemes. Apply the masks while the paint is still wet for better adhesion. Peel off masks after the paint has dried for at least 24 hours. Apply a light coat of acrylic paint (e.g., Vallejo Model Color) along the mask edges to help prevent paint from bleeding under the masks."
+      "title": "Installing Eduard Photo-Etch Parts",
+      "text": "Soak Eduard photo-etch parts in warm water for 10 seconds to soften. Remove, pat dry, and bend parts over a GodHand Nippers tip to shape. Use Eduard's CA Glue for tiny parts; apply a drop, let cure for 15 seconds, then attach the part. For larger parts, use Tamiya Extra Thin Cement and tweezers."
     },
     {
-      "title": "Applying AK Interactive Washes for Realistic Weathering",
-      "text": "Apply AK Interactive Washes using a soft, natural bristle brush. Work the wash into panel lines and other recesses. Remove excess wash with a dry brush or cotton swab after 10-15 minutes. For a more subtle effect, use a mix of AK Interactive Washes and AK Interactive Thinner (1:1 ratio)."
+      "title": "Working with Resin Conversion Kits (Clear Prop Models)",
+      "text": "Pin-vice drill Clear Prop Models' resin parts at recommended locations. Assemble dry, using CA glue for joins. Let cure for 30 minutes. Sand seams with 240 grit, then 400 grit. Clean parts with warm water, pat dry, and apply a thin layer of Vallejo Plastic Putty. Let dry, sand smooth, and prepare for painting."
     },
     {
-      "title": "Chipping Technique with Mr. Hobby Chipping Colors",
-      "text": "For chipping effects, use Mr. Hobby Chipping Colors. Apply the color where chips are desired using a fine brush. Allow to dry, then gently dab the areas with a sponge dampened with water and a drop of dish soap. For a more pronounced effect, use a stiff brush to lightly scrub the area before applying the chipping color."
+      "title": "Strengthening Thin Parts with Brass Rod",
+      "text": "Reinforce ICM's 1/48 MiG-15bis' thin wing struts with brass rod (0.5mm). Cut rod to length, leaving extra for bending. Drill holes in the struts using the smallest bit that won't split the plastic. Superglue the brass rod into the holes, let cure for 1 hour. Trim excess brass with flush cutters, then sand smooth."
     }
   ]
 }
