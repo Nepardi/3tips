@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Fixing Silvered Decals After They Have Dried",
-      "text": "Silvered decals (visible silver film around markings) happen when air is trapped under the decal. To fix after drying: apply Mr. Mark Softer generously over the decal, wait 10 minutes, then press gently with a damp cotton swab from the center outward to force air bubbles out. Repeat twice more with fresh solution. If silvering persists, carefully slit the decal film with a fresh hobby knife blade in a crosshatch pattern, apply setting solution again, and press flat. Once fully settled, seal with a gloss coat. For stubborn cases, replace the decal and reapply with stronger solutions like Daco Strong."
+      "title": "Selecting the Right Paint for Scale Modeling",
+      "text": "For most scale modeling tasks, Vallejo's Acrylic and Airbrush colors are recommended. They offer a wide range of colors, excellent pigment density, and easy application with Vallejo Airbrush Thinner. Use Vallejo Model Color for hand brushing, Model Air for airbrushing, and Game Color for wargaming figures. Avoid enamels like Tamiya Acrylic Paints for airbrushing due to their slow drying time."
     },
     {
-      "title": "Removing Old Paint from Kit Parts",
-      "text": "To remove old paint from kit parts, first soften the paint with Goo Gone or similar citrus-based cleaner. Apply with a cotton swab, let sit for 15 minutes, then gently scrape off with a dental pick or wooden toothpick. For stubborn areas, use a hobby knife to carefully scrape paint off in small sections. Wipe clean with a damp cloth, then allow parts to dry completely before priming."
+      "title": "Choosing the Right Sandpaper Grits",
+      "text": "Start with 240 grit sandpaper for smoothing seams and filling putty. Progress to 320 grit for removing scratches and preparing surfaces for paint. Finish with 400 grit for a smooth, glass-like finish before applying decals. Always wet sand to avoid clogging and use a sanding block for even pressure. After sanding, clean the surface with isopropyl alcohol to remove dust."
     },
     {
-      "title": "Fixing Broken Photo-Etch Parts",
-      "text": "Broken photo-etch parts can be repaired using CA glue (super glue). Apply a small drop of CA glue on a wooden toothpick, then gently apply it to the broken edge, allowing the glue to wick into the gap. Hold the parts together for 10-15 seconds until set. Once dry, gently sand any excess glue with fine grit sandpaper. For better adhesion, roughen the surface with a light scratch using a hobby knife or scribing tool before applying CA glue."
+      "title": "Filling Gaps: Tamiya Putty vs Vallejo Plastic Putty",
+      "text": "For small gaps and scratches, use Tamiya's Extra Thin Cement mixed with baking soda to create a lightweight filler. Apply with a fine brush, let dry, then sand smooth with 240 grit. For larger gaps, use Vallejo Plastic Putty. Apply with a palette knife, let dry, sand with 120 grit, then 240 grit before painting. Avoid using super glue alone as it shrinks and doesn't sand well."
     },
     {
-      "title": "Recovering Clogged Airbrushes",
-      "text": "Clogged airbrushes can be recovered using Vallejo Airbrush Thinner. Disassemble the airbrush, then soak the nozzle, needle, and other parts in Vallejo Airbrush Thinner for 15-30 minutes. Use a cotton swab dipped in thinner to gently clean the airbrush cup and any other accessible parts. Reassemble the airbrush, then run a few bursts of Vallejo Airbrush Thinner through the airbrush to clear any remaining residue. Follow up with a few bursts of water to flush out the system before painting."
+      "title": "Photo-Etch vs Resin Detail Parts",
+      "text": "Photo-etch (PE) details from Eduard, Eduard's Brassin, or Arma Hobby provide excellent surface details like hinges, ladders, and tool sets. They require careful cutting, bending, and gluing with super glue. Resin details from brands like Clear Prop Models offer complex shapes like engines, landing gear, or figures. They're easier to use but often require sanding and cleaning. Choose PE for thin, delicate details and resin for bulky, complex shapes."
     },
     {
-      "title": "Repairing Warped Parts",
-      "text": "Warped kit parts can be repaired by gently warming them with a heat gun, then carefully reshaping them over a flat surface or using tweezers. For best results, use a low-temperature heat gun and apply heat evenly across the part. Once reshaped, allow the part to cool slowly to prevent warping again. For large parts, consider using a small vice with soft jaws to hold the part flat while cooling."
+      "title": "Decal Setting Solutions: Micro Set/Sol vs Mr. Mark Softer",
+      "text": "Micro Set/Sol from Microscale is a popular decal setting solution used worldwide. Apply Micro Set with a fine brush to the decal placement area, let it soak in, then apply Micro Sol. Gently wipe off excess with a damp cloth. Let dry completely before painting. Mr. Mark Softer is a Japanese alternative that works similarly but may have a slightly different scent. Both products require careful application to avoid oversaturation or residue."
     }
   ]
 }
