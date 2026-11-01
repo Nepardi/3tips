@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Proper Scribing with RB Productions Tools",
-      "text": "For crisp panel lines, use RB Productions scribing tools. Choose the right size (0.2mm, 0.3mm, or 0.5mm) based on your model's scale. Apply gentle pressure while scribing along the panel line, never force it. For deep lines, use multiple passes. Avoid pressing too hard to prevent damaging the detail."
+      "title": "Airbrushing Vallejo Model Air \u2014 The 2:1 Ratio",
+      "text": "Vallejo Model Air is thinner than Model Color and requires thinning for airbrushing. Mix at a 2:1 ratio with Vallejo Airbrush Thinner. Add 2-3 drops of Vallejo Flow Improver per 10 drops of thinned paint to ensure smooth flow. Spray at 1.5-2.0 bar pressure. Test on a white plastic spoon \u2014 if the paint spiders outward, reduce pressure; if it splatters, add more thinner."
     },
     {
-      "title": "Bending Photo-Etch with Eduard Jigs",
-      "text": "Eduard photo-etch bending jigs are invaluable for shaping tiny details. Soak the part in warm water for 30 seconds to make it pliable. Place it in the jig and gently bend it using tweezers. Once bent, let it dry naturally to retain its shape. For complex bends, use multiple jigs progressively."
+      "title": "Base Coat Technique with Tamiya Acrylics",
+      "text": "For base coats, use Tamiya Acrylics diluted with Tamiya Acrylic Thinner at a 3:1 ratio. Stir well and filter through a fine mesh strainer. Apply 2-3 light coats, allowing each to dry for 5-10 minutes. Start with a light coat to avoid obscuring panel lines and details. Use a badger 150 airbrush at 15-20 psi."
     },
     {
-      "title": "Airbrush Needle Cleaning with Iwata",
-      "text": "Keep your Iwata airbrush performing optimally with regular needle cleaning. After each use, disassemble the nozzle and needle. Clean the needle under running water, gently rubbing off dried paint with a soft brush. Use Iwata Airbrush Cleaner for stubborn deposits. Dry and lubricate the needle with Iwata Airbrush Oil before reassembling."
+      "title": "Camouflage Masking with Mr. Hobby Tape",
+      "text": "For complex camouflage patterns, use Mr. Hobby Masking Tape. Cut strips to match panel lines and shapes, pressing firmly to ensure a good seal. Apply a light coat of Vallejo Model Color (diluted 1:1 with Vallejo Airbrush Thinner) as a primer. This helps seal the model and improves paint adhesion. Allow to dry thoroughly before applying topcoats."
     },
     {
-      "title": "Masking with Tamiya vs Kabuki Tape",
-      "text": "For precision masking, use Tamiya Low Tack Masking Tape for curved surfaces and fine details. For larger, straighter areas, opt for Kabuki US1 Tape due to its superior adhesion. Always apply tape on a firm, flat surface to prevent creases. To remove, pull it off slowly at a 45\u00b0 angle to prevent paint from peeling off."
+      "title": "Applying AK Interactive Washes \u2014 The Wet Method",
+      "text": "For a subtle effect, apply AK Interactive Washes using the 'wet' method. Dilute the wash with distilled water at a 1:3 ratio. Using a fine brush, apply the wash to panel lines, crevices, and other recessed areas while the model is still wet from a light spray of Vallejo Airbrush Thinner. Wipe off excess with a damp cloth or cotton swab. Allow to dry thoroughly before handling."
     },
     {
-      "title": "Progressive Sanding with ICM Sanding Sticks",
-      "text": "ICM Sanding Sticks help you achieve a smooth finish on your models. Start with 1500 grit for general smoothing, followed by 2000 grit for removing scratches, and finish with 3000 grit for a mirror-like surface. Wet sand in a circular motion, using a guidance tool like a rubber eraser for straight lines. Rinse and dry between grits to prevent cross-contamination."
+      "title": "Streaking with Oil Paints \u2014 The 'Wet-on-Wet' Technique",
+      "text": "To create realistic streaks, use the 'wet-on-wet' technique with oil paints. Dilute oil paints with odorless mineral spirits at a 1:1 ratio. Apply thin lines of oil paint to the model where streaks would naturally occur. While the paint is still wet, gently blend with a soft brush or cloth, allowing some streaks to remain visible. Allow to dry completely before applying a flat coat."
     }
   ]
 }
