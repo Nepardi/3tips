@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Assembling Trumpeter Multi-Part Gun Barrels",
-      "text": "For Trumpeter's detailed gun barrels (e.g., 1/35 US M1 Abrams), first dry-fit parts to ensure correct fit. Apply Tamiya Extra Thin Cement to the mating surfaces, immediately joining the parts. Clamp gently with tweezers or soft-jaws pliers to keep them aligned while curing. After 24 hours, use a fine-bristle brush and Vallejo Airbrush Thinner to clean up any excess cement. Once completely dry, paint and weather as desired."
+      "title": "Fixing Silvered Decals After They Have Dried",
+      "text": "Silvered decals happen when air is trapped under the decal. To fix after drying: apply Mr. Mark Softer generously over the decal, wait 10 minutes, then press gently with a damp cotton swab from the center outward to force air bubbles out. Repeat twice more with fresh solution. If silvering persists, carefully slit the decal film with a fresh hobby knife blade in a crosshatch pattern, apply setting solution again, and press flat. Once fully settled, seal with a gloss coat. For stubborn cases, replace the decal and reapply with stronger solutions like Daco Strong."
     },
     {
-      "title": "Aligning Wings with ICM Jigs",
-      "text": "When working with ICM kits that include jigs for wing alignment (e.g., 1/72 WW2 Aircraft series), dry-fit the wings to ensure proper fit. Apply Tamiya Extra Thin Cement along the mating edges, then insert the jig into the wing root and assemble. Allow to cure for 30 minutes before removing the jig. Sand any excess cement with 400 grit sandpaper if necessary."
+      "title": "Removing Old Paint from Model Kits",
+      "text": "To remove old paint from model kits without damaging details, use Tamiya Extra Thin Cement to soften the paint. Apply sparingly with a brush, let it sit for 5 minutes, then gently scrape off the softened paint with a toothpick or dental pick. For tougher spots, use Citadel's Dettol Soap and warm water to scrub gently. Rinse with cold water and dry thoroughly before repainting."
     },
     {
-      "title": "Installing Eduard Photo-Etch Parts",
-      "text": "For Eduard photo-etch sets, soften parts in warm water for 10-15 seconds to make them more malleable. Remove with tweezers and pat dry. Using a fine pair of GodHand nippers, cut parts from the fret if needed. Align parts on the model using tweezers, then apply a small amount of CA glue with a fine brush. Allow to set for 15-20 seconds before positioning the part permanently."
+      "title": "Fixing Broken Photo-Etch Parts",
+      "text": "To repair broken photo-etch parts, use CA (Cyanoacrylate) glue like Loctite Super Glue Ultra Gel Control. Apply a small amount to the broken edge, then use tweezers to hold the parts together until the glue sets (about 30 seconds). Once set, use a hobby knife to trim excess glue. For better adhesion, lightly scratch the surfaces to be joined with a hobby knife before applying glue."
     },
     {
-      "title": "Working with Clear Prop Models Resin Conversion Kits",
-      "text": "Resin conversion kits like Clear Prop Models' 1/72 WW2 Fighter Cowlings require careful preparation. Remove molding lines with a sharp X-Acto knife or hobby saw. Soak parts in warm water to remove any mold release agent, then pat dry. Assemble parts using CA glue, ensuring a strong bond. Allow to cure for at least 24 hours before handling. Sand any rough edges with progressively finer grit sandpaper."
+      "title": "Recovering Clogged Airbrushes",
+      "text": "To recover a clogged airbrush, first disassemble and soak the nozzle, needle, and other removable parts in Vallejo Airbrush Cleaner for 15 minutes. While soaking, clean the airbrush body with warm water and a soft brush. Reassemble the airbrush, then use Vallejo Airbrush Thinner to backflush the airbrush at 30 psi to remove any remaining paint particles. Inspect the needle and nozzle under magnification to ensure they are clean and smooth before use."
     },
     {
-      "title": "Strengthening Arma Hobby Track Links with Brass Rod",
-      "text": "Arma Hobby track links can be reinforced with brass rod for better durability. Cut brass rod (e.g., 0.5mm diameter) into short lengths, about twice the width of the track link. Apply a small amount of CA glue to the inner face of the track link where you want to place the brass support. Press the brass rod onto the glue, ensuring it's centered and flush with the link's surface. Allow to cure for 15-20 seconds before positioning the link permanently."
+      "title": "Repairing Warped Parts",
+      "text": "To repair warped parts, gently heat the warped area with a hairdryer set to low heat. Once heated, carefully bend the part back into shape using tweezers or your fingers. Hold the part in place until it cools and sets. For more precise repairs, use a heat gun set to a low temperature and a plastic clay shim to hold the part in shape while heating."
     }
   ]
 }
