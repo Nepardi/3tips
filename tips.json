@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Fixing Silvered Decals After They Have Dried",
-      "text": "Silvered decals happen when air is trapped under the decal. To fix after drying: apply Mr. Mark Softer generously over the decal, wait 10 minutes, then press gently with a damp cotton swab from the center outward to force air bubbles out. Repeat twice more with fresh solution. If silvering persists, carefully slit the decal film with a fresh hobby knife blade in a crosshatch pattern, apply setting solution again, and press flat. Once fully settled, seal with a gloss coat. For stubborn cases, replace the decal and reapply with stronger solutions like Daco Strong."
+      "title": "Selecting the Right Paint Type for Scale Models",
+      "text": "For detail and ease of use, acrylics like Vallejo Model Air are ideal. They're water-based, non-toxic, and offer a wide color range. For enamels, try Tamiya Acrylic Paints (e.g., Rubber Black) for better adhesion and no need for thinning. Lacquers like Alclad II offer metallic and clear finishes but require specialized handling. Always test paints on spare parts first."
     },
     {
-      "title": "Removing Old Paint from Model Kits",
-      "text": "To remove old paint from model kits without damaging details, use Tamiya Extra Thin Cement to soften the paint. Apply sparingly with a brush, let it sit for 5 minutes, then gently scrape off the softened paint with a toothpick or dental pick. For tougher spots, use Citadel's Dettol Soap and warm water to scrub gently. Rinse with cold water and dry thoroughly before repainting."
+      "title": "Choosing the Right Sandpaper Grits for Different Stages",
+      "text": "For initial sanding after filing seams, use coarse grits like 120 or 150. For preparing surfaces for painting, switch to medium grits like 220 or 320. Fine grits, such as 400 or 600, are used for removing minor imperfections before decals and final coats. For polishing, use wet/dry sandpaper in grits from 800 to 2000, gradually increasing."
     },
     {
-      "title": "Fixing Broken Photo-Etch Parts",
-      "text": "To repair broken photo-etch parts, use CA (Cyanoacrylate) glue like Loctite Super Glue Ultra Gel Control. Apply a small amount to the broken edge, then use tweezers to hold the parts together until the glue sets (about 30 seconds). Once set, use a hobby knife to trim excess glue. For better adhesion, lightly scratch the surfaces to be joined with a hobby knife before applying glue."
+      "title": "Filling Gaps: Tamiya Putty vs Vallejo Plastic Putty",
+      "text": "Tamiya Putty is versatile, self-leveling, and easy to use, perfect for large gaps and seams. Vallejo Plastic Putty is more watery, ideal for thin gaps and hard-to-reach areas. To use, apply with a brush or syringe, let dry, sand smooth, and paint over. For deeper gaps, consider using super glue mixed with baking soda."
     },
     {
-      "title": "Recovering Clogged Airbrushes",
-      "text": "To recover a clogged airbrush, first disassemble and soak the nozzle, needle, and other removable parts in Vallejo Airbrush Cleaner for 15 minutes. While soaking, clean the airbrush body with warm water and a soft brush. Reassemble the airbrush, then use Vallejo Airbrush Thinner to backflush the airbrush at 30 psi to remove any remaining paint particles. Inspect the needle and nozzle under magnification to ensure they are clean and smooth before use."
+      "title": "Photo-Etch vs Resin Detail Parts: Which to Choose?",
+      "text": "Photo-etch (e.g., Eduard, Eduard Brass) offers thin, detailed parts but can be fragile and tricky to bend. Resin (e.g., MiniArt, ICM Resin Upgrade Set) is stronger and easier to handle but lacks some detail. For delicate parts, consider using photo-etch first, reinforcing with resin where needed. Always test-bend parts on spares before assembly."
     },
     {
-      "title": "Repairing Warped Parts",
-      "text": "To repair warped parts, gently heat the warped area with a hairdryer set to low heat. Once heated, carefully bend the part back into shape using tweezers or your fingers. Hold the part in place until it cools and sets. For more precise repairs, use a heat gun set to a low temperature and a plastic clay shim to hold the part in shape while heating."
+      "title": "Selecting the Right Decal Setting Solutions",
+      "text": "For most decals, use Microscale Microsol to float decals into place. For stubborn decals, try Mr. Mark Softer first, then Microsol. Avoid using water with decals, as it can damage them. For clear parts like canopies, use Microsol only, without water or Softer. Always apply decals over a gloss coat and seal with a flat coat afterwards."
     }
   ]
 }
