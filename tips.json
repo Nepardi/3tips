@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Selecting the Right Paint Type for Scale Models",
-      "text": "For detail and ease of use, acrylics like Vallejo Model Air are ideal. They're water-based, non-toxic, and offer a wide color range. For enamels, try Tamiya Acrylic Paints (e.g., Rubber Black) for better adhesion and no need for thinning. Lacquers like Alclad II offer metallic and clear finishes but require specialized handling. Always test paints on spare parts first."
+      "title": "The Two-Cut Method with GodHand Ultimate Nippers",
+      "text": "GodHand Ultimate Nippers have razor-sharp edges that leave almost no stress mark, but they are fragile and will chip if used on thick gates. Use the two-cut method: first cut the gate 2mm from the part with cheaper single-action nippers, then make the final flush cut with the GodHand. Never twist or pull the part off \u2014 always cut straight through. This works especially well on delicate Eduard photo-etch frets and Clear Prop Models canopy parts."
     },
     {
-      "title": "Choosing the Right Sandpaper Grits for Different Stages",
-      "text": "For initial sanding after filing seams, use coarse grits like 120 or 150. For preparing surfaces for painting, switch to medium grits like 220 or 320. Fine grits, such as 400 or 600, are used for removing minor imperfections before decals and final coats. For polishing, use wet/dry sandpaper in grits from 800 to 2000, gradually increasing."
+      "title": "Scribing Panel Lines with RB Productions Tools",
+      "text": "Panel lines on plastic kits can be shallow. Use RB Productions' line scriber or 'U' tool to deepen them. Hold the tool at a 45\u00b0 angle to the surface, applying gentle pressure. Start from the middle of the panel and work outwards to avoid fracturing the plastic. For complex curves, use the 'U' tool to follow the line precisely. Suitable for kits like ICM and Arma Hobby."
     },
     {
-      "title": "Filling Gaps: Tamiya Putty vs Vallejo Plastic Putty",
-      "text": "Tamiya Putty is versatile, self-leveling, and easy to use, perfect for large gaps and seams. Vallejo Plastic Putty is more watery, ideal for thin gaps and hard-to-reach areas. To use, apply with a brush or syringe, let dry, sand smooth, and paint over. For deeper gaps, consider using super glue mixed with baking soda."
+      "title": "Airbrush Needle Cleaning with Iwata's Cleaner and Thinner",
+      "text": "Regularly clean your Iwata airbrush needle to maintain consistent paint flow. First, remove the needle chuck and needle using the appropriate wrench. Then, soak the needle in Iwata Cleaner and Thinner for 10-15 minutes. Gently scrub with an old toothbrush, rinse with clean thinner, and dry thoroughly before reassembly. This prevents clogs and ensures smooth paint delivery."
     },
     {
-      "title": "Photo-Etch vs Resin Detail Parts: Which to Choose?",
-      "text": "Photo-etch (e.g., Eduard, Eduard Brass) offers thin, detailed parts but can be fragile and tricky to bend. Resin (e.g., MiniArt, ICM Resin Upgrade Set) is stronger and easier to handle but lacks some detail. For delicate parts, consider using photo-etch first, reinforcing with resin where needed. Always test-bend parts on spares before assembly."
+      "title": "Masking with Tamiya tape vs Kabuki tape",
+      "text": "For complex shapes, use Tamiya tape for its strong adhesion and ease of handling. For fine details and intricate patterns, opt for Kabuki tape due to its thinner profile and better conformability. Apply Tamiya tape in longer strips, pressing firmly to avoid bubbles. For Kabuki, use short pieces and gently press down to avoid creasing. Both tapes require a sharp knife for trimming and should be applied over a light coat of Vallejo Airbrush Thinner to improve adhesion."
     },
     {
-      "title": "Selecting the Right Decal Setting Solutions",
-      "text": "For most decals, use Microscale Microsol to float decals into place. For stubborn decals, try Mr. Mark Softer first, then Microsol. Avoid using water with decals, as it can damage them. For clear parts like canopies, use Microsol only, without water or Softer. Always apply decals over a gloss coat and seal with a flat coat afterwards."
+      "title": "Sanding Sticks Progression for Smooth Surfaces",
+      "text": "Sanding sticks help achieve smooth surfaces on large areas. Start with 220 grit for coarse sanding, followed by 320 grit for smoothing. For optimal results, use Tamiya Fine Surface 5000 and 8000 grit polishing compounds after sanding. Wet-sand using water or Tamiya Surface Primer Thinner for better control and fewer dust particles. Always sand in straight lines and follow the direction of panel lines for the best finish."
     }
   ]
 }
