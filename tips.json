@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "The Two-Cut Method with GodHand Ultimate Nippers",
-      "text": "GodHand Ultimate Nippers have razor-sharp edges that leave almost no stress mark, but they are fragile and will chip if used on thick gates. Use the two-cut method: first cut the gate 2mm from the part with cheaper single-action nippers, then make the final flush cut with the GodHand. Never twist or pull the part off \u2014 always cut straight through. This works especially well on delicate Eduard photo-etch frets and Clear Prop Models canopy parts."
+      "title": "Airbrushing Vallejo Model Air vs Model Color",
+      "text": "Vallejo Model Air is ready-to-spray, use as-is or thin 10% with Vallejo Airbrush Thinner for better flow. Model Color needs thinning; mix 1:1 with thinner. Add 2 drops Vallejo Flow Improver per 10 drops paint for fine nozzle setups. Airbrush at 1.5-2.0 bar pressure for Model Air, 1.0-1.5 bar for Model Color. Test on white paper, adjust pressure/flow improver as needed."
     },
     {
-      "title": "Scribing Panel Lines with RB Productions Tools",
-      "text": "Panel lines on plastic kits can be shallow. Use RB Productions' line scriber or 'U' tool to deepen them. Hold the tool at a 45\u00b0 angle to the surface, applying gentle pressure. Start from the middle of the panel and work outwards to avoid fracturing the plastic. For complex curves, use the 'U' tool to follow the line precisely. Suitable for kits like ICM and Arma Hobby."
+      "title": "Base Coating with Vallejo Model Color",
+      "text": "Shake Vallejo Model Color well before use. Apply 2-3 light coats, letting each dry for 5 minutes. Spray at 1.0-1.5 bar pressure. For best adhesion, use Vallejo Surface Primer beforehand, letting it dry 24 hours. Sand lightly between coats with fine-grit sandpaper, wipe clean with a damp cloth."
     },
     {
-      "title": "Airbrush Needle Cleaning with Iwata's Cleaner and Thinner",
-      "text": "Regularly clean your Iwata airbrush needle to maintain consistent paint flow. First, remove the needle chuck and needle using the appropriate wrench. Then, soak the needle in Iwata Cleaner and Thinner for 10-15 minutes. Gently scrub with an old toothbrush, rinse with clean thinner, and dry thoroughly before reassembly. This prevents clogs and ensures smooth paint delivery."
+      "title": "Camouflage Masking with Eduard PE Masks",
+      "text": "Soak Eduard PE masks in warm water for 15-20 seconds until soft. Apply soap solution to the model, then gently lay masks in place. Gently pat dry with a tissue. Spray Vallejo Air paint, letting each coat dry for 5 minutes. Carefully peel off masks immediately after painting, using tweezers if needed."
     },
     {
-      "title": "Masking with Tamiya tape vs Kabuki tape",
-      "text": "For complex shapes, use Tamiya tape for its strong adhesion and ease of handling. For fine details and intricate patterns, opt for Kabuki tape due to its thinner profile and better conformability. Apply Tamiya tape in longer strips, pressing firmly to avoid bubbles. For Kabuki, use short pieces and gently press down to avoid creasing. Both tapes require a sharp knife for trimming and should be applied over a light coat of Vallejo Airbrush Thinner to improve adhesion."
+      "title": "Applying AK Interactive Washes",
+      "text": "Shake AK Interactive Wash bottles well before use. Apply thin coats, focusing on recesses, using a soft brush or dropper bottle. Let dry 10-15 minutes. Remove excess with a damp cloth. For panel line washing, use a fine brush, applying wash along panel lines. Seal with Vallejo Acrylic Gloss Varnish before weathering."
     },
     {
-      "title": "Sanding Sticks Progression for Smooth Surfaces",
-      "text": "Sanding sticks help achieve smooth surfaces on large areas. Start with 220 grit for coarse sanding, followed by 320 grit for smoothing. For optimal results, use Tamiya Fine Surface 5000 and 8000 grit polishing compounds after sanding. Wet-sand using water or Tamiya Surface Primer Thinner for better control and fewer dust particles. Always sand in straight lines and follow the direction of panel lines for the best finish."
+      "title": "Chipping with Sponges \u2014 Tamiya Weathering Master Set",
+      "text": "Dab Tamiya Weathering Master Set chipping colors onto a damp sponge. Gently pat onto the model, focusing on edges and high-wear areas. Let dry 10 minutes. Carefully remove excess with a damp cloth. Seal with Vallejo Acrylic Matt Varnish before applying further weathering effects."
     }
   ]
 }
