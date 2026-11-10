@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Choosing the Right Cement for ABS vs Polystyrene",
-      "text": "Tamiya Extra Thin Cement bonds polystyrene perfectly by melting the plastic together, but it struggles with ABS parts found in many modern kits (breeches, gun barrels, ICM and Arma Hobby aircraft propellers). For ABS, switch to Tamiya ABS & Polystyrene Cement in the green bottle, which contains ABS-compatible solvents. Apply sparingly with a fine brush to both surfaces, press together for 10 seconds, and let cure for 24 hours before sanding. Test the bond on a spare sprue first."
+      "title": "Scribing Panel Lines with RB Productions Tools",
+      "text": "For deep, crisp panel lines, use RB Productions scribing tools. First, lightly sand the surface with 2400 grit sandpaper. Then, using the tool's adjustable depth stop, scribe lines along panel edges. Start with the smallest tool, gradually increasing size to create depth. For complex shapes, use RB Productions curve scribing tool. Apply minimal pressure to avoid damaging details."
     },
     {
-      "title": "Selecting Paint Type: Acrylic vs Enamel vs Lacquer",
-      "text": "For most scale model applications, Vallejo's Model Air (acrylic) and Model Color (acrylic with additives) are recommended. Acrylics offer vibrant colors, ease of use, and quick drying times. For enamel effects or when using aged colors, consider AMMO by Mig Jimenez' Acrylic Paints (with built-in enamel effect). Lacquers like Tamiya's are less common but suitable for clear coats and metallics. Always test paints on a spare part before use."
+      "title": "Photo-Etch Bending with Eduard's PE Bending Jigs",
+      "text": "Eduard's PE Bending Jigs allow precise bending of photo-etch parts. Insert the part into the jig, then gently bend it over the edge. Use the jig's depth marks for desired angle. For complex bends, use the 90\u00b0 jig first, then use the 45\u00b0 jig to fine-tune. Always bend parts before painting, and support them with soft clay or tissue to prevent creases."
     },
     {
-      "title": "Choosing the Right Sandpaper Grits for Each Stage",
-      "text": "For plastic models, use wet-or-dry sandpaper from brands like Tamiya or Everbilt. Start with 400-600 grit for initial sanding of joins and seams, then progress to 800-1000 grit for smoothing and preparing surfaces for painting. Finally, use 1500-2000 grit for polishing and achieving a gloss finish before applying decals. Always sand in one direction and rinse parts with water after each grit."
+      "title": "Airbrush Needle Cleaning with Iwata Brush Cleaner",
+      "text": "Clean your Iwata airbrush needle regularly to maintain performance. Soak the needle in Iwata Brush Cleaner for 10 minutes, then scrub gently with an Iwata needle brush. Rinse with water and dry with compressed air. For stubborn residue, soak in a solution of warm water and mild detergent, then scrub and rinse. Never use harsh chemicals like acetone."
     },
     {
-      "title": "Filling Gaps: Tamiya Putty vs Vallejo Plastic Putty vs Super Glue + Baking Soda",
-      "text": "Tamiya's Liquid Putty and Vallejo's Plastic Putty are both versatile fillers for gaps and seams. Apply with a fine brush, let dry, then sand smooth with progressively finer grits. For deep gaps or undercarriage bay doors, mix super glue with a pinch of baking soda to create a gap-filling putty. Apply with a toothpick, let cure, then sand and clean with isopropyl alcohol."
+      "title": "Masking with Tamiya and Kabuki Tapes",
+      "text": "For precision masking, use Tamiya tape for sharp corners and Kabuki tape for curves. Apply Tamiya tape with a light touch, pressing down from the middle towards the edges. For Kabuki tape, press down firmly for a tight seal, especially around curves. Overlap tapes slightly to prevent paint bleeding. Remove tapes immediately after painting to avoid adhesive residue."
     },
     {
-      "title": "Decal Setting Solutions: Micro Set/Sol vs Mr. Mark Softer",
-      "text": "For setting decals, choose between Micro Scale's Micro Set (decalsolvent) and Micro Sol (wetter). Apply Micro Set to the decal, let it soak for 10-15 seconds, then apply Micro Sol to flatten and bond the decal. For harder-to-settle decals, consider Mr. Mark Softer, a stronger decal solvent. Always test setting solutions on a spare decal first to avoid damaging graphics."
+      "title": "Sanding Stick Progression for Smooth Surfaces",
+      "text": "Achieve smooth surfaces with a progression of sanding sticks. Start with a coarse grit to remove major imperfections, then progress through medium and fine grits. Always sand in the same direction as panel lines. For intricate areas, use dental tools or flexible sanding sticks. Wipe off dust after each grit to avoid scratches."
     }
   ]
 }
