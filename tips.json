@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Airbrushing Vallejo Model Air vs Model Color",
-      "text": "Vallejo Model Air is thinner than Model Color, requiring less thinning. Mix Model Air at a 3:1 paint to thinner ratio using Vallejo Airbrush Thinner. For Model Color, mix at a 1:1 ratio. Add 2-3 drops of Vallejo Flow Improver per 10 drops of thinned paint. Spray Model Air at 1.5-2.0 bar pressure, Model Color at 1.0-1.5 bar. Test consistency on a white plastic spoon."
+      "title": "Assembling Multi-Part Gun Barrels (Trumpeter, AFV Club)",
+      "text": "With Trumpeter and AFV Club kits, multi-part gun barrels can be challenging. Start by test-fitting parts to ensure a proper fit. Use tweezers to apply a tiny dot of CA glue (like Testors Clear) where parts join. Allow 30 seconds for parts to set, then use tweezers to gently press parts together. For a seamless fit, lightly sand joins with a fine grit sanding stick after gluing."
     },
     {
-      "title": "Base Coat Technique with Alclad II",
-      "text": "Alclad II offers excellent metal finish but requires proper preparation. Pre-shade panel lines with acrylic paint, then apply Alclad II using an HVLP gun or airbrush at 1.5-2.0 bar pressure. Allow to dry for 10 minutes, then buff off excess with a soft cloth. Apply a second coat, allowing 20 minutes' drying time between coats."
+      "title": "Aligning Wings with a DIY Jig",
+      "text": "For kits like ICM or Meng, ensure wing alignment with a DIY jig. Cut a square slot in a scrap piece of wood matching wing root width. Insert the wing roots into the slot, ensuring the wings are level and parallel. Glue wings together using Tamiya Extra Thin Cement, clamping and weighing down until cured."
     },
     {
-      "title": "Camouflage Masking with Eduard Masks",
-      "text": "Eduard masks simplify camouflage painting. Cut masks to size, trim edges if necessary. Apply with Eduard Masking Solvent, allowing 30 seconds' drying time before painting. Paint with Vallejo Model Air, allowing 24 hours' drying time before removing masks. Remove masks using tweezers and a sharp blade to lift edges."
+      "title": "Installing Eduard Photo-Etch Parts",
+      "text": "Eduard photo-etch parts often require bending and shaping. Use a GodHand nipper to carefully cut and bend parts using the bend lines as a guide. For complex shapes, use a needle or pin to gradually bend parts, avoiding sudden force. Apply CA glue (like UHU Plus) to attach parts, allowing 30 seconds for setting before positioning."
     },
     {
-      "title": "Applying AK Interactive Washes",
-      "text": "AK Interactive Washes add depth and realism. Shake bottle well before use. Dilute wash with AK Interactive Thinner at a 1:1 ratio for initial application. Apply with a flat brush, working wash into recesses and panel lines. Allow to dry 24 hours, then remove excess with a damp cloth. Apply a second coat undiluted for deeper effect."
+      "title": "Working with Resin Conversion Kits (Clear Prop Models)",
+      "text": "Resin conversion kits require careful handling due to their fragility. Lightly sand mating surfaces with fine grit sandpaper before gluing with CA glue (like Loctite Super Glue). Test fit parts first to ensure a proper fit. If necessary, use a razor saw to trim excess resin."
     },
     {
-      "title": "Chipping with Sponge Technique",
-      "text": "Sponge technique adds realistic chipping to edges. Use a natural sea sponge, cut into small pieces. Dip sponge in Vallejo Model Color or AMMO by Mig Jimenez enamel paint, matching desired chip color. Gently dab sponge onto model's edge, varying pressure for chip size. Allow paint to dry 15 minutes before sealing with varnish."
+      "title": "Assembling Workable Tracks (Arma Hobby)",
+      "text": "Arma Hobby's workable tracks require careful assembly. Soak individual links in warm water until they soften, then bend and connect them as per the instructions. To strengthen the track, use thin CA glue (like Loctite Super Glue) along the seam where links join, allowing them to set before handling. Once assembled, dip tracks in Vallejo Acrylic Thinner to remove any remaining lubricant."
     }
   ]
 }
