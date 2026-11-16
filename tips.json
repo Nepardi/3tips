@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Mastering Panel Line Scribing with RB Productions",
-      "text": "For deep, crisp panel lines, use RB Productions scribing tools. Hold the tool like a pencil, not a pen. Apply firm, steady pressure perpendicular to the surface. Start from one end and let the tool's edge bite into the plastic. Use the 0.3mm tool for most kits, switching to 0.5mm for thicker plastic. Once done, carefully clean up any burrs with a sharp hobby knife."
+      "title": "Airbrushing Vallejo Model Air \u2014 Pressure Matters",
+      "text": "Vallejo Model Air is designed for airbrushing but may still require thinning for fine detail work. Mix at a 2:1 ratio with Vallejo Airbrush Thinner for a workable consistency. Add 2-3 drops of Vallejo Flow Improver per 10 drops of thinned paint for smoother application. Spray at 1.5-2.0 bar pressure for consistent coverage. Test on a white plastic spoon \u2014 if it sprays evenly, you're good to go."
     },
     {
-      "title": "Photo-Etch Bending with Eduard's ProMarkers",
-      "text": "Eduard's ProMarkers are perfect for bending photo-etch parts. Heat the part with a hairdryer, then use the marker to press and hold the part in place until it cools. For tight radii, use the small end, and for larger curves, use the wider end. Be patient; it may take a few attempts to get the right bend."
+      "title": "Base Coat with Vallejo Model Color \u2014 Two Coats Better",
+      "text": "Vallejo Model Color is ideal for base coats due to its pigment density. Apply the first coat diluted at a 1:1 ratio with Vallejo Airbrush Thinner at 1.0 bar pressure. Allow 24 hours drying time. Apply the second coat undiluted at 1.5 bar pressure for better adhesion and coverage. Sand lightly with fine sandpaper after drying to remove any orange peel."
     },
     {
-      "title": "Airbrush Needle Cleaning: The Soak and Brush Method",
-      "text": "Clean your Iwata airbrush needle regularly to prevent clogs. Soak it in Vallejo Airbrush Thinner for 15 minutes, then scrub it gently with a soft toothbrush. Rinse with water and dry thoroughly. Repeat this process after every 2-3 hours of use or whenever you switch paints."
+      "title": "Camouflage Masking \u2014 Tamiya Tape and Mr. Hobby Markers",
+      "text": "For camouflage patterns, use Tamiya Tape to mask off sections. Apply gently to avoid lifting paint later. Use Mr. Hobby Markers to draw stripes or panel lines before painting to create hard edges. Paint each section with Vallejo Model Air or Color, allowing each coat to dry completely before removing tape. Start with smaller sections to avoid lifting paint."
     },
     {
-      "title": "Masking with Tamiya Tape vs. Kabuki Tape",
-      "text": "Tamiya tape is great for masking large, smooth surfaces, while Kabuki tape is better for intricate, curved details. For best results, use both tapes together. Apply Tamiya tape first, then use Kabuki tape to mask complex shapes or fine edges. Once painted, carefully remove both tapes, starting from a corner."
+      "title": "Applying AK Interactive Washes \u2014 Dilute for Control",
+      "text": "AK Interactive Washes provide great contrast but can be too dark if not diluted. Dilute with AK Interactive Thinner at a 3:1 ratio (3 parts thinner, 1 part wash) for better control. Apply with a fine brush or by dabbing onto raised areas. Work quickly and wipe away excess with a damp Q-tip before it dries. Allow 24 hours drying time before removing excess with a soft brush."
     },
     {
-      "title": "Sanding Stick Progression for Smooth Surfaces",
-      "text": "Use a progression of sanding sticks to achieve a smooth finish. Start with 400-grit for major imperfections, followed by 600-grit for most of the work, and finish with 800-grit for a mirror-like surface. Wet-sand using water or a suitable lubricant, applying light, even pressure. Inspect your progress frequently to avoid over-sanding."
+      "title": "Chipping with Sponge Technique \u2014 Alclad II and Mr. Hobby",
+      "text": "Create realistic chipping using a makeup sponge and Alclad II Clear Primer. Paint the area to be chipped with Vallejo Model Color. Once dry, dab the sponge lightly in Alclad II Clear Primer and pat gently onto the painted surface. Use varying pressure for different chip sizes. Allow drying, then gently wipe away excess primer with a damp Q-tip. Apply final washes and weathering."
     }
   ]
 }
