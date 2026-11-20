@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Selecting the Right Sandpaper Grits for Different Stages",
-      "text": "For initial preparation of plastic surfaces, use 240-grit sandpaper like Tamiya Sanding Stick to remove mold lines and imperfections. For smoothing putty, switch to 400-grit for gentle work on delicate areas. Finish with 800-grit for a fine surface before painting. Always sand in one direction to avoid creating scratches."
+      "title": "Proper Use of Tamiya Basic Nippers",
+      "text": "Tamiya Basic Nippers are a versatile tool for modelers. They're great for thicker gates but can damage delicate parts if twisted. Always cut straight through, never twisting or pulling. For thicker parts like ICM or Meng sprues, use these nippers; for thinner gates, opt for GodHand Ultimate Nippers."
     },
     {
-      "title": "Choosing the Right Paint Type for Acrylic vs Enamel vs Lacquer",
-      "text": "Acrylic paints like Vallejo Model Air and Tamiya Acrylics are water-based, non-toxic, and fast-drying, ideal for hand-brushing and airbrushing. Enamels like Tamiya Acrylic Enamels offer a harder finish but slower drying time, suitable for brush-on applications. Lacquers like Alclad II offer metallic finishes, best applied by airbrush and reduced with Alclad II Lacquer Thinner."
+      "title": "Scribing Panel Lines with RB Productions Tools",
+      "text": "RB Productions tools have varying depths to accommodate different panel line sizes. For best results, use the tool corresponding to your kit's panel line depth. Apply gentle, steady pressure while moving the tool along the panel line. Start from the center and work outwards to avoid damaging the part."
     },
     {
-      "title": "Filling Gaps with Vallejo Plastic Putty vs Tamiya Putty",
-      "text": "Vallejo Plastic Putty is self-drying, perfect for filling large gaps and scratches. Apply with a spatula, let dry, then sand flush with the surface. For smaller gaps and pin holes, Tamiya Putty is easier to control. Apply sparingly, sand after drying, and remove excess with a damp cloth. Both putties can be activated with Vallejo Putty Activator Hardener."
+      "title": "Using Photo-Etch Bending Jigs",
+      "text": "Eduard photo-etch bending jigs help create consistent bends. Place the photo-etch part over the jig, with the edge you want to bend along the groove. Using tweezers, gently bend the part over the jig's edge. For tighter bends, use the smaller jigs. Always bend before painting to avoid damaging decals."
     },
     {
-      "title": "Photo-Etch vs Resin Detail Parts: Which to Choose",
-      "text": "Photo-etch parts from Eduard and ICM offer fine detail but require careful bending and cutting with pliers or tweezers. Resin parts from brands like MiniArt and Arma Hobby offer no frills but excellent detail. Choose photo-etch for complex details and resin for robust, easy-to-assemble parts. Always handle resin parts with care due to their fragility."
+      "title": "Airbrush Needle Cleaning Techniques",
+      "text": "Iwata airbrush needles can clog with dried paint. To clean, soak the needle in Vallejo Airbrush Thinner for 15 minutes, then use an Iwata Airbrush Needle Cleaning Brush to scrub the inside gently. Rinse with water and dry thoroughly before reassembling. Do this regularly to maintain airbrush performance."
     },
     {
-      "title": "Choosing the Right Decal Setting Solutions",
-      "text": "For standard decals, use Microscale Solva-Set or Mr. Mark Softer to improve adhesion and reduce silvering. For stubborn or brittle decals, soak in warm water with a few drops of dish soap, then use Micro Set to promote adhesion. For water-slide decals, apply Micro Set before applying, then Micro Sol to seal and soften. Always follow manufacturer's instructions."
+      "title": "Masking with Tamiya Tape vs. Kabuki Tape",
+      "text": "Tamiya Tape is ideal for masking large, flat areas due to its adhesive strength. Kabuki Tape is softer, better for masking curves and edges without pulling paint. For best results, use Tamiya Tape for large areas and Kabuki Tape for intricate curves, like when masking around windows or canopies in Arma Hobby kits."
     }
   ]
 }
