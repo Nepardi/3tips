@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Removing Old Paint from Kits",
-      "text": "To strip old paint from plastic kits, use Tamiya Extra Thin Cement. Apply liberally to the surface, let it soak for 1-2 minutes, then gently scrape off the softened paint with a wood toothpick or scribe. For stubborn areas, use a sharp hobby knife. Once paint is removed, clean the surface with alcohol to prepare for priming."
+      "title": "Choosing the Right Cement for ABS vs Polystyrene",
+      "text": "Tamiya Extra Thin Cement bonds polystyrene perfectly by melting the plastic together, but it struggles with ABS parts found in many modern kits (breeches, gun barrels, ICM and Arma Hobby aircraft propellers). For ABS, switch to Tamiya ABS & Polystyrene Cement in the green bottle, which contains ABS-compatible solvents. Apply sparingly with a fine brush to both surfaces, press together for 10 seconds, and let cure for 24 hours before sanding. Test the bond on a spare sprue first."
     },
     {
-      "title": "Fixing Broken Photo-Etch Parts",
-      "text": "To repair broken photo-etch parts, use CA (Cyanoacrylate) glue. Apply a tiny dot with a toothpick or needle to the joint, let it dry, then press the parts together firmly. For extra strength, apply a small amount of Vallejo Acrylic Thinner to the joint before gluing. Once dry, hide the repair with Vallejo Metal Color paint or appropriate weathering techniques."
+      "title": "Selecting the Right Paint Type for Weathering",
+      "text": "For realistic weathering, use Vallejo Model Air acrylic paints for your base coat and AK Interactive and AMMO by Mig Jimenez acrylic washes and filters. Acrylics are water-based, non-toxic, and offer a wide range of colors. They're also easier to control and clean up than enamels. For lacquers, consider Vallejo Airbrush Thinner for thinning and Citadel Lacquer Thinner for cleanup. Always test paint consistency and flow on a test surface first."
     },
     {
-      "title": "Recovering Clogged Airbrushes",
-      "text": "To unclog an airbrush, first disassemble and clean with warm water and mild detergent. If clog persists, soak the tip and needle in Vallejo Airbrush Thinner for 15-30 minutes, then scrub with a soft toothbrush. For severe clogs, use a pin vise to carefully widen the tip opening. Reassemble, test with water, then paint to ensure proper functioning."
+      "title": "Choosing the Right Sandpaper Grits",
+      "text": "For sanding seams and preparing surfaces, start with 180-220 grit sandpaper for removing mold lines and filling imperfections. Use a light touch and work in one direction to avoid scratches. For finer sanding before painting, switch to 320-400 grit sandpaper. For the smoothest finish, use 600-800 grit sandpaper before applying a primer. Wet sanding with micro-mesh pads can achieve mirror-like finishes."
     },
     {
-      "title": "Repairing Warped Parts",
-      "text": "To straighten warped plastic parts, immerse them in warm water for 30 seconds, then gently bend them back into shape using tweezers or pliers. Let them dry flat on a towel. For severe warping, use a hot air gun to heat the part, then gently bend it back into shape while still warm."
+      "title": "Filling Gaps: Vallejo vs Tamiya Putty",
+      "text": "Vallejo Plastic Putty is thicker and sticks better to vertical surfaces than Tamiya Putty, making it ideal for filling deep gaps. Apply Vallejo Plastic Putty with a toothpick or brush, let it dry, then scrape off excess with a sharp blade. Tamiya Putty is thinner, great for fine crevices, and easier to sand. For hard-to-reach gaps, mix Tamiya Extra Thin Cement with baking soda to create a custom gap-filling paste. Let it dry, then sand flush."
     },
     {
-      "title": "Avoiding Frost from Rattle Cans",
-      "text": "To prevent frost from forming on paint when using rattle cans in cold weather, warm the can in warm water for 10-15 minutes before use. Shake well and test spray on a scrap piece before painting your model. Always paint in a well-ventilated area and avoid direct sunlight."
+      "title": "Photo-Etch vs Resin Detail Parts",
+      "text": "Choose photo-etch (PE) for intricate, thin details (lattice work, railings, etc.) found in Eduard, ICM, and AFV Club sets. PE is stronger and more realistic than plastic but requires careful cutting, bending, and glueing. Resin detail parts from brands like Clear Prop Models and Special H offer high detail and no bending, but they're delicate and harder to clean up. For the best of both worlds, combine PE and resin details in your build."
     }
   ]
 }
