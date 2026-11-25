@@ -1,24 +1,24 @@
 {
   "tips": [
     {
-      "title": "Choosing the Right Cement for ABS vs Polystyrene",
-      "text": "Tamiya Extra Thin Cement bonds polystyrene perfectly by melting the plastic together, but it struggles with ABS parts found in many modern kits (breeches, gun barrels, ICM and Arma Hobby aircraft propellers). For ABS, switch to Tamiya ABS & Polystyrene Cement in the green bottle, which contains ABS-compatible solvents. Apply sparingly with a fine brush to both surfaces, press together for 10 seconds, and let cure for 24 hours before sanding. Test the bond on a spare sprue first."
+      "title": "Scribing Panel Lines with RB Productions' Panel Line Scriber",
+      "text": "For deep, consistent panel lines, use RB Productions' Panel Line Scriber. It has interchangeable tips for various line depths. Apply gentle pressure and guide it along the panel line. For best results, scribe after assembly but before painting. With RB Productions, you can achieve realistic panel lines without damaging the model's surface."
     },
     {
-      "title": "Selecting the Right Paint Type for Weathering",
-      "text": "For realistic weathering, use Vallejo Model Air acrylic paints for your base coat and AK Interactive and AMMO by Mig Jimenez acrylic washes and filters. Acrylics are water-based, non-toxic, and offer a wide range of colors. They're also easier to control and clean up than enamels. For lacquers, consider Vallejo Airbrush Thinner for thinning and Citadel Lacquer Thinner for cleanup. Always test paint consistency and flow on a test surface first."
+      "title": "Airbrush Needle Cleaning with Iwata's Airbrush Needle Cleaning Kit",
+      "text": "A clean needle ensures smooth paint flow and prevents clogging. Use Iwata's Airbrush Needle Cleaning Kit to maintain your needle. First, dissolve dried paint with Iwata's needle cleaning solution. Then, scrub gently with the cleaning brush, rinse with water, and dry with the included towel. Repeat until the needle is clean."
     },
     {
-      "title": "Choosing the Right Sandpaper Grits",
-      "text": "For sanding seams and preparing surfaces, start with 180-220 grit sandpaper for removing mold lines and filling imperfections. Use a light touch and work in one direction to avoid scratches. For finer sanding before painting, switch to 320-400 grit sandpaper. For the smoothest finish, use 600-800 grit sandpaper before applying a primer. Wet sanding with micro-mesh pads can achieve mirror-like finishes."
+      "title": "Masking with Tamiya Tape vs Kabuki Tape",
+      "text": "Tamiya tape is great for large, flat surfaces due to its strong adhesion. Kabuki tape, however, is more flexible and better suited for curves and complex shapes. For best results, use Tamiya tape for flat areas and Kabuki tape for curves. Before applying, clean the surface with alcohol to remove oils. Press firmly to ensure a good seal, and peel slowly at a 45\u00b0 angle."
     },
     {
-      "title": "Filling Gaps: Vallejo vs Tamiya Putty",
-      "text": "Vallejo Plastic Putty is thicker and sticks better to vertical surfaces than Tamiya Putty, making it ideal for filling deep gaps. Apply Vallejo Plastic Putty with a toothpick or brush, let it dry, then scrape off excess with a sharp blade. Tamiya Putty is thinner, great for fine crevices, and easier to sand. For hard-to-reach gaps, mix Tamiya Extra Thin Cement with baking soda to create a custom gap-filling paste. Let it dry, then sand flush."
+      "title": "Using Dental Tools for Detail Work on Eduard Photo-Etch",
+      "text": "Eduard's photo-etch frets often include tiny, delicate details. For bending and shaping these parts, use dental tools like the KAI Tweezer and KAI Scalpel. Gently grasp the part with the tweezer, then use the scalpel to bend or cut it. Be careful not to apply too much pressure and damage the part."
     },
     {
-      "title": "Photo-Etch vs Resin Detail Parts",
-      "text": "Choose photo-etch (PE) for intricate, thin details (lattice work, railings, etc.) found in Eduard, ICM, and AFV Club sets. PE is stronger and more realistic than plastic but requires careful cutting, bending, and glueing. Resin detail parts from brands like Clear Prop Models and Special H offer high detail and no bending, but they're delicate and harder to clean up. For the best of both worlds, combine PE and resin details in your build."
+      "title": "Sanding Stick Progression for Styrene Sheet (Evergreen)",
+      "text": "To prepare Evergreen styrene sheet for use, start with a coarse sanding stick to remove the shiny surface and any imperfections. Follow up with a medium to smooth out the surface, then finish with a fine to achieve a glass-like smoothness. Always sand in the direction of the grain and use light, steady pressure. Finally, wipe the sheet with a damp cloth to remove dust."
     }
   ]
 }
